@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>  Pretty Baked || Savory  </title>
+        <meta charset ="UTF-8" />
+        <link rel="stylesheet" href="savory.css">
+
+        <script></script>
+    </head>
+
+    <body>
+        <header > 
+            <img src="Images/logoo.jpg" alt=" LOGO ">
+            <nav>
+                <li> <a  href="home.html"         >       HOME       </a></li>
+                <li> <a  href="contact-us.html"   >   CONTACT US  </a></li>
+                <li> <a  href="login.html"        >    LOGIN       </a></li>
+                <li> <a  href="cart.html"         >     CART      </a></li>
+            </nav>
+
+        </header>
+
+
+        <section >
+            <div class="left-side"> </div>
+
+            <div class ="right-side" >
+                <H1> << WELCOM TO THE SAVORY PAGE >></H1>
+
+                <div class=" searh-filter ">
+                    <div class="search">
+                         <input list="Savory-list" name="Savory" placeholder="search">
+                         <datalist id="Savory-list">
+                              <option value="Sausage pies">
+                              <option value="Mini Meat Pies">
+                              <option value="Cheese Pies">
+                              <option value="Croissant Egg">
+                              <option value=" Chicken Croissant">
+                              <option value=" Beef & Pickle Croissant">
+                              <option value=" Sausage Croissant">
+                              <option value=" Shrimp Sandwich">
+                              <option value=" Mini Pizaa">
+                              <option value=" Zaatar Pie">
+                              <option value=" Cheesy Cold Cut Croissant">
+                              <option value=" Cheese Stuffed Croissant">
+                        </datalist>
+                    </div>
+                 
+                   <div class="filter-section">
+                        <section class = "price-filter">
+                             <button   id="pricebutton"  onclick="togglePriceOptions()"> Filter by Price   ↡ </button>
+
+                        <div id="priceOption" style="display: none;">
+                             <button  class="price-btn"   onclick="sortByPrice('asc') ; setActiveButton(this)">    ASC     </button>
+                             <button  class="price-btn"   onclick="sortByPrice('desc') ; setActiveButton(this)">  DESC    </button>
+                             <input     type="number"      id="minPrice"     placeholder="Min Price">
+                             <input     type="number"      id="maxPrice"     placeholder="Max Price" max="300">
+                             <button  class="filer-only"   onclick="filterByPriceRange() ; toggleFilterActive(this)">   Filter   </button>
+                        </div>
+                        </section>
+                    </div>
+                </div>
+
+                 <div class="imagess">
+                    <div class="image" data-price="70">
+                             <img src="Images/Sausage pie .jpg" alt=" Sausage pies" > 
+                             <h3 >Sausage pies</h3>
+                             <p> 1/4k ==> 70 EGP </p>
+                             <button onclick="addToCart('product',4.5)"> Add To Cart </button> 
+                            </div>
+
+                    <div class="image" data-price="140"> 
+                     <img src="Images/mini meat.jpg" alt=" Mini Meat Pie" > 
+                     <h3 > Mini Meat Pies </h3>
+                     <p> 1/4k ==> 140 EGP </p>
+                     <button onclick="addToCart('product',4.5)"> Add To Cart </button> 
+                    </div>
+
+                    <div class="image" data-price="40">
+                         <img src="Images/cheese pie.jpg" alt=" Cheese Pies" > 
+                         <h3 > Cheese Pies </h3>
+                         <p> 1/4k ==> 40 EGP </p>
+                         <button onclick="addToCart('product',4.5)"> Add To Cart </button> 
+                        </div>
+
+                    <div class="image " data-price="190">
+                         <img src="Images/كرواسون 1.jpg" alt=" Egg Croissant" > 
+                         <h3 >  Egg Croissant </h3>
+                         <p> 190 EGP </p>
+                         <button onclick="addToCart('product',4.5)"> Add To Cart </button> 
+                        </div>
+
+                    <div class="image" data-price="250">
+                        <img src="Images/كرواسون 2.jpg" alt=" Chicken Croissant" > 
+                        <h3 > Chicken Croissant</h3>
+                        <p> 250 EGP </p>
+                        <button onclick="addToCart('product',4.5)"> Add To Cart </button> 
+                    </div>
+
+                    <div class="image" data-price="270">
+                        <img src="Images/كرواسون 3٠.jpg" alt=" Beef & Pickle Croissant" > 
+                        <h3 > Beef & Pickle Croissant</h3>
+                        <p> 270 EGP </p>
+                        <button onclick="addToCart('product',4.5)"> Add To Cart </button> 
+                    </div>
+
+                     <div class="image " data-price="170">
+                        <img src="Images/كرواسون4.jpg" alt="Sausage Croissant" > 
+                        <h3 > Sausage Croissant</h3>
+                        <p> 170 EGP </p>
+                        <button onclick="addToCart('product',4.5)"> Add To Cart </button> 
+                    </div>
+
+                     <div class="image" data-price="300">
+                        <img src="Images/بوبيان.jpg" alt="Shrimp Sandwich" > 
+                        <h3 > Shrimp Sandwich</h3>
+                        <p> 300 EGP </p>
+                        <button onclick="addToCart('product',4.5)"> Add To Cart </button> 
+                    </div>
+
+                     <div class="image" data-price="90">
+                        <img src="Images/mini piza.jpg" alt="Mini Pizza" > 
+                        <h3 > Mini Pizza</h3>
+                        <p> 1/4k ==> 90 EGP</p>
+                        <button onclick="addToCart('product',4.5)"> Add To Cart </button> 
+                    </div>
+
+                     <div class="image" data-price="55">
+                        <img src="Images/فطيرة زعتر.jpg" alt="Zaatar Pie" > 
+                        <h3 > Zaatar Pie</h3>
+                        <p> 1/4k ==> 55 EGP</p>
+                        <button onclick="addToCart('product',4.5)"> Add To Cart </button> 
+                    </div>
+
+                     <div class="image" data-price="110">
+                        <img src="Images/;v,hs,k 6.jpg" alt="Cheesy Cold Cut Croissant" > 
+                        <h3 > Cheesy Cold Cut Croissant</h3>
+                        <p>  110 EGP</p>
+                        <button onclick="addToCart('product',4.5)"> Add To Cart </button> 
+                    </div>
+
+                     <div class="image" data-price="80">
+                        <img src="Images/photo_2025-04-19_06-08-06.jpg" alt="Cheese Stuffed Croissant" > 
+                        <h3 > Cheese Stuffed Croissant</h3>
+                        <p>  80 EGP</p>
+                        <button onclick="addToCart('product',4.5)"> Add To Cart </button> 
+                    </div>
+                    
+                 </div>
+
+            </div>
+             
+
+        </section>
+
+        <script>
+            let originalProducts =[]; 
+
+            window .onload =function(){
+                const container = document.querySelector('.imagess');
+                originalProducts = Array.from(container.children);
+            }
+
+            let lastStored ='';
+
+            function sortByPrice(order){
+                const container = document.querySelector('.imagess');
+                const products = Array.from (document.querySelectorAll('.image')); 
+
+                if (lastStored === order){
+                    originalProducts.forEach( product => container.appendChild(product));
+                    lastStored ='';
+                    clearActiveButtons();
+                }
+                else{
+                        products .sort ((a,b) => {
+                        const priceA = parseInt ( a.dataset.price) ; 
+                        const priceB = parseInt ( b.dataset.price) ; 
+                        return order === 'asc' ? priceA - priceB : priceB - priceA ;
+                    });
+                    products.forEach( product => container.appendChild(product) );
+                    lastStored = order ;
+                }
+            }
+
+            function clearActiveButtons (){
+                const button = document.querySelectorAll('.price-btn');
+                button.forEach(btn => btn.classList.remove('active'));
+            }
+
+            function togglePriceOptions(){
+                const priceOption = document.getElementById('priceOption');
+                priceOption.style.display= priceOption.style.display === 'none' ? 'block': 'none' ;
+                
+                const button = document.getElementById('pricebutton');
+                button.classList.toggle('active');
+            }
+               
+            function setActiveButton(clickedBtn) {
+                 const buttons = document.querySelectorAll('.price-btn:not(#pricebutton)');
+                 buttons.forEach(btn => btn.classList.remove('active'));
+                 clickedBtn.classList.add('active');
+            }
+            function toggleFilterActive(btn){
+                const container = document.querySelector('.imagess') ;
+                const products = Array.from ( document.querySelectorAll('.image'))  ;
+
+                if (btn.classList.contains('active')){
+                    btn.classList.remove('active');
+                    products.forEach(product=>{
+                        product.style.display ='block' ; 
+                        container.appendChild(product);
+                    });
+                }
+                else{
+                    btn.classList.add('active') ; 
+                    let min = parseInt(document.getElementById('minPrice') .value) || 0 ;
+                    let max = parseInt(document.getElementById('maxPrice') .value) || Infinity ;
+                    
+                    products.forEach ( product => {
+                        const price = parseInt (product.dataset.price) ; 
+                         if ( price >= min && price <= max ){
+                            product.style.display = 'block';
+                        }
+                         else{
+                            product.style.display = 'none' ;
+                        }    
+
+                });
+              }
+            }
+        </script>
+
+    </body>
+</html>

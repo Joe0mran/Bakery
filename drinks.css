@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 100;
+  font-size: medium;
+  background-color: rgb(235, 212, 172);
+  transition-duration: 1s;
+}
+.title {
+  justify-items: center;
+  color: rgb(255, 209, 122);
+  padding: 10px 0px 0px 0px;
+  font-size: x-large;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  border-radius: 0px 0px 15px 15px;
+  background-color: rgb(243, 203, 151);
+  transition-duration: 1s;
+  position: initial;
+}
+#upperbtn , #theme {
+  border: solid 1px rgb(139, 61, 37);
+}
+.dark {
+  background-color: rgb(46, 42, 42);
+}
+.dark #cardd,
+.dark #parties {
+  background-color: #000000;
+  color: white;
+}
+.dark #theme,
+.dark #upperbtn,
+.dark #added {
+  background-color: #504f4f;
+  color: white;
+}
+.logo {
+  width: 70px;
+  border-radius: 10%;
+}
+.head a {
+  color: white;
+  background-color: rgb(170, 123, 65);
+  padding: 3px 15px;
+  text-decoration: none;
+  border-radius: 15px;
+}
+.head button {
+  color: white;
+  background-color: rgb(170, 123, 65);
+  padding: 5px 15px;
+  text-decoration: none;
+  border-radius: 15px;
+  border: 0;
+}
+.head button:hover,
+a:hover {
+  background-color: rgb(87, 64, 36);
+}
+.imgCover {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+  border-radius: 30px;
+}
+.cover {
+  color: white;
+  padding: 0px 0px 50px 10px;
+  font-size: large;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 5px;
+}
+.adding {
+  position: flex;
+  color: white;
+  background-color: rgb(122, 89, 49);
+  padding: 5px 13px;
+  text-decoration: none;
+  border-radius: 30px;
+  border: 0;
+}
+.adding:hover {
+  background-color: rgb(161, 117, 62);
+}
+.card {
+  width: 25%;
+  height: 100%;
+  background-color: rgb(228, 195, 135);
+  padding: 5px 5px;
+  justify-items: center;
+  border-radius: 30px;
+  color: rgba(66, 43, 15, 0.685);
+  transition-duration: 1s;
+}
+.card img {
+  width: 100%;
+  border-radius: 30px;
+}
+.card:hover {
+  background-color: rgb(63, 40, 14);
+  color: rgb(250, 181, 102);
+}
+.end {
+  background-color: rgb(243, 203, 151);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  gap: 5px;
+  transition-duration: 1s;
+}
+.end img {
+  width: 30px;
+}

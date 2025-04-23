@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background:#F5ECD5 ;
+}
+header{
+    width: 100% ;
+    max-width: 1800px;
+    background: #E5D0AC;
+    padding: 10px 30px;
+    min-height: 80px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+}
+header img {
+    width: 20%;
+    min-width: 150px;
+    height: auto;
+    max-height: 80px ;
+    margin-left: 2%;
+    margin-top: 0px;
+    display: inline-block;
+}
+header nav {
+    margin-left:15%;
+    display: flex;
+    flex-grow: 1;
+    list-style: none;
+    text-align: center;
+    gap: 10%;
+    justify-content: center;
+
+}
+a{
+    color: #550808;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; 
+    font-size: large;
+    text-decoration: none;
+}
+.left-side {
+    width: 20%;
+    height: auto ;
+    border-radius: 10px;  
+    background: #E5D0AC;
+    background-image: url("Images/logoo.jpg");
+    background-size: contain ;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 5px 5px;
+    margin: 0;   
+    padding: 0;
+}
+
+section{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 10px ;
+}
+.right-side {
+    display: flex;
+    flex-direction: column ;
+    gap: 20px;
+    flex: 1;
+    height: atuo ;
+    flex: 2 1 50%;
+    min-width: 400px;
+    background: #E5D0AC;
+    border-radius: 10px;
+}
+h1 {
+    text-align: center;
+    padding-top: 2%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; 
+    color: #550808;
+}
+.searh-filter  {
+    display: flex; 
+    gap : 3px; 
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+.search input{
+    width: 80%;
+    padding: 10px 15px ;
+    margin-left: 20px;
+    flex: 1 1 200px;
+    font-size: medium;
+    border: #550808;
+    border-style: double;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #550808;
+    background-color: #E5D0AC;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/622/622669.png');
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: 99% center;
+}
+#pricebutton {
+    width: 40%;
+    padding: 5px 5px ;
+    flex: 1 1 200px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-bottom: 0%;
+    font-size: medium;
+    border: #550808;
+    border-style: double;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #550808;
+    background-color: #E5D0AC;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; 
+    color: #550808;
+ }
+#priceOption{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px ;
+}
+#priceOption button{
+    padding: 10px;
+    width: 10%;
+    padding: 5px 5px ;
+    border-radius: 10px;
+    font-size: medium;
+    border: #550808;
+    border-style: double;
+    box-shadow: 2px 2px 5px #550808;
+    background-color: #E5D0AC;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; 
+    color: #550808;
+}
+
+.active{
+    background-color: #550808 !important;
+    color: aliceblue !important;
+    transform: scale(1.025);
+    box-shadow: 5px 5px 10px #754c23;
+}
+
+.imagess {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap ;
+    gap: 15px ;
+    justify-content: center;
+
+}
+.image {
+    background-color:#c9ae86;
+    width: 100%;
+    max-width: 300px ;
+    height: auto ; 
+    border: #550808;
+    border-style: double;
+    border-radius: 10%;  
+    padding-top: 2%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; 
+    color: #550808;
+    font-size: larger;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    transition: transform 0.03s  ease , box-shodow 0.03 ease;
+    margin-top: 0;
+}
+.image:hover {
+    transform: scale(1.025);
+    box-shadow: 5px 5px 10px #754c23;
+}
+
+.image img{
+    width: 75%;
+    height: 70%;
+    border-radius: 10%;
+}
+.image button{
+    margin-top: 2%;
+    width: 80%;
+    max-width: 200px;
+    min-width: 120px;
+    border: #550808;
+    border-style:solid ;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #550808;
+    background-color: #550808;
+    font-size: medium;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+
+
+

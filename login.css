@@ -44,7 +44,7 @@ body
     font-weight: 400;
     transition: 0.5s ease-in-out;
     background-color:rgb(255, 247, 240) ;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 .login:hover
 {

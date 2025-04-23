@@ -19,9 +19,9 @@ function theme() {
     }
     else {
         themebutton.innerHTML = '<img src="moon-stars.png" alt="moon" width="30px">';
-        colorhouse.src = "imgsbake/house-chimney.png";
-        colormenu.src = 'imgsbake/apps.png';
-        colorcart.src = 'imgsbake/cart-shopping-fast.png';
+        colorhouse.src = "house-chimney.png";
+        colormenu.src = 'apps.png';
+        colorcart.src = 'cart-shopping-fast.png';
         colorlog.src = 'entrance.png';
         colorphone.src = 'phone-plus.png';
 

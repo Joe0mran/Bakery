@@ -193,8 +193,11 @@ nav button {
 
 }
 
-.listphotos li a {
+.listphotos a {
     text-decoration: none;
+}
+
+.listphotos a button {
     color: var(--button-text);
     font-weight: bold;
     text-transform: capitalize;
@@ -259,7 +262,7 @@ nav button {
     color: var(--nav-text);
 }
 
-.footer-address a {
+.footer-address a button {
     text-decoration: none;
     color: var(--nav-bgcolor);
 

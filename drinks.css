@@ -16,14 +16,15 @@ body {
   text-decoration: none;
 }
 .head {
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 50px;
-  border-radius: 0px 0px 15px 15px;
-  background-color: rgb(243, 203, 151);
+  background-color: rgb(244, 231, 215);
   transition-duration: 1s;
   position: initial;
+  height: 27px;
+  width: 1245px;
 }
 
 .dark {
@@ -45,11 +46,17 @@ body {
   border-radius: 10%;
 }
 .head a {
-  color: white;
-  background-color: rgb(170, 123, 65);
-  padding: 3px 15px;
+  text-transform: uppercase;
   text-decoration: none;
-  border-radius: 15px;
+  color: rgb(89, 15, 15);
+}
+li {
+  list-style: none;
+  margin: 2px 35px;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .head button {
   color: white;
@@ -59,8 +66,7 @@ body {
   border-radius: 15px;
   border: 0;
 }
-.head button:hover,
-a:hover {
+.head button:hover {
   background-color: rgb(87, 64, 36);
 }
 .imgCover {

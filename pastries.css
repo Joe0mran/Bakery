@@ -289,18 +289,7 @@ transition: transform 0.2s ease;}
     height: 100px;
     
 }
-.logo{
-   
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    height: 150px;
-    border-radius:15px;
-    width: 250px;
-    filter: contrast(120%);
-    
+
 
 }
 .search input[type="text"]{

@@ -48,7 +48,7 @@ a{
     height: auto ;
     border-radius: 10px;  
     background: #E5D0AC;
-    background-image: url("Images/logoo.jpg");
+    background-image: url("logoo.jpg");
     background-size: contain ;
     background-repeat: repeat;
     background-attachment: scroll;

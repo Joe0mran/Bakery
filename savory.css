@@ -6,35 +6,63 @@
 html{
     background:#F5ECD5 ;
 }
-header{
-    width: 100% ;
-    max-width: 1800px;
-    background: #E5D0AC;
-    padding: 10px 30px;
-    min-height: 80px;
+.navbar {
+    background-color: var(--nav-bgcolor);
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: space-between;
     text-transform: uppercase;
-    flex-wrap: wrap;
+    height: 55px;
+
 }
-header img {
-    width: 20%;
-    min-width: 150px;
-    height: auto;
-    max-height: 80px ;
-    margin-left: 2%;
-    margin-top: 0px;
+
+nav button {
+    margin-right: 30px;
+    border-radius: 10px 10px;
+    border: none;
+    background-color: var(--nav-bgcolor);
+    cursor: pointer;
+    font-size: 30px;
+
+
+}
+
+.navbar .logo img {
+    width: 150px;
     display: inline-block;
+
 }
-header nav {
-    margin-left:15%;
+
+.navbar .link {
     display: flex;
-    flex-grow: 1;
-    list-style: none;
-    text-align: center;
-    gap: 10%;
     justify-content: center;
+    flex-grow: 1;
+
+}
+
+.navbar .link li {
+
+    list-style: none;
+    display: inline-block;
+    margin-right: 70px;
+    text-align: center;
+
+}
+
+.link li a {
+    text-decoration: none;
+    color: var(--nav-text);
+
+}
+
+.link li a:hover {
+    color: rgb(192, 98, 98);
+
+}
+
+.link li img {
+    width: 15px;
+    margin-right: 5px;
 
 }
 a{

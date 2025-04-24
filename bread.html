@@ -12,21 +12,19 @@
       <a id="header1" href="index.html"><h1>Pretty Baked</h1></a>
     </div>
   </header>
- 
-<!--
-  <div class="cover">
-    <img id="Bread" src="-04-13 at 16.26.18_9b8dcb7e.jpg" alt="Bread" >
- </div>
-  -->
-  
- 
-    
+   
   <div class="products">
     <div class="product-card">
       <img src="classic sourdough.jpeg" class="img" alt="Classic Sourdough">
       <h3>Classic Sourdough</h3>
       <p class="price"> EGP 90</p> 
       <button onclick="addToCart('Classic Sourdough',90)", class="add-to-cart">Add to cart</button>
+     
+      <form onsubmit="return validateNote()">
+        <p>special instructions:</p>
+        <textarea id="note" placeholder="e.g. I'd love a softer crust" maxlength="120" rows="4" cols="30"></textarea> 
+        <button type="submit">Submit Note</button>
+      </form>
     </div>
 
     <div class="product-card">
@@ -34,13 +32,23 @@
       <h3>Baguette</h3>
       <p class="price">EGP 110</p> 
       <button onclick="addToCart('Baguette',110)" class="add-to-cart">Add to cart</button>
+      <form onsubmit="return validateNote()">
+        <p>special instructions:</p>
+        <textarea id="note" placeholder="e.g. I'd love a softer crust" maxlength="120" rows="4" cols="30"></textarea> 
+        <button type="submit">Submit Note</button>
+      </form>
     </div>
 
     <div class="product-card">
       <img src="whole wheate 111.jpg" alt="Whole Wheate Bread">
-      <h3>'Whole Wheate Bread</h3>
+      <h3>Whole Wheate Bread</h3>
       <p class="price">EGP 59</p>
       <button onclick="addToCart('Whole Wheate Bread',59)" class="add-to-cart">Add to cart</button>
+      <form onsubmit="return validateNote()">
+        <p>special instructions:</p>
+        <textarea id="note" placeholder="e.g. I'd love a softer crust" maxlength="120" rows="4" cols="30"></textarea> 
+        <button type="submit">Submit Note</button>
+      </form>
     </div>
 
     <div class="product-card">
@@ -48,6 +56,11 @@
       <h3>French Brioche Loaf</h3>
       <p class="price">EGP 95</p>
       <button onclick="addToCart('French Brioche Loaf',95)" class="add-to-cart">Add to cart</button>
+      <form onsubmit="return validateNote()">
+        <p>special instructions:</p>
+        <textarea id="note" placeholder="e.g. I'd love a softer crust" maxlength="120" rows="4" cols="30"></textarea> 
+        <button type="submit">Submit Note</button>
+      </form>
     </div>
 
     <div class="product-card">
@@ -55,6 +68,11 @@
       <h3>Honey Oat Sandwich Bread</h3>
       <p class="price">EGP 85</p>
       <button onclick="addToCart('Honey Oat Sandwich Bread',85)" class="add-to-cart">Add to cart</button>
+      <form onsubmit="return validateNote()">
+        <p>special instructions:</p>
+        <textarea id="note" placeholder="e.g. I'd love a softer crust" maxlength="120" rows="4" cols="30"></textarea> 
+        <button type="submit">Submit Note</button>
+      </form>
     </div>
 
     <div class="product-card">
@@ -62,6 +80,11 @@
       <h3>Garlic Butter Baguette</h3>
       <p class="price">EGP 68</p>
       <button onclick="addToCart('Garlic Butter Baguette',68)" class="add-to-cart">Add to cart</button>
+      <form onsubmit="return validateNote()">
+        <p>special instructions:</p>
+        <textarea id="note" placeholder="e.g. I'd love a softer crust" maxlength="120" rows="4" cols="30"></textarea> 
+        <button type="submit">Submit Note</button>
+      </form>
     </div>
 
     <div class="product-card">
@@ -69,6 +92,11 @@
       <h3>Rye Bread</h3>
       <p class="price">EGP 99</p>
       <button onclick="addToCart('Rye Bread',99)"class="add-to-cart">Add to cart</button>
+      <form onsubmit="return validateNote()">
+        <p>special instructions:</p>
+        <textarea id="note" placeholder="e.g. I'd love a softer crust" maxlength="120" rows="4" cols="30"></textarea> 
+        <button type="submit">Submit Note</button>
+      </form>
     </div>
 
     <div class="product-card">
@@ -76,18 +104,36 @@
       <h3>Ciabatta Bread</h3>
       <p class="price">EGP 80</p>
       <button onclick="addToCart('Ciabatta Bread',80)" class="add-to-cart">Add to cart</button>
+      <form onsubmit="return validateNote()">
+        <p>special instructions:</p>
+        <textarea id="note" placeholder="e.g. I'd love a softer crust" maxlength="120" rows="4" cols="30"></textarea> 
+        <button type="submit">Submit Note</button>
+      </form>
     </div>
   </div>
     <footer>
       <p>© 2025 <a href="index.html">Pretty Baked</a></p>
     </footer>
+  <!-- note -->
+  <script>
+    function validateNote() {
+      const note = document.getElementById("note").value.trim();
+      if (!note) {
+        alert("Please fill out note.");
+        return false;
+      }
+      else{
+        alert("Thank you, we will take this in consideration .")
+      }
+    }
+  </script>  
     <script>
       document.querySelectorAll('.add-to-cart').forEach(btn => {
         btn.addEventListener(
           'click', () =>
         {
           btn.textContent = 'Added ✅';
-          btn.disabled    = true;       
+          btn.disabled= true;       
         });
       });
     </script>

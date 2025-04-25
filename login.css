@@ -6,10 +6,44 @@
 }
 body
 {
-    background-image: url(images/pic.jpg);
+    background-color: rgb(255, 247, 240);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+}
+body.dark-mode {
+    background-color: #3C2A21;
+    color: E5E5CB;
+  }
+  
+  button {
+    background-color: #E5E5CB;
+    color: #3C2A21;
+  }
+  body.dark-mode button {
+    background-color: #3C2A21;
+    color: #E5E5CB;
+  }
+  body.dark-mode h1 a {
+    color: #E5E5CB;
+  }
+  body.dark-mode .navbar {
+    background-color: #E5E5CB;
+    border-bottom: none; 
+}
+body.dark-mode .navbar button {
+    background-color: #E5E5CB;  
+}
+
+body.dark-mode .link li a {
+    color: #3C2A21; 
+}
+body.dark-mode footer a {
+    color: #E5E5CB;
+}
+body.dark-mode .login {
+    background-color: #E5E5CB; 
+    color: #3C2A21; 
 }
 .container
 {
@@ -29,7 +63,6 @@ body
 .login 
 {
     width: 30%;
-    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     position: relative;
@@ -46,7 +79,7 @@ body
     font-weight: 400;
     transition: 0.5s ease-in-out;
     background-color:rgb(255, 247, 240) ;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 .login:hover
 {
@@ -131,20 +164,20 @@ footer a
     font-family: Lucida Handwriting;
 }
 .navbar {
-    background-color: var(--nav-bgcolor);
+    background-color: rgb(255, 247, 240);
     display: flex;
     align-items: center;
     justify-content: space-between;
     text-transform: uppercase;
     height: 55px;
-
+    border-bottom: 2px solid rgb(160, 82, 45);
 }
 
 nav button {
     margin-right: 30px;
     border-radius: 10px 10px;
     border: none;
-    background-color: var(--nav-bgcolor);
+    background-color: rgb(255, 247, 240);
     cursor: pointer;
     font-size: 30px;
 

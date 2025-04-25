@@ -6,8 +6,15 @@
 html{
     background:#F5ECD5 ;
 }
+:root {
+    --navbg: #E5D0AC;
+}
+
+body.dark {
+    --navbg: #2b2b2b;
+}
 .navbar {
-    background-color: var(--nav-bgcolor);
+    background-color: var(--navbg);
     display: flex;
     align-items: center;
     justify-content: space-between;

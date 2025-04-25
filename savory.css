@@ -8,11 +8,11 @@ html{
     background:#F5ECD5 ;
 }
 body.dark {
-    --nav-bgcolor: #2b2b2b;
+    --navbgcolor: #2b2b2b;
     
 }
 .navbar {
-    background-color: var(--nav-bgcolor) ;
+    background-color: var(--navbgcolor) ;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,7 +25,7 @@ nav button {
     margin-right: 30px;
     border-radius: 10px 10px;
     border: none;
-    background-color: var(--nav-bgcolor) ;
+    background-color: var(--navbgcolor) ;
     cursor: pointer;
     font-size: 30px;
 

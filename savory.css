@@ -30,7 +30,7 @@ nav button {
     margin-right: 30px;
     border-radius: 10px 10px;
     border: none;
-    background-color: var(--nav-bgcolor);
+    background-color: var(--navbg) !important;
     cursor: pointer;
     font-size: 30px;
 
@@ -61,7 +61,7 @@ nav button {
 
 .link li a {
     text-decoration: none;
-    color: var(--navtext);
+    color: var(--navtext) !important;
 
 }
 

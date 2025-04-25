@@ -2,39 +2,72 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+     
 }
 html{
     background:#F5ECD5 ;
 }
-header{
-    width: 100% ;
-    max-width: 1800px;
-    background: #E5D0AC;
-    padding: 10px 30px;
-    min-height: 80px;
+body.dark {
+    --navbgcolor: #2b2b2b;
+    
+}
+.navbar {
+    background-color: var(--navbgcolor) ;
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: space-between;
     text-transform: uppercase;
-    flex-wrap: wrap;
+    height: 55px;
+
 }
-header img {
-    width: 20%;
-    min-width: 150px;
-    height: auto;
-    max-height: 80px ;
-    margin-left: 2%;
-    margin-top: 0px;
+
+nav button {
+    margin-right: 30px;
+    border-radius: 10px 10px;
+    border: none;
+    background-color: var(--navbgcolor) ;
+    cursor: pointer;
+    font-size: 30px;
+
+
+}
+
+.navbar .logo img {
+    width: 150px;
     display: inline-block;
+
 }
-header nav {
-    margin-left:15%;
+
+.navbar .link {
     display: flex;
-    flex-grow: 1;
-    list-style: none;
-    text-align: center;
-    gap: 10%;
     justify-content: center;
+    flex-grow: 1;
+
+}
+
+.navbar .link li {
+
+    list-style: none;
+    display: inline-block;
+    margin-right: 70px;
+    text-align: center;
+
+}
+
+.link li a {
+    text-decoration: none;
+    color: rgb(89, 15, 15);
+
+}
+
+.link li a:hover {
+    color: rgb(192, 98, 98);
+
+}
+
+.link li img {
+    width: 15px;
+    margin-right: 5px;
 
 }
 a{
@@ -48,7 +81,7 @@ a{
     height: auto ;
     border-radius: 10px;  
     background: #E5D0AC;
-    background-image: url("Images/logoo.jpg");
+    background-image: url("logoo.jpg");
     background-size: contain ;
     background-repeat: repeat;
     background-attachment: scroll;

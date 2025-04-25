@@ -1,88 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Pretty Baked - Cart</title>
-  <link rel="stylesheet" href="cart.css">
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<title>Pretty Baked - Cart</title>
+<link rel="stylesheet" href="cart.css">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header><h1><a href="index.html">Pretty Baked</h1></header>
-  <nav>
-    <a href="index.html">Home Page</a>
-  </nav>
+<header><h1><a href="index.html">Pretty Baked</h1></header>
+<nav class="navbar">
+    <ul class="link">
+        <li><img src="house-chimney.png" id="iconhouse"><a href="index.html">HOME</a></li>
+        <li><img src="apps.png" id="iconmenu"><a href="#">menu</a></li>
+        <li> <img src="phone-plus.png" alt="" id="icophone"><a href="#">contact us</a></li>
+        <li><img src="cart-shopping-fast.png" id="iconcart"><a href="cart.html">cart</a></li>
+        <li><img src="entrance.png" alt="" id="iconlog"><a href="login.html">login</a></li>
+    </ul>
+</nav>
 
-  <section class="cart-container" id="cart"></section>
 
-  <script src="cart.js"></script>
-  <script>
-    function renderCart() {
-      const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
-      const container = document.getElementById("cart");
-      container.innerHTML = "";
-      let subtotal = 0;
-      const shipping = 40;
+<section class="cart-container" id="cart"></section>
 
-      if (cartItems.length === 0) {
-        container.innerHTML = "<p>Your cart is empty.</p>";
-        return;
-      }
+<script src="cart.js"></script>
+<script>
+  function renderCart() {
+    const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+    const container = document.getElementById("cart");
+    container.innerHTML = "";
+    let subtotal = 0;
+    const shipping = 40;
 
-      cartItems.forEach((item, index) => {
-        subtotal += item.price * item.quantity;
-        const itemDiv = document.createElement("div");
-        itemDiv.className = "cart-item";
-        itemDiv.innerHTML = `
-          <h3>${item.name}</h3>
-          <p>Price: ${item.price.toFixed(2)} EGP</p>
-          <p>
-            Quantity:
-            <button onclick="updateQuantity(${index}, -1)">-</button>
-            ${item.quantity}
-            <button onclick="updateQuantity(${index}, 1)">+</button>
-          </p> 
-          <p>Total: ${(item.price * item.quantity).toFixed(2)} EGP</p>
-        `;
-        container.appendChild(itemDiv);
-      });
+    if (cartItems.length === 0) {
+      container.innerHTML = "<p>Your cart is empty.</p>";
+      return;
+    }
 
-      const totals = document.createElement("div");
-      totals.innerHTML = `
-        <hr>
-        <p><strong>Subtotal:</strong> ${subtotal.toFixed(2)} EGP</p>
-        <p><strong>Shipping:</strong> ${shipping.toFixed(2)} EGP</p>
-        <h3>Total: ${(subtotal + shipping).toFixed(2)} EGP</h3>
-        <button onclick="checkout()">Checkout</button>
-        <button onclick="clearCartAndReload()">Clear Cart</button>
+    cartItems.forEach((item, index) => {
+      subtotal += item.price * item.quantity;
+      const itemDiv = document.createElement("div");
+      itemDiv.className = "cart-item";
+      itemDiv.innerHTML = `
+        <h3>${item.name}</h3>
+        <p>Price: ${item.price.toFixed(2)} EGP</p>
+        <p>
+          Quantity:
+          <button onclick="updateQuantity(${index}, -1)">-</button>
+          ${item.quantity}
+          <button onclick="updateQuantity(${index}, 1)">+</button>
+        </p> 
+        <p>Total: ${(item.price * item.quantity).toFixed(2)} EGP</p>
       `;
-      container.appendChild(totals);
-    }
+      container.appendChild(itemDiv);
+    });
 
-    function updateQuantity(index, change) {
-      let cart = JSON.parse(localStorage.getItem("cart")) || [];
-      cart[index].quantity += change;
-      if (cart[index].quantity <= 0) {
-        cart.splice(index, 1);
-      }
-      localStorage.setItem("cart", JSON.stringify(cart));
-      renderCart();
-    }
+    const totals = document.createElement("div");
+    totals.innerHTML = `
+      <hr>
+      <p><strong>Subtotal:</strong> ${subtotal.toFixed(2)} EGP</p>
+      <p><strong>Shipping:</strong> ${shipping.toFixed(2)} EGP</p>
+      <h3>Total: ${(subtotal + shipping).toFixed(2)} EGP</h3>
+      <button onclick="checkout()">Checkout</button>
+      <button onclick="clearCartAndReload()">Clear Cart</button>
+    `;
+    container.appendChild(totals);
+  }
 
-    function clearCartAndReload() {
-      localStorage.removeItem("cart");
-      renderCart();
+  function updateQuantity(index, change) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart[index].quantity += change;
+    if (cart[index].quantity <= 0) {
+      cart.splice(index, 1);
     }
-
-    function checkout() {
-      alert("Thank you for your purchase!  Your order is being processed.");
-      clearCartAndReload(); 
-    }
-
+    localStorage.setItem("cart", JSON.stringify(cart));
     renderCart();
-  </script>
-  <footer>
-    <p>© 2025 <a href="index.html">Pretty Baked</a></p>
-  </footer>
+  }
+
+  function clearCartAndReload() {
+    localStorage.removeItem("cart");
+    renderCart();
+  }
+
+  function checkout() {
+    alert("Thank you for your purchase!  Your order is being processed.");
+    clearCartAndReload(); 
+  }
+
+  renderCart();
+</script>
+<footer>
+  <p>© 2025 <a href="index.html">Pretty Baked</a></p>
+</footer>
 </body>
 </html>

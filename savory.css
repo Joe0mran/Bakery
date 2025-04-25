@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+     background:#F5ECD5 ;
 }
-html{
+/* html{
     background:#F5ECD5 ;
-}
+} */
 :root {
     --navbg: #f3d0b5;
 }

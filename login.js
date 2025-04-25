@@ -4,8 +4,8 @@ function themeToggle() {
   const isDarkMode = body.classList.toggle("dark-mode");
 
   if (isDarkMode) {
-    themeToggleButton.innerHTML = '<img src="images/brightness.png" alt=""/>';
+    themeToggleButton.innerHTML = '<img src="brightness.png" alt=""/>';
   } else {
-    themeToggleButton.innerHTML = '<img src="images/moon-stars.png" alt="">';
+    themeToggleButton.innerHTML = '<img src="moon-stars.png" alt="">';
   }
 }

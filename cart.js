@@ -13,4 +13,5 @@
 
       localStorage.setItem('cart', JSON.stringify(cart));
       alert(name + ' x' + quantity + ' added to cart for ' + (price * quantity)+ ' EGP each');
+      qtyElement.innerText = 1;
   }

@@ -1,0 +1,175 @@
+
+body{
+    background-color: rgb(246, 236, 223) ;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+  
+  
+
+.navbar {
+  background-color: var(--nav-bgcolor);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  height: 55px;
+
+}
+
+nav button {
+  margin-right: 30px;
+  border-radius: 10px 10px;
+  border: none;
+  background-color: var(--nav-bgcolor);
+  cursor: pointer;
+  font-size: 30px;
+
+
+}
+
+.navbar .logo img {
+  width: 150px;
+  display: inline-block;
+
+}
+
+.navbar .link {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+
+}
+
+.navbar .link li {
+
+  list-style: none;
+  display: inline-block;
+  margin-right: 70px;
+  text-align: center;
+
+}
+
+.link li a {
+  text-decoration: none;
+  color: var(--nav-text);
+
+}
+
+.link li a:hover {
+  color: rgb(192, 98, 98);
+
+}
+
+.link li img {
+  width: 15px;
+  margin-right: 5px;
+
+}
+
+
+
+
+
+
+
+
+
+  .photo{
+   position: relative;
+  }
+
+  .text{
+    position: absolute;
+    top: 5px;
+    color: rgb(153 97 44);
+
+  }
+  .text h3{
+    font-size: 30px;
+    font-family: "Roboto Mono", monospace;
+    margin-left: 530px;
+    
+    
+  }
+  .text h2{
+    font-size: 35px;
+    font-family: "Roboto Mono", monospace;
+    margin-left: 450px;
+    
+  }
+  .text h4{
+    font-size: 20px;
+    font-family: "Roboto Mono", monospace;
+    margin-left: 300px;
+    
+  }
+
+  
+ input,textarea{
+    width: 450px;
+    margin: 10px 0;
+    padding: 10px;
+    display: block;
+    border: 2px solid #b96d36;
+    border-radius: 10px 10px;
+    box-sizing: border-box;
+ }
+  
+  label{
+    color: #8b4513;
+    font-family: "Roboto Mono", monospace;
+  }
+
+.form {
+  position: static;
+ 
+  margin-top: 75px;
+  
+}
+.photo{
+  height: 350px;
+  width: 100%;
+}
+button {
+  padding: 10px 20px;
+  background-color: #a0522d;
+  color: white;
+  border: none;
+  border-radius: 10px 10px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #8b4513;
+}
+input:focus , textarea:focus{
+  border: 3px solid #803e10;
+  outline: none;
+  
+}
+
+
+.call ,.whatsapp ,.email, .shop{
+  background-color: rgb(247, 230, 209);
+  display:inline-block;
+  width: 35%;
+  border-radius: 8px;
+  padding: 20px;
+  font-family:"Roboto Mono", monospace; 
+  color: #8b4513;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px;
+  box-sizing: border-box;
+}
+.all{
+  display: flex;
+}
+
+button:hover{
+ background-color:rgb(247, 230, 209); ; }
+
+
+
+ 

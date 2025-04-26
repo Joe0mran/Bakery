@@ -12,6 +12,6 @@
       }
 
       localStorage.setItem('cart', JSON.stringify(cart));
-      alert(name + ' x' + quantity + ' added to cart for ' + (price * quantity)+ ' EGP each ✅');
+      alert('x' + quantity + " " + name + ' added to cart for ' + (price * quantity)+ ' EGP ✅');
       qtyElement.innerText = 1;
   }

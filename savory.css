@@ -22,7 +22,7 @@ body.dark {
 }
 
 .navbar {
-    background-color: var(--nav-bgcolor);
+    background-color: var(--navbgcolor);
     display: flex;
     align-items: center;
     justify-content: space-between;

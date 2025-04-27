@@ -18,8 +18,12 @@
       <img src="classic sourdough.jpeg" class="img" alt="Classic Sourdough">
       <h3>Classic Sourdough</h3>
       <p class="price"> EGP 90</p> 
-      <button onclick="addToCart('Classic Sourdough',90)", class="add-to-cart">Add to cart</button>
-     
+      <div class="addOrRemove"> 
+        <button onclick="changeQty(this, -1)">-</button>
+        <span class="addOrRemove">1</span>
+        <button onclick="changeQty(this, 1)">+</button>
+      </div>
+      <button onclick="addToCart(this, 'Classic Sourdough',90)" class="add">add to cart</button>   
       <form onsubmit="return validateNote()">
         <p>special instructions:</p>
         <textarea id="note" placeholder="e.g. I'd love a softer crust" maxlength="120" rows="4" cols="30"></textarea> 
@@ -31,7 +35,12 @@
       <img src="baguette.webp" alt="">
       <h3>Baguette</h3>
       <p class="price">EGP 110</p> 
-      <button onclick="addToCart('Baguette',110)" class="add-to-cart">Add to cart</button>
+      <div class="addOrRemove"> 
+        <button onclick="changeQty(this, -1)">-</button>
+        <span class="addOrRemove">1</span>
+        <button onclick="changeQty(this, 1)">+</button>
+      </div>
+      <button onclick="addToCart(this, 'Baguette',110)" class="add">add to cart</button>   
       <form onsubmit="return validateNote()">
         <p>special instructions:</p>
         <textarea id="note" placeholder="e.g. I'd love a softer crust" maxlength="120" rows="4" cols="30"></textarea> 
@@ -43,7 +52,12 @@
       <img src="whole wheate 111.jpg" alt="Whole Wheate Bread">
       <h3>Whole Wheate Bread</h3>
       <p class="price">EGP 59</p>
-      <button onclick="addToCart('Whole Wheate Bread',59)" class="add-to-cart">Add to cart</button>
+      <div class="addOrRemove"> 
+        <button onclick="changeQty(this, -1)">-</button>
+        <span class="addOrRemove">1</span>
+        <button onclick="changeQty(this, 1)">+</button>
+      </div>
+      <button onclick="addToCart(this, 'Whole Wheate Bread',59)" class="add">add to cart</button>   
       <form onsubmit="return validateNote()">
         <p>special instructions:</p>
         <textarea id="note" placeholder="e.g. I'd love a softer crust" maxlength="120" rows="4" cols="30"></textarea> 
@@ -55,7 +69,12 @@
       <img src="French Brioche Loaf 111.jpg" alt="French Brioche Loaf">
       <h3>French Brioche Loaf</h3>
       <p class="price">EGP 95</p>
-      <button onclick="addToCart('French Brioche Loaf',95)" class="add-to-cart">Add to cart</button>
+      <div class="addOrRemove"> 
+        <button onclick="changeQty(this, -1)">-</button>
+        <span class="addOrRemove">1</span>
+        <button onclick="changeQty(this, 1)">+</button>
+      </div>
+      <button onclick="addToCart(this, 'French Loaf',95)" class="add">add to cart</button>   
       <form onsubmit="return validateNote()">
         <p>special instructions:</p>
         <textarea id="note" placeholder="e.g. I'd love a softer crust" maxlength="120" rows="4" cols="30"></textarea> 
@@ -67,7 +86,12 @@
       <img src="honey oat bread sandwiches 112.webp" alt="Honey Oat Sandwich Bread">
       <h3>Honey Oat Sandwich Bread</h3>
       <p class="price">EGP 85</p>
-      <button onclick="addToCart('Honey Oat Sandwich Bread',85)" class="add-to-cart">Add to cart</button>
+      <div class="addOrRemove"> 
+        <button onclick="changeQty(this, -1)">-</button>
+        <span class="addOrRemove">1</span>
+        <button onclick="changeQty(this, 1)">+</button>
+      </div>
+      <button onclick="addToCart(this, 'Honey Oat Sandwich Bread',85)" class="add">add to cart</button>   
       <form onsubmit="return validateNote()">
         <p>special instructions:</p>
         <textarea id="note" placeholder="e.g. I'd love a softer crust" maxlength="120" rows="4" cols="30"></textarea> 
@@ -79,7 +103,12 @@
       <img src="Garlic Butter Baguette 111.jpg" alt="Garlic Butter Baguette">
       <h3>Garlic Butter Baguette</h3>
       <p class="price">EGP 68</p>
-      <button onclick="addToCart('Garlic Butter Baguette',68)" class="add-to-cart">Add to cart</button>
+      <div class="addOrRemove"> 
+        <button onclick="changeQty(this, -1)">-</button>
+        <span class="addOrRemove">1</span>
+        <button onclick="changeQty(this, 1)">+</button>
+      </div>
+      <button onclick="addToCart(this, 'Garlic Butter Baguette',68)" class="add">add to cart</button>   
       <form onsubmit="return validateNote()">
         <p>special instructions:</p>
         <textarea id="note" placeholder="e.g. I'd love a softer crust" maxlength="120" rows="4" cols="30"></textarea> 
@@ -91,8 +120,13 @@
       <img src="Rye Bread.jpg" alt="Rye Bread">
       <h3>Rye Bread</h3>
       <p class="price">EGP 99</p>
-      <button onclick="addToCart('Rye Bread',99)"class="add-to-cart">Add to cart</button>
-      <form onsubmit="return validateNote()">
+      <div class="addOrRemove"> 
+        <button onclick="changeQty(this, -1)">-</button>
+        <span class="addOrRemove">1</span>
+        <button onclick="changeQty(this, 1)">+</button>
+      </div>
+      <button onclick="addToCart(this, 'Rye Bread',99)" class="add">add to cart</button>   
+       <form onsubmit="return validateNote()">
         <p>special instructions:</p>
         <textarea id="note" placeholder="e.g. I'd love a softer crust" maxlength="120" rows="4" cols="30"></textarea> 
         <button type="submit">Submit Note</button>
@@ -103,7 +137,12 @@
       <img src="ciabatta bread.jpg" alt="Ciabatta Bread">
       <h3>Ciabatta Bread</h3>
       <p class="price">EGP 80</p>
-      <button onclick="addToCart('Ciabatta Bread',80)" class="add-to-cart">Add to cart</button>
+      <div class="addOrRemove"> 
+        <button onclick="changeQty(this, -1)">-</button>
+        <span class="addOrRemove">1</span>
+        <button onclick="changeQty(this, 1)">+</button>
+      </div>
+      <button onclick="addToCart(this, 'Ciabatta Bread',80)" class="add">add to cart</button>
       <form onsubmit="return validateNote()">
         <p>special instructions:</p>
         <textarea id="note" placeholder="e.g. I'd love a softer crust" maxlength="120" rows="4" cols="30"></textarea> 
@@ -114,21 +153,29 @@
     <footer>
       <p>© 2025 <a href="index.html">Pretty Baked</a></p>
     </footer>
-  <!-- note -->
+
   <script>
     function validateNote() {
-      const note = document.getElementById("note");
+      const note = document.getElementById("note")//edited;
       if (!note) {
         alert("Please fill out note.");
         return false;
       }
       else{
-        alert("Thank you, we will take this into consideration .")
+        alert("Thank you, we will take this in consideration .")
       }
     }
-  </script>  
+  </script> 
+  <script>
+    function changeQty(button, amount) {
+  const counter = button.parentElement.querySelector("span");
+  let value = parseInt(counter.innerText);
+  value = Math.max(1, value + amount);
+  counter.innerText = value;
+}
+  </script> 
     <script>
-      document.querySelectorAll('.add-to-cart').forEach(btn => {
+      document.querySelectorAll('.add').forEach(btn => {
         btn.addEventListener(
           'click', () =>
         {
@@ -140,3 +187,7 @@
     <script src="cart.js"></script>
 </body>
 </html>
+
+
+    
+

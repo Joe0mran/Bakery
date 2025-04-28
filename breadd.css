@@ -86,7 +86,7 @@ transition: transform 0.3s ease;
     cursor: pointer;   
 }
 
-.d button{
+.c button{
   color:white;
   background-color:rgb(160, 82, 45) ;
   border: none;

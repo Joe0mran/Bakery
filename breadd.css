@@ -14,6 +14,40 @@ header{
     
 }
 
+
+.navbar {
+    background-color: var(--navbgcolor);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    height: 55px;
+
+}
+
+nav button {
+    margin-right: 30px;
+    border-radius: 10px 10px;
+    border: none;
+    background-color: var(--navbgcolor);
+    cursor: pointer;
+    font-size: 30px;
+
+}
+
+.navbar .logo img {
+    width: 150px;
+    display: inline-block;
+
+}
+
+.navbar .link {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+
+}
+
 header h1{
    color: rgb(94, 60, 43); 
 }

@@ -86,7 +86,7 @@ transition: transform 0.3s ease;
     cursor: pointer;   
 }
 
-.addOrRemove button{
+.d button{
   color:white;
   background-color:rgb(160, 82, 45) ;
   border: none;
@@ -99,7 +99,7 @@ transition: transform 0.3s ease;
 
 }
 
-.addOrRemove span{
+.d span{
   color: #845057;
   font-weight:bold;
   font-size: larger;

@@ -166,14 +166,7 @@
       }
     }
   </script> 
-  <script>
-    function changeQty(button, amount) {
-  const counter = button.parentElement.querySelector("span");
-  let value = parseInt(counter.innerText);
-  value = Math.max(1, value + amount);
-  counter.innerText = value;
-}
-  </script> 
+
     <script>
       document.querySelectorAll('.add').forEach(btn => {
         btn.addEventListener(
@@ -185,6 +178,14 @@
       });
     </script>
     <script src="cart.js"></script>
+    <script>
+    function changeQty(button, amount) {
+  const counter = button.parentElement.querySelector("span");
+  let value = parseInt(counter.innerText);
+  value = Math.max(1, value + amount);
+  counter.innerText = value;
+}
+  </script> 
 </body>
 </html>
 

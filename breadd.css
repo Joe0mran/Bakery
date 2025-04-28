@@ -48,6 +48,16 @@ nav button {
 
 }
 
+.link li a {
+    text-decoration: none;
+    color: var(--nav-text);
+
+}
+
+.link li a:hover {
+    color: rgb(192, 98, 98);
+
+}
 header h1{
    color: rgb(94, 60, 43); 
 }

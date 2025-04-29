@@ -182,7 +182,7 @@ transition: transform 0.3s ease;
   display: flex;
   justify-content: center;
   align-items: center;      
-
+}
 .d span{
   color: #845057;
   font-weight:bold;
@@ -224,7 +224,7 @@ footer {
     
   }
   textarea {
-    width: 85%;
+    width: 70%;
     height:20px ;
     padding: 8px;
     font-size: 14px;

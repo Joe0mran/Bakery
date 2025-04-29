@@ -48,6 +48,15 @@ nav button {
 
 }
 
+.navbar .link li {
+
+    list-style: none;
+    display: inline-block;
+    margin-right: 70px;
+    text-align: center;
+
+}
+
 .link li a {
     text-decoration: none;
     color: var(--nav-text);
@@ -58,6 +67,32 @@ nav button {
     color: rgb(192, 98, 98);
 
 }
+
+.link li img {
+    width: 15px;
+    margin-right: 5px;
+
+}
+a{
+    color: #550808;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; 
+    font-size: large;
+    text-decoration: none;
+}
+.left-side {
+    width: 20%;
+    height: auto ;
+    border-radius: 10px;  
+    background: #E5D0AC;
+    background-image: url("logoo.jpg");
+    background-size: contain ;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 5px 5px;
+    margin: 0;   
+    padding: 0;
+}
+
 header h1{
    color: rgb(94, 60, 43); 
 }

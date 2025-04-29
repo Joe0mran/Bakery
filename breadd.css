@@ -178,6 +178,11 @@ transition: transform 0.3s ease;
 
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;      
+
 .d span{
   color: #845057;
   font-weight:bold;

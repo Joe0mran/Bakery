@@ -38,7 +38,7 @@
         <button onclick="changeQty(this, 1)">+</button>
       </div>
       <button onclick="addToCart(this, 'Classic Sourdough',90)" class="add">Add to cart</button>   
-      <form onsubmit="return validateNote()">
+      <form>
         <p>special instructions:</p>
         <div class="container">
           <textarea class="note" placeholder="e.g. I'd love a softer crust" maxlength="120" rows="4" cols="30"></textarea>
@@ -57,7 +57,7 @@
         <button onclick="changeQty(this, 1)">+</button>
       </div>
       <button onclick="addToCart(this, 'Baguette',110)" class="add">Add to cart</button>   
-      <form onsubmit="return validateNote()">
+      <form>
         <p>special instructions:</p>
         <div class="container">
           <textarea class="note" placeholder="e.g. I'd love a softer crust" maxlength="120" rows="4" cols="30"></textarea>
@@ -76,7 +76,7 @@
         <button onclick="changeQty(this, 1)">+</button>
       </div>
       <button onclick="addToCart(this, 'Whole Wheate Bread',59)" class="add">Add to cart</button>   
-      <form onsubmit="return validateNote()">
+      <form>
         <p>special instructions:</p>
         <div class="container">
           <textarea class="note" placeholder="e.g. I'd love a softer crust" maxlength="120" rows="4" cols="30"></textarea>
@@ -95,7 +95,7 @@
         <button onclick="changeQty(this, 1)">+</button>
       </div>
       <button onclick="addToCart(this, 'French Loaf',95)" class="add">Add to cart</button>   
-      <form onsubmit="return validateNote()">
+      <form>
         <p>special instructions:</p>
         <div class="container">
           <textarea class="note" placeholder="e.g. I'd love a softer crust" maxlength="120" rows="4" cols="30"></textarea>
@@ -114,7 +114,7 @@
         <button onclick="changeQty(this, 1)">+</button>
       </div>
       <button onclick="addToCart(this, 'Honey Oat Sandwich Bread',85)" class="add">Add to cart</button>   
-      <form onsubmit="return validateNote()">
+      <form>
         <p>special instructions:</p>
         <div class="container">
           <textarea class="note" placeholder="e.g. I'd love a softer crust" maxlength="120" rows="4" cols="30"></textarea>
@@ -133,7 +133,7 @@
         <button onclick="changeQty(this, 1)">+</button>
       </div>
       <button onclick="addToCart(this, 'Garlic Butter Baguette',68)" class="add">Add to cart</button>   
-      <form onsubmit="return validateNote()">
+      <form>
         <p>special instructions:</p>
         <div class="container">
           <textarea class="note" placeholder="e.g. I'd love a softer crust" maxlength="120" rows="4" cols="30"></textarea>
@@ -152,7 +152,7 @@
         <button onclick="changeQty(this, 1)">+</button>
       </div>
       <button onclick="addToCart(this, 'Rye Bread',99)" class="add">Add to cart</button>   
-       <form onsubmit="return validateNote()">
+       <form>
         <p>special instructions:</p>
         <div class="container">
           <textarea class="note" placeholder="e.g. I'd love a softer crust" maxlength="120" rows="4" cols="30"></textarea>
@@ -171,7 +171,7 @@
         <button onclick="changeQty(this, 1)">+</button>
       </div>
       <button onclick="addToCart(this, 'Ciabatta Bread',80)" class="add">Add to cart</button>
-      <form onsubmit="return validateNote()">
+      <form>
         <p>special instructions:</p>
         <div class="container">
           <textarea class="note" placeholder="e.g. I'd love a softer crust" maxlength="120" rows="4" cols="30"></textarea>
@@ -185,8 +185,8 @@
     </footer>
 
   <script>
-    function validateNote() {
-      const note = document.querySelector(".note")//edited;
+    function validateNote(form) {
+      const note = form.querySelector(".note")//edited;
       if (!note || note.value.trim() === "") {
         alert("Please fill out note.");
         return false;
@@ -227,7 +227,3 @@
   </script> 
 </body>
 </html>
-
-
-    
-

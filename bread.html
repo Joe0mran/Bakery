@@ -193,8 +193,16 @@
       }
       else{
         alert("Thank you, we will take this in consideration .")
+        return true
       }
     }
+      document.querySelectorAll("form").forEach(form => {
+    form.addEventListener("submit", function (e) {
+      if (!validateNote(form)) {
+        e.preventDefault();
+      }
+    });
+  });     
   </script> 
 
     <script>
@@ -203,7 +211,8 @@
           'click', () =>
         {
           btn.textContent = 'Added ✅';
-          btn.disabled= true;       
+          btn.disabled= true;     
+          
         });
       });
     </script>

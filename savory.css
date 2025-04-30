@@ -195,6 +195,47 @@ h1 {
 
 
 
+#priceOption {
+    display: flex;
+    gap: 5px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#priceOption input {
+    width: 15%;
+    margin-left: 20px;
+    margin-right: 5px;
+    gap: 20px;
+    border: #550808;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.sort-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-left: 12%;
+}
+
+#priceOption button {
+    padding: 10px;
+    width: 6%;
+    padding: 5px 5px;
+    border-radius: 10px;
+    font-size: medium;
+    border: #550808;
+    border-style: double;
+    box-shadow: 2px 2px 5px #550808;
+    background-color: #E5D0AC;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #550808;
+}
+
+
+
 .imagess {
     display: flex;
     flex-direction: row;

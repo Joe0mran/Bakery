@@ -26,7 +26,10 @@ body {
   height: 27px;
   width: 1245px;
 }
-
+#upperbtn{
+  width: 15px;
+   border-radius: 100%;
+}
 .dark {
   background-color: rgb(46, 42, 42);
 }

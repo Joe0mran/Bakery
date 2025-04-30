@@ -11,22 +11,7 @@
     
   
 }
-body::before{
-content: "";
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-background-image: url('../أفكار\ جدران\ ثري\ دي\ فاخر.jfif');
 
-    background-size: cover;
-    opacity: .6;
-    z-index: -1;
-    
-
-
-}
 .navbar {
     background-color: var(--nav-bgcolor);
     display: flex;

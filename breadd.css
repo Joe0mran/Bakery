@@ -1,5 +1,6 @@
 body{
     margin: 0 ;
+    background-color: var(--backg-color);
     background-color:rgb(246, 232, 219);
     border-radius: 20px;
 }

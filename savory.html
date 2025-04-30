@@ -6,7 +6,8 @@
     <title> Pretty Baked || Savory </title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="savory.css">
-    <script src="theme.js"></script>
+
+    <script></script>
 </head>
 
 <body>
@@ -37,42 +38,20 @@
                 << WELCOM TO THE SAVORY PAGE>>
             </H1>
 
-            <div class=" searh-filter ">
-                <div class="search">
-                    <input list="Savory-list" name="Savory" placeholder="search">
-                    <datalist id="Savory-list">
-                        <option value="Sausage pies">
-                        <option value="Mini Meat Pies">
-                        <option value="Cheese Pies">
-                        <option value="Croissant Egg">
-                        <option value=" Chicken Croissant">
-                        <option value=" Beef & Pickle Croissant">
-                        <option value=" Sausage Croissant">
-                        <option value=" Shrimp Sandwich">
-                        <option value=" Mini Pizaa">
-                        <option value=" Zaatar Pie">
-                        <option value=" Cheesy Cold Cut Croissant">
-                        <option value=" Cheese Stuffed Croissant">
-                    </datalist>
-                </div>
+            <div class="price-filter">
+                <button id="pricebutton" onclick="togglePriceOptions()"> Filter by Price ↡ </button>
 
-                <div class="filter-section">
-                    <section class="price-filter">
-                        <button id="pricebutton" onclick="togglePriceOptions()"> Filter by Price ↡ </button>
-
-                        <div id="priceOption" style="display: none;">
-                            <button class="price-btn" onclick="sortByPrice('asc') ; setActiveButton(this)"> ASC
-                            </button>
-                            <button class="price-btn" onclick="sortByPrice('desc') ; setActiveButton(this)"> DESC
-                            </button>
-                            <input type="number" id="minPrice" placeholder="Min Price">
-                            <input type="number" id="maxPrice" placeholder="Max Price" max="300">
-                            <button class="filer-only" onclick="filterByPriceRange() ; toggleFilterActive(this)"> Filter
-                            </button>
-                        </div>
-                    </section>
+                <div id="priceOption" style="display: none;">
+                    <input id="minPrice" type="number" placeholder="Min Price" step="20" min="0">
+                    <input id="maxPrice" type="number" placeholder="Max Price" step="20" max="300">
+                    <button onclick="filterByPrice()"> Filter </button>
+                    <div class="sort-btn">
+                        <button onclick="sortByPrice('asc') "> ASC </button>
+                        <button onclick="sortByPrice('desc')"> DESC </button>
+                    </div>
                 </div>
             </div>
+
 
             <div class="imagess">
                 <div class="image" data-price="70">
@@ -166,7 +145,92 @@
 
     </section>
 
-    <script src="savory.js"> </script>
+    <script>
+        let originalProducts = [];
+        let lastStoredOrder = '';  // عشان اخزن اخر ترتيب 
+
+        // لما احمل الصفحة
+        window.onload = function () {
+            const container = document.querySelector('.imagess');
+            originalProducts = Array.from(container.children); // عشان احفظ المنتجات الاصليه
+        };
+
+        //  عشان ارتب العناصر
+        function sortByPrice(order) {
+            const container = document.querySelector('.imagess');
+            const products = Array.from(document.querySelectorAll('.image'));
+
+            if (lastStoredOrder === order) {
+                // لو نفس الترتيب موجود قبل كدا ... هنرجع كل العناصر لطبيعتها
+                originalProducts.forEach(product => container.appendChild(product));
+                lastStoredOrder = ''; //  بعيد الترتيب
+                clearActiveButtons();  // همسح التأثيرات
+            } else {
+                // لو كان الترتيب مختلف عن اللي موجود هنرتب حسب الترتيب المطلوب
+                products.sort((a, b) => {
+                    const priceA = parseInt(a.dataset.price);
+                    const priceB = parseInt(b.dataset.price);
+                    return order === 'asc' ? priceA - priceB : priceB - priceA;
+                });
+                products.forEach(product => container.appendChild(product));
+                lastStoredOrder = order;  // عشان احفظ الترتيب الجديد
+            }
+        }
+
+
+        // عشان ابين او اخفي خيارات الفلتر
+        function togglePriceOptions() {
+            const priceOption = document.getElementById('priceOption');
+            priceOption.style.display = priceOption.style.display === 'none' ? 'block' : 'none';
+            const button = document.getElementById('pricebutton');
+            button.classList.toggle('active');
+        }
+
+        //  عشان اصفي المنتجات حسب السعر
+        function filterByPrice() {
+            const container = document.querySelector('.imagess');
+            const products = Array.from(document.querySelectorAll('.image'));
+
+            let min = parseInt(document.getElementById('minPrice').value) || 0;
+            let max = parseInt(document.getElementById('maxPrice').value) || Infinity;
+
+            products.forEach(product => {
+                const price = parseInt(product.dataset.price);
+                if (price >= min && price <= max) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        }
+        const themebutton = document.getElementById('theme');
+        const colorhouse = document.getElementById('iconhouse');
+        const colormenu = document.getElementById('iconmenu');
+        const colorphone = document.getElementById('icophone');
+        const colorcart = document.getElementById('iconcart');
+        const colorlog = document.getElementById('iconlog');
+
+        function theme() {
+            document.body.classList.toggle('dark');
+            if (document.body.classList.contains('dark')) {
+                themebutton.innerHTML = '<img src="brightness.png" alt="sun" width="30px">';
+                colorhouse.src = 'house-chimney -white.png';
+                colormenu.src = 'apps -1.png';
+                colorcart.src = 'cart-shopping-fast (1).png';
+                colorlog.src = 'entrance (1).png';
+                colorphone.src = 'phone-plus (1).png'
+            }
+            else {
+                themebutton.innerHTML = '<img src="moon-stars.png" alt="moon" width="30px">';
+                colorhouse.src = "house-chimney.png";
+                colormenu.src = 'apps.png';
+                colorcart.src = 'cart-shopping-fast.png';
+                colorlog.src = 'entrance.png';
+                colorphone.src = 'phone-plus.png';
+            }
+        }
+        themebutton.addEventListener('click', theme);
+    </script>
 
 </body>
 

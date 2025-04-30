@@ -7,10 +7,9 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="savory.css">
 
-    <script></script>
+    <script src="theme.js"></script>
 </head>
 
-<<<<<<< HEAD
 <body>
     <header>
         <nav class="navbar">
@@ -29,26 +28,6 @@
 
         </nav>
     </header>
-=======
-    <body>
-        <header>
-            <nav class="navbar">
-                <div class="logo">
-                    <img src="logono.png" alt="">
-                </div>
-                <ul class="link">
-                    <li><img src="house-chimney.png" id="iconhouse"><a href="index.html">HOME</a></li>
-                    <li><img src="apps.png" id="iconmenu"><a href="#">menu</a></li>
-                    <li> <img src="phone-plus.png" alt="" id="icophone"><a href="#">contact us</a></li>
-                    <li><img src="cart-shopping-fast.png" id="iconcart"><a href="cart.html">cart</a></li>
-                    <li><img src="entrance.png" alt="" id="iconlog"><a href="login.html">login</a></li>
-    
-                </ul>
-                <button id="theme" class="theme"><img src="moon-stars.png" alt=""></button>
-    
-            </nav>
-        </header>
->>>>>>> origin/main
 
 
     <section>
@@ -59,7 +38,6 @@
                 << WELCOM TO THE SAVORY PAGE>>
             </H1>
 
-<<<<<<< HEAD
             <div class="price-filter">
                 <button id="pricebutton" onclick="togglePriceOptions()"> Filter by Price ↡ </button>
 
@@ -82,37 +60,6 @@
                     <p> 1/4k ==> 70 EGP </p>
                     <button onclick="addToCart('product',4.5)"> Add To Cart </button>
                 </div>
-=======
-                 <div class = "price-filter">
-                    <button   id="pricebutton"  onclick="togglePriceOptions()"> Filter by Price   ↡ </button>
-
-                    <div id="priceOption" style="display: none;">
-                        <input    id="minPrice"     type="number"    placeholder="Min Price"  step="20"   min="0">
-                        <input    id="maxPrice"     type="number"    placeholder="Max Price"  step="20"   max="300">
-                        <button    onclick="filterByPrice()">   Filter   </button>
-                      <div class="sort-btn">
-                          <button    onclick="sortByPrice('asc') ">    ASC     </button>
-                          <button    onclick="sortByPrice('desc')">    DESC    </button>
-                       </div>
-                    </div>
-                 </div>
-                
-
-                 <div class="imagess">
-                    <div class="image" data-price="70">
-                        <img src="Sausage pie .jpg" alt=" Sausage pies" > 
-                        <h3 >Sausage pies</h3>
-                        <p> 1/4k ==> 70 EGP </p>
-                        <button onclick="addToCart('product',4.5)"> Add To Cart </button> 
-                    </div>
-
-                    <div class="image" data-price="140"> 
-                        <img src="mini meat.jpg" alt=" Mini Meat Pie" > 
-                        <h3 > Mini Meat Pies </h3>
-                        <p> 1/4k ==> 140 EGP </p>
-                        <button onclick="addToCart('product',4.5)"> Add To Cart </button> 
-                    </div>
->>>>>>> origin/main
 
                 <div class="image" data-price="140">
                     <img src="mini meat.jpg" alt=" Mini Meat Pie">
@@ -195,184 +142,10 @@
 
         </div>
 
-<<<<<<< HEAD
 
     </section>
 
-    <script>
-        let originalProducts = [];
-        let lastStoredOrder = '';  // عشان اخزن اخر ترتيب 
-
-        // لما احمل الصفحة
-        window.onload = function () {
-            const container = document.querySelector('.imagess');
-            originalProducts = Array.from(container.children); // عشان احفظ المنتجات الاصليه
-        };
-
-        //  عشان ارتب العناصر
-        function sortByPrice(order) {
-            const container = document.querySelector('.imagess');
-            const products = Array.from(document.querySelectorAll('.image'));
-
-            if (lastStoredOrder === order) {
-                // لو نفس الترتيب موجود قبل كدا ... هنرجع كل العناصر لطبيعتها
-                originalProducts.forEach(product => container.appendChild(product));
-                lastStoredOrder = ''; //  بعيد الترتيب
-                clearActiveButtons();  // همسح التأثيرات
-            } else {
-                // لو كان الترتيب مختلف عن اللي موجود هنرتب حسب الترتيب المطلوب
-                products.sort((a, b) => {
-                    const priceA = parseInt(a.dataset.price);
-                    const priceB = parseInt(b.dataset.price);
-                    return order === 'asc' ? priceA - priceB : priceB - priceA;
-                });
-                products.forEach(product => container.appendChild(product));
-                lastStoredOrder = order;  // عشان احفظ الترتيب الجديد
-            }
-        }
-
-
-        // عشان ابين او اخفي خيارات الفلتر
-        function togglePriceOptions() {
-            const priceOption = document.getElementById('priceOption');
-            priceOption.style.display = priceOption.style.display === 'none' ? 'block' : 'none';
-            const button = document.getElementById('pricebutton');
-            button.classList.toggle('active');
-        }
-
-        //  عشان اصفي المنتجات حسب السعر
-        function filterByPrice() {
-            const container = document.querySelector('.imagess');
-            const products = Array.from(document.querySelectorAll('.image'));
-
-            let min = parseInt(document.getElementById('minPrice').value) || 0;
-            let max = parseInt(document.getElementById('maxPrice').value) || Infinity;
-=======
-    <script>
-      let originalProducts = [];
-      let lastStoredOrder = '';  // عشان اخزن اخر ترتيب 
-
-    // لما احمل الصفحة
-      window.onload = function () {
-        const container = document.querySelector('.imagess');
-        originalProducts = Array.from(container.children); // عشان احفظ المنتجات الاصليه
-     };
-
-    //  عشان ارتب العناصر
-      function sortByPrice(order) {
-        const container = document.querySelector('.imagess');
-        const products = Array.from(document.querySelectorAll('.image'));
-
-        if (lastStoredOrder === order) {
-            // لو نفس الترتيب موجود قبل كدا ... هنرجع كل العناصر لطبيعتها
-            originalProducts.forEach(product => container.appendChild(product));
-            lastStoredOrder = ''; //  بعيد الترتيب
-            clearActiveButtons();  // همسح التأثيرات
-        } else {
-            // لو كان الترتيب مختلف عن اللي موجود هنرتب حسب الترتيب المطلوب
-            products.sort((a, b) => {
-                const priceA = parseInt(a.dataset.price);
-                const priceB = parseInt(b.dataset.price);
-                return order === 'asc' ? priceA - priceB : priceB - priceA;
-            });
-            products.forEach(product => container.appendChild(product));
-            lastStoredOrder = order;  // عشان احفظ الترتيب الجديد
-        }
-    }
-
-
-    // عشان ابين او اخفي خيارات الفلتر
-     function togglePriceOptions() {
-        const priceOption = document.getElementById('priceOption');
-        priceOption.style.display = priceOption.style.display === 'none' ? 'block' : 'none';
-        const button = document.getElementById('pricebutton');
-        button.classList.toggle('active');
-    }
-
-    //  عشان اصفي المنتجات حسب السعر
-    function filterByPrice() {
-        const container = document.querySelector('.imagess');
-        const products = Array.from(document.querySelectorAll('.image'));
-
-        let min = parseInt(document.getElementById('minPrice').value) || 0;
-        let max = parseInt(document.getElementById('maxPrice').value) || Infinity;
-
-        products.forEach(product => {
-            const price = parseInt(product.dataset.price);
-            if (price >= min && price <= max) {
-                product.style.display = 'block';
-            } else {
-                product.style.display = 'none';
-            }
-        });
-    }
-            const themebutton = document.getElementById('theme');
-            const colorhouse = document.getElementById('iconhouse');
-            const colormenu = document.getElementById('iconmenu');
-            const colorphone = document.getElementById('icophone');
-            const colorcart = document.getElementById('iconcart');
-            const colorlog = document.getElementById('iconlog');
-
-            function theme() {
-               document.body.classList.toggle('dark');
-                if (document.body.classList.contains('dark')) {
-                    themebutton.innerHTML = '<img src="brightness.png" alt="sun" width="30px">';
-                    colorhouse.src = 'house-chimney -white.png';
-                    colormenu.src = 'apps -1.png';
-                    colorcart.src = 'cart-shopping-fast (1).png';
-                    colorlog.src = 'entrance (1).png';
-                    colorphone.src = 'phone-plus (1).png'
-                 }
-               else {
-                  themebutton.innerHTML = '<img src="moon-stars.png" alt="moon" width="30px">';
-                  colorhouse.src = "house-chimney.png";
-                  colormenu.src = 'apps.png';
-                  colorcart.src = 'cart-shopping-fast.png';
-                  colorlog.src = 'entrance.png';
-                  colorphone.src = 'phone-plus.png';
-                }
-            }
-         themebutton.addEventListener('click', theme);
-        </script>
->>>>>>> origin/main
-
-            products.forEach(product => {
-                const price = parseInt(product.dataset.price);
-                if (price >= min && price <= max) {
-                    product.style.display = 'block';
-                } else {
-                    product.style.display = 'none';
-                }
-            });
-        }
-        const themebutton = document.getElementById('theme');
-        const colorhouse = document.getElementById('iconhouse');
-        const colormenu = document.getElementById('iconmenu');
-        const colorphone = document.getElementById('icophone');
-        const colorcart = document.getElementById('iconcart');
-        const colorlog = document.getElementById('iconlog');
-
-        function theme() {
-            document.body.classList.toggle('dark');
-            if (document.body.classList.contains('dark')) {
-                themebutton.innerHTML = '<img src="brightness.png" alt="sun" width="30px">';
-                colorhouse.src = 'house-chimney -white.png';
-                colormenu.src = 'apps -1.png';
-                colorcart.src = 'cart-shopping-fast (1).png';
-                colorlog.src = 'entrance (1).png';
-                colorphone.src = 'phone-plus (1).png'
-            }
-            else {
-                themebutton.innerHTML = '<img src="moon-stars.png" alt="moon" width="30px">';
-                colorhouse.src = "house-chimney.png";
-                colormenu.src = 'apps.png';
-                colorcart.src = 'cart-shopping-fast.png';
-                colorlog.src = 'entrance.png';
-                colorphone.src = 'phone-plus.png';
-            }
-        }
-        themebutton.addEventListener('click', theme);
-    </script>
+    <script src="savory.js"></script>
 
 </body>
 

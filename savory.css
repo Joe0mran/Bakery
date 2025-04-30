@@ -2,17 +2,32 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-     
+
 }
-html{
-    background:#F5ECD5 ;
+
+:root {
+    --navbgcolor: rgb(244, 231, 215);
+    --navtext: rgb(89, 15, 15);
+    --rightbg: #E5D0AC;
+    --imgbg: #c9ae86;
+
 }
+
+html {
+    background: #F5ECD5;
+}
+
 body.dark {
     --navbgcolor: #2b2b2b;
-    
+    --navtext: white;
+    --rightbg: #1e1e1e;
+    --imgbg: #f7e6c4;
+
+
 }
+
 .navbar {
-    background-color: var(--navbgcolor) ;
+    background-color: var(--navbgcolor);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,7 +40,7 @@ nav button {
     margin-right: 30px;
     border-radius: 10px 10px;
     border: none;
-    background-color: var(--navbgcolor) ;
+    background-color: var(--navbgcolor);
     cursor: pointer;
     font-size: 30px;
 
@@ -56,7 +71,7 @@ nav button {
 
 .link li a {
     text-decoration: none;
-    color: rgb(89, 15, 15);
+    color: var(--navtext);
 
 }
 
@@ -70,59 +85,65 @@ nav button {
     margin-right: 5px;
 
 }
-a{
+
+a {
     color: #550808;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: large;
     text-decoration: none;
 }
+
 .left-side {
     width: 20%;
-    height: auto ;
-    border-radius: 10px;  
-    background: #E5D0AC;
+    height: auto;
+    border-radius: 10px;
+    /* background: #E5D0AC; */
     background-image: url("logoo.jpg");
-    background-size: contain ;
+    background-size: contain;
     background-repeat: repeat;
     background-attachment: scroll;
     background-position: 5px 5px;
-    margin: 0;   
+    margin: 0;
     padding: 0;
 }
 
-section{
+section {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
-    margin-top: 10px ;
+    margin-top: 10px;
 }
+
 .right-side {
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     gap: 20px;
     flex: 1;
-    height: atuo ;
+    height: atuo;
     flex: 2 1 50%;
     min-width: 400px;
-    background: #E5D0AC;
+    background: var(--rightbg);
     border-radius: 10px;
 }
+
 h1 {
     text-align: center;
     padding-top: 2%;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; 
-    color: #550808;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--navtext);
 }
-.searh-filter  {
-    display: flex; 
-    gap : 3px; 
+
+.searh-filter {
+    display: flex;
+    gap: 3px;
     justify-content: space-between;
     align-items: flex-start;
 
 }
-.search input{
+
+.search input {
     width: 80%;
-    padding: 10px 15px ;
+    padding: 10px 15px;
     margin-left: 20px;
     flex: 1 1 200px;
     font-size: medium;
@@ -136,9 +157,10 @@ h1 {
     background-repeat: no-repeat;
     background-position: 99% center;
 }
+
 #pricebutton {
     width: 40%;
-    padding: 5px 5px ;
+    padding: 5px 5px;
     flex: 1 1 200px;
     margin-bottom: 10px;
     margin-right: 20px;
@@ -149,29 +171,31 @@ h1 {
     border-radius: 10px;
     box-shadow: 2px 2px 5px #550808;
     background-color: #E5D0AC;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #550808;
- }
-#priceOption{
+}
+
+#priceOption {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 20px ;
+    margin-left: 20px;
 }
-#priceOption button{
+
+#priceOption button {
     padding: 10px;
     width: 10%;
-    padding: 5px 5px ;
+    padding: 5px 5px;
     border-radius: 10px;
     font-size: medium;
     border: #550808;
     border-style: double;
     box-shadow: 2px 2px 5px #550808;
     background-color: #E5D0AC;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #550808;
 }
 
-.active{
+.active {
     background-color: #550808 !important;
     color: aliceblue !important;
     transform: scale(1.025);
@@ -181,46 +205,50 @@ h1 {
 .imagess {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap ;
-    gap: 15px ;
+    flex-wrap: wrap;
+    gap: 15px;
     justify-content: center;
 
 }
+
+/* #c9ae86 */
 .image {
-    background-color:#c9ae86;
+    background-color: var(--imgbg);
     width: 100%;
-    max-width: 300px ;
-    height: auto ; 
+    max-width: 300px;
+    height: auto;
     border: #550808;
     border-style: double;
-    border-radius: 10%;  
+    border-radius: 10%;
     padding-top: 2%;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #550808;
     font-size: larger;
     text-align: center;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    transition: transform 0.03s  ease , box-shodow 0.03 ease;
+    transition: transform 0.03s ease, box-shodow 0.03 ease;
     margin-top: 0;
 }
+
 .image:hover {
     transform: scale(1.025);
     box-shadow: 5px 5px 10px #754c23;
 }
 
-.image img{
+.image img {
     width: 75%;
     height: 70%;
     border-radius: 10%;
 }
-.image button{
+
+.image button {
     margin-top: 2%;
     width: 80%;
     max-width: 200px;
     min-width: 120px;
     border: #550808;
-    border-style:solid ;
+    border-style: solid;
     border-radius: 10px;
     box-shadow: 3px 3px 5px #550808;
     background-color: #550808;
@@ -228,7 +256,3 @@ h1 {
     color: aliceblue;
     cursor: pointer;
 }
-
-
-
-

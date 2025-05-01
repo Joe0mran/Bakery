@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bread</title>
     <link rel="stylesheet" href="breadd.css">
+  <script src="theme.js"></script>
 </head>
 <body>
    <header>
@@ -21,6 +22,7 @@
                     <li><img src="entrance.png" alt="" id="iconlog"><a href="login.html">login</a></li>
     
                 </ul>
+               <button id="theme" class="theme"><img src="moon-stars.png" alt=""></button>
     
             </nav>
      <div class="page-header">
@@ -226,5 +228,13 @@
   counter.innerText = value;
 }
   </script> 
+     
+  <script>
+     loadTheme();
+    const themebutton = document.getElementById('theme');
+    themebutton.addEventListener('click', theme);
+  </script>
+  
+  
 </body>
 </html>

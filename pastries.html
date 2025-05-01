@@ -273,8 +273,9 @@
 
    </div>
    
-  <script src="cart.js"></script>
+  
   <script>
+      <script src="cart.js"><\script>
     function changeQty(button, amount) {
       const counter = button.parentElement.querySelector("span");
       let value = parseInt(counter.innerText);
@@ -293,7 +294,11 @@ items.forEach(item=>{
     }
     });
 }
-        
+  <script src="theme.js">
+loadTheme();
+const themebutton = document.getElementById('theme');
+themebutton.addEventListener('click', theme);
+      <\script>
   
   </script>
 </body>

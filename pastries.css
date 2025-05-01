@@ -97,20 +97,19 @@ nav button {
     background-color: #F3DEBA;
     color: rgb(12, 8, 8);
     cursor: pointer;
-    transition: transform 0.2s ease;
     width:150px ;
     height: 33px;
     font-family: "Concert One", sans-serif;
     font-weight: 400;
-    font-style: normal;
-
-
+    font-style: normal
+  transition: transform 0.3 ease,box-shadow 0.3s ease ;
+  
 }
- .search button:active{
-    transform: scale(1.1);
-}
+
 .search button:hover{
-    background-color: #F6F1DE;
+     background-color:  #F3DEBA;
+    transform: translatez(-10px) scale(1.03);
+        box-shadow: 0 4px 8px #74512D;
 }
     .title{ 
        
@@ -174,14 +173,18 @@ h1{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-       
+      
+       transition:transform 0.3 ease,box-shadow 0.3s ease ;
+        cursor: pointer; 
     
-
 
     }
     
 
-
+  .items:hover{
+        transform: translateY(-10px) scale(1.03);
+        box-shadow: 0 12px 20px #74512D;
+    }
 
 .items img{
 width: 200px;

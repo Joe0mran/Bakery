@@ -1,230 +1,234 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bread</title>
-    <link rel="stylesheet" href="breadd.css">
-</head>
-<body>
-   <header>
-            <nav class="navbar">
-                <div class="logo">
-                    <img src="logono.png" alt="">
-                </div>
-                <ul class="link">
-                    <li><img src="house-chimney.png" id="iconhouse"><a href="index.html">HOME</a></li>
-                    <li><img src="apps.png" id="iconmenu"><a href="#">menu</a></li>
-                    <li> <img src="phone-plus.png" alt="" id="icophone"><a href="#">contact us</a></li>
-                    <li><img src="cart-shopping-fast.png" id="iconcart"><a href="cart.html">cart</a></li>
-                    <li><img src="entrance.png" alt="" id="iconlog"><a href="login.html">login</a></li>
-    
-                </ul>
-    
-            </nav>
-     <div class="page-header">
-      <h1>Bread</h1>
-    </div>
-  </header>
-   
-  <div class="products">
-    <div class="product-card">
-      <img src="classic sourdough.jpeg" class="img" alt="Classic Sourdough">
-      <h3>Classic Sourdough</h3>
-      <p class="price"> EGP 90</p> 
-      <div class="c"> 
-        <button onclick="changeQty(this, -1)">-</button>
-        <span class="d">1</span>
-        <button onclick="changeQty(this, 1)">+</button>
-      </div>
-      <button onclick="addToCart(this, 'Classic Sourdough',90)" class="add">Add to cart</button>   
-      <form>
-        <p>special instructions:</p>
-        <div class="container">
-          <textarea class="note" placeholder="e.g. I'd love a softer crust" maxlength="120" rows="4" cols="30"></textarea>
-        </div>
-        <button type="submit">Submit Note</button>
-      </form>
-    </div>
-
-    <div class="product-card">
-      <img src="baguette.webp" alt="">
-      <h3>Baguette</h3>
-      <p class="price">EGP 110</p> 
-      <div class="c"> 
-        <button onclick="changeQty(this, -1)">-</button>
-        <span class="d">1</span>
-        <button onclick="changeQty(this, 1)">+</button>
-      </div>
-      <button onclick="addToCart(this, 'Baguette',110)" class="add">Add to cart</button>   
-      <form>
-        <p>special instructions:</p>
-        <div class="container">
-          <textarea class="note" placeholder="e.g. I'd love a softer crust" maxlength="120" rows="4" cols="30"></textarea>
-        </div>
-        <button type="submit">Submit Note</button>
-      </form>
-    </div>
-
-    <div class="product-card">
-      <img src="whole wheate 111.jpg" alt="Whole Wheate Bread">
-      <h3>Whole Wheate Bread</h3>
-      <p class="price">EGP 59</p>
-      <div class="c"> 
-        <button onclick="changeQty(this, -1)">-</button>
-        <span class="d">1</span>
-        <button onclick="changeQty(this, 1)">+</button>
-      </div>
-      <button onclick="addToCart(this, 'Whole Wheate Bread',59)" class="add">Add to cart</button>   
-      <form>
-        <p>special instructions:</p>
-        <div class="container">
-          <textarea class="note" placeholder="e.g. I'd love a softer crust" maxlength="120" rows="4" cols="30"></textarea>
-        </div>       
-        <button type="submit">Submit Note</button>
-      </form>
-    </div>
-
-    <div class="product-card">
-      <img src="French Brioche Loaf 111.jpg" alt="French Brioche Loaf">
-      <h3>French Brioche Loaf</h3>
-      <p class="price">EGP 95</p>
-      <div class="c"> 
-        <button onclick="changeQty(this, -1)">-</button>
-        <span class="d">1</span>
-        <button onclick="changeQty(this, 1)">+</button>
-      </div>
-      <button onclick="addToCart(this, 'French Loaf',95)" class="add">Add to cart</button>   
-      <form>
-        <p>special instructions:</p>
-        <div class="container">
-          <textarea class="note" placeholder="e.g. I'd love a softer crust" maxlength="120" rows="4" cols="30"></textarea>
-        </div>       
-        <button type="submit">Submit Note</button>
-      </form>
-    </div>
-
-    <div class="product-card">
-      <img src="honey oat bread sandwiches 112.webp" alt="Honey Oat Sandwich Bread">
-      <h3>Honey Oat Sandwich Bread</h3>
-      <p class="price">EGP 85</p>
-      <div class="c"> 
-        <button onclick="changeQty(this, -1)">-</button>
-        <span class="d">1</span>
-        <button onclick="changeQty(this, 1)">+</button>
-      </div>
-      <button onclick="addToCart(this, 'Honey Oat Sandwich Bread',85)" class="add">Add to cart</button>   
-      <form>
-        <p>special instructions:</p>
-        <div class="container">
-          <textarea class="note" placeholder="e.g. I'd love a softer crust" maxlength="120" rows="4" cols="30"></textarea>
-        </div>   
-       <button type="submit">Submit Note</button>
-      </form>
-    </div>  
-
-    <div class="product-card">
-      <img src="Garlic Butter Baguette 111.jpg" alt="Garlic Butter Baguette">
-      <h3>Garlic Butter Baguette</h3>
-      <p class="price">EGP 68</p>
-      <div class="c"> 
-        <button onclick="changeQty(this, -1)">-</button>
-        <span class="d">1</span>
-        <button onclick="changeQty(this, 1)">+</button>
-      </div>
-      <button onclick="addToCart(this, 'Garlic Butter Baguette',68)" class="add">Add to cart</button>   
-      <form>
-        <p>special instructions:</p>
-        <div class="container">
-          <textarea class="note" placeholder="e.g. I'd love a softer crust" maxlength="120" rows="4" cols="30"></textarea>
-        </div>      
-        <button type="submit">Submit Note</button>
-      </form>
-    </div>
-
-    <div class="product-card">
-      <img src="Rye Bread.jpg" alt="Rye Bread">
-      <h3>Rye Bread</h3>
-      <p class="price">EGP 99</p>
-      <div class="c"> 
-        <button onclick="changeQty(this, -1)">-</button>
-        <span class="d">1</span>
-        <button onclick="changeQty(this, 1)">+</button>
-      </div>
-      <button onclick="addToCart(this, 'Rye Bread',99)" class="add">Add to cart</button>   
-       <form>
-        <p>special instructions:</p>
-        <div class="container">
-          <textarea class="note" placeholder="e.g. I'd love a softer crust" maxlength="120" rows="4" cols="30"></textarea>
-        </div>        
-         <button type="submit">Submit Note</button>
-      </form>
-    </div>
-
-    <div class="product-card">
-      <img src="ciabatta bread.jpg" alt="Ciabatta Bread">
-      <h3>Ciabatta Bread</h3>
-      <p class="price">EGP 80</p>
-      <div class="c"> 
-        <button onclick="changeQty(this, -1)">-</button>
-        <span class="d">1</span>
-        <button onclick="changeQty(this, 1)">+</button>
-      </div>
-      <button onclick="addToCart(this, 'Ciabatta Bread',80)" class="add">Add to cart</button>
-      <form>
-        <p>special instructions:</p>
-        <div class="container">
-          <textarea class="note" placeholder="e.g. I'd love a softer crust" maxlength="120" rows="4" cols="30"></textarea>
-        </div>     
-        <button type="submit">Submit Note</button>
-      </form>
-    </div>
-  </div>
-    <footer>
-      <p>© 2025 <a href="index.html">Pretty Baked</a></p>
-    </footer>
-
-  <script>
-    function validateNote(form) {
-      const note = form.querySelector(".note")//edited;
-      if (!note || note.value.trim() === "") {
-        alert("Please fill out note.");
-        return false;
-      }
-      else{
-        alert("Thank you, we will take this in consideration .")
-        return true;
-      }
-    }
-      document.querySelectorAll("form").forEach(form => {
-    form.addEventListener("submit", function (e) {
-      if (!validateNote(form)) {
-        e.preventDefault();
-      }
-    });
-  });     
-  </script> 
-
-    <script>
-      document.querySelectorAll('.add').forEach(btn => {
-        btn.addEventListener(
-          'click', () =>
-        {
-          btn.textContent = 'Added ✅';
-          btn.disabled= true;     
-          
-        });
-      });
-    </script>
-    <script src="cart.js"></script>
-    <script>
-    function changeQty(button, amount) {
-  const counter = button.parentElement.querySelector("span");
-  let value = parseInt(counter.innerText);
-  value = Math.max(1, value + amount);
-  counter.innerText = value;
+body{
+  margin: 0 ;
+  background-color:rgb(246, 232, 219);
+  border-radius: 20px;
 }
-  </script> 
-</body>
-</html>
+
+
+header{
+  padding: 20px;
+  background-color: rgb(245, 229, 214) ;
+  text-align: center;
+  font-family:'Lucida Handwriting';
+  font-size:x-large ; 
+  
+}
+
+
+.navbar {
+  background-color: var(--navbgcolor);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  height: 55px;
+
+}
+
+nav button {
+  margin-right: 30px;
+  border-radius: 10px 10px;
+  border: none;
+  background-color: var(--navbgcolor);
+  cursor: pointer;
+  font-size: 30px;
+
+}
+
+.navbar .logo img {
+  width: 150px;
+  display: inline-block;
+
+}
+
+.navbar .link {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+
+}
+
+.navbar .link li {
+
+  list-style: none;
+  display: inline-block;
+  margin-right: 70px;
+  text-align: center;
+
+}
+
+.link li a {
+  text-decoration: none;
+  color: var(--nav-text);
+
+}
+
+.link li a:hover {
+  color: rgb(192, 98, 98);
+
+}
+
+.link li img {
+  width: 15px;
+  margin-right: 5px;
+
+}
+a{
+  color: #550808;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; 
+  font-size: large;
+  text-decoration: none;
+}
+.left-side {
+  width: 20%;
+  height: auto ;
+  border-radius: 10px;  
+  background: #E5D0AC;
+  background-image: url("logoo.jpg");
+  background-size: contain ;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-position: 5px 5px;
+  margin: 0;   
+  padding: 0;
+}
+
+header h1{
+ color: rgb(94, 60, 43); 
+}
+#header1{
+  color: inherit; 
+  text-decoration: none;
+}
+
+
+.products{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  padding: 40px ;
+  gap: 40px;
+}
+
+.product-card{
+background-color:rgb(246, 232, 219);
+;
+border-radius: 15px;
+box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+text-align: center;
+padding: 15px;
+transition: transform 0.3s ease;
+}
+
+/*animation*/
+.product-card:hover {
+  transform: translateY(10px);
+}
+
+
+.product-card img {
+  width: 50%;
+  height: 180px;
+  border-radius: 15px;
+}
+
+.product-card h3 {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.product-card p {
+  color: #845057;
+  font-weight:bold;
+  cursor: pointer;
+  border-radius: 999px;
+  
+}  
+
+.price{
+  background-color: rgb(246, 232, 219); 
+  color:#a0522d;;
+  border: none;
+  padding: 10px 18px;
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: x-large;
+}   
+
+.add{
+  color:white;
+  background-color:rgb(160, 82, 45) ;
+  border: none;
+  padding: 10px 18px;
+  margin-top: 8px;
+  border-radius: 999px;
+  font-weight: bold;
+  cursor: pointer;   
+}
+
+.c button{
+color:white;
+background-color:rgb(160, 82, 45) ;
+border: none;
+padding: 12px 12px;
+margin-top: 8px;
+border-radius: 999px;
+font-weight: bold;
+cursor: pointer; 
+font-size: small;
+
+}
+
+.container {
+display: flex;
+justify-content: center;
+align-items: center;      
+}
+.d span{
+color: #845057;
+font-weight:bold;
+font-size: larger;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+footer a {
+  color: rgb(0,0,0);
+}
+
+form{
+  background-color: rgb(246, 232, 219) ;
+  max-width: 400px;
+  padding: 10px;
+  margin-left: 125px;
+}
+
+form p {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: larger;
+  }
+
+form button{
+  color:white;
+  background-color:rgb(160, 82, 45) ;
+  border: none;
+  padding: 10px 18px;
+  margin-top: 12px;
+  border-radius: 999px;
+  font-weight: bold;
+  cursor: pointer;   
+  
+}
+textarea {
+  width: 70%;
+  height:20px ;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 18px;
+  resize: none;
+  overflow-y: hidden;
+}

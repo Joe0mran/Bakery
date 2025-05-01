@@ -1,7 +1,7 @@
   function addToCart(button, name, price) {
 
       const qtyElement = button.parentElement.querySelector('.d');
-      const quantity = parseInt(qtyElement.innerText) || 1; 
+      const quantity = parseInt(qtyElement?.innerText) || 1; 
       let cart = JSON.parse(localStorage.getItem('cart')) || [];
       const index = cart.findIndex(item => item.name === name);
 

@@ -6,7 +6,20 @@ body{
     padding: 0;
 }
   
-  
+ :root {
+  --bacckg-color: rgb(246,236,223);
+  --nav-bgcolor: rgb(246,231,215);
+  --button-bg: #E8D7C2;
+  --button-text: #5c4033;
+  --nav-text: rgb(89,15,15);
+}
+body.dark{
+  --bacckg-color: #1e1e1e;
+  --nav-bgcolor: #2b2b2b;
+  --button-bg: rgb(64,58,48,0.9);
+  --button-text: #ffffff;
+  --nav-text: #f5f5f5;
+} 
 
 .navbar {
   background-color: var(--nav-bgcolor);
@@ -187,20 +200,7 @@ input:focus , textarea:focus{
 button:hover{
  background-color:rgb(247, 230, 209); ; }
 
-:root {
-  --bacckg-color: rgb(246,236,223);
-  --nav-bgcolor: rgb(246,231,215);
-  --button-bg: #E8D7C2;
-  --button-text: #5c4033;
-  --nav-text: rgb(89,15,15);
-}
-body.dark{
-  --bacckg-color: #1e1e1e;
-  --nav-bgcolor: #2b2b2b;
-  --button-bg: rgb(64,58,48,0.9);
-  --button-text: #ffffff;
-  --nav-text: #f5f5f5;
-}
+
  
 
 

@@ -1,19 +1,34 @@
+
 body{
   margin: 0 ;
-  background-color:rgb(246, 232, 219);
+  background-color: var(--backg-color);
   border-radius: 20px;
 }
 
 
 header{
   padding: 20px;
-  background-color: rgb(245, 229, 214) ;
+  background-color: var(--backg-color) ;
   text-align: center;
   font-family:'Lucida Handwriting';
   font-size:x-large ; 
   
 }
 
+:root {
+  --backg-color: rgb(246,236,223) ;
+  --nav-bgcolor: rgb(244,231,215) ;
+  --button-bg: #E8D7C2 ;
+  --button-text: #5C4033 ;
+  --nav-text: rgb(89,15,15) ;
+}
+body.dark{
+  --backg-color: #1e1e1e ;
+  --nav-bgcolor: #2b2b2b ;
+  --button-bg: rgb(64,58,48,0.9) ;
+  --button-text: #ffffff ;
+  --nav-text: #f5f5f5 ;
+}
 
 .navbar {
   background-color: var(--navbgcolor);

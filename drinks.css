@@ -3,7 +3,7 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: 100;
   font-size: medium;
-  background-color: rgb(235, 212, 172);
+  background-color: var(--backg);
   transition-duration: 1s;
 }
 .titlebody {
@@ -20,17 +20,14 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 50px;
-  background-color: rgb(244, 231, 215);
+  background-color:var(--nav-bg);
   transition-duration: 1s;
   position: initial;
   height: 27px;
   width: 1245px;
 }
-#upperbtn{
-  width: 15px;
-   border-radius: 100%;
-}
-.dark {
+
+/*.dark {
   background-color: rgb(46, 42, 42);
 }
 .dark #cardd,
@@ -43,6 +40,18 @@ body {
 .dark #added {
   background-color: #504f4f;
   color: white;
+}*/
+:root {
+  --backg:rgb(235, 212, 172);
+  --nav-bg: rgb(244, 231, 215);
+  --btn-bg:rgb(170, 123, 65);
+  --btn-text:rgb(89, 15, 15);
+}
+body.dark {
+  --backg:rgb(46, 42, 42);
+  --nav-bg:  #000000;
+  --btn-bg:#504f4f;
+  --btn-text: white;
 }
 .logo {
   width: 70px;
@@ -51,7 +60,12 @@ body {
 .head a {
   text-transform: uppercase;
   text-decoration: none;
-  color: rgb(89, 15, 15);
+  font-size: 16px;
+  color: var(--btn-text);
+}
+#upperbtn {
+  width: 15px;
+  border-radius: 100%;
 }
 li {
   list-style: none;
@@ -63,7 +77,7 @@ li {
 }
 .head button {
   color: white;
-  background-color: rgb(170, 123, 65);
+  background-color: var(--btn-bg);
   padding: 5px 15px;
   text-decoration: none;
   border-radius: 15px;
@@ -97,7 +111,7 @@ li {
   background-color: rgb(122, 89, 49);
   padding: 5px 13px;
   text-decoration: none;
-  border-radius: 30px;
+  border-radius: 30px 5px;
   border: 0;
 }
 .adding:hover {
@@ -109,13 +123,13 @@ li {
   background-color: rgb(228, 195, 135);
   padding: 5px 5px;
   justify-items: center;
-  border-radius: 30px;
+  border-radius: 30px 5px;
   color: rgba(66, 43, 15, 0.685);
   transition-duration: 1s;
 }
 .card img {
   width: 100%;
-  border-radius: 30px;
+  border-radius: 30px 5px;
 }
 .card:hover {
   background-color: rgb(63, 40, 14);

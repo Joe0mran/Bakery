@@ -13,3 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("DOMContentLoaded", function() {
     alert("Welcome to Pretty Baked! We 're glad you're here.If you need any help ,please don't hesitate to contact us.")
 });
+
+loadTheme();
+const themebutton = document.getElementById('theme');
+themebutton.addEventListener('click',theme);

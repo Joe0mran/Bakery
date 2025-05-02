@@ -1,6 +1,6 @@
 
 body{
-    background-color: rgb(246, 236, 223) ;
+    background-color: var(--nav-bgcolor) ;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@ body{
   
 
 .navbar {
-  background-color: var(--button-bg);
+  background-color: var(--nav-bgcolor);
   display: flex;
   align-items: center;
   justify-content: space-between;

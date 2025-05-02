@@ -9,7 +9,7 @@ body{
   
 
 .navbar {
-  background-color: var(--nav-bgcolor);
+  background-color: var(--button-bg);
   display: flex;
   align-items: center;
   justify-content: space-between;

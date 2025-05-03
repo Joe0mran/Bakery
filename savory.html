@@ -53,92 +53,168 @@
             </div>
 
 
-            <div class="imagess">
-                <div class="image" data-price="70">
-                    <img src="Sausage pie .jpg" alt=" Sausage pies">
-                    <h3>Sausage pies</h3>
-                    <p> 1/4k ==> 70 EGP </p>
-                    <button onclick="addToCart('product',4.5)"> Add To Cart </button>
-                </div>
+                 <div class="imagess">
+                    <div class="image" data-price="70">
+                        <img src="Images/Sausage pie .jpg" alt=" Sausage pies" > 
+                        <h3 >Sausage pies</h3>
+                        <p> 1/4k ==> 70 EGP </p>
 
-                <div class="image" data-price="140">
-                    <img src="mini meat.jpg" alt=" Mini Meat Pie">
-                    <h3> Mini Meat Pies </h3>
-                    <p> 1/4k ==> 140 EGP </p>
-                    <button onclick="addToCart('product',4.5)"> Add To Cart </button>
-                </div>
+                        <div class="counter"> 
+                            <button onclick="changeQty(this, -1)">-</button>
+                            <span class="num">1</span>
+                            <button onclick="changeQty(this, 1)">+</button>
+                        </div>
 
-                <div class="image" data-price="40">
-                    <img src="cheese pie.jpg" alt=" Cheese Pies">
-                    <h3> Cheese Pies </h3>
-                    <p> 1/4k ==> 40 EGP </p>
-                    <button onclick="addToCart('product',4.5)"> Add To Cart </button>
-                </div>
+                        <button onclick="addToCart(this, 'Sausage pies', 70)" class="add">add to cart</button>                    </div>
 
-                <div class="image " data-price="190">
-                    <img src="كرواسون 1.jpg" alt=" Egg Croissant">
-                    <h3> Egg Croissant </h3>
-                    <p> 190 EGP </p>
-                    <button onclick="addToCart('product',4.5)"> Add To Cart </button>
-                </div>
+                    <div class="image" data-price="140"> 
+                        <img src="Images/mini meat.jpg" alt=" Mini Meat Pie" > 
+                        <h3 > Mini Meat Pies </h3>
+                        <p> 1/4k ==> 140 EGP </p>
 
-                <div class="image" data-price="250">
-                    <img src="كرواسون 2.jpg" alt=" Chicken Croissant">
-                    <h3> Chicken Croissant</h3>
-                    <p> 250 EGP </p>
-                    <button onclick="addToCart('product',4.5)"> Add To Cart </button>
-                </div>
+                        <div class="counter"> 
+                            <button onclick="changeQty(this, -1)">-</button>
+                            <span class="num">1</span>
+                            <button onclick="changeQty(this, 1)">+</button>
+                        </div>
 
-                <div class="image" data-price="270">
-                    <img src="كرواسون 3٠.jpg" alt=" Beef & Pickle Croissant">
-                    <h3> Beef & Pickle Croissant</h3>
-                    <p> 270 EGP </p>
-                    <button onclick="addToCart('product',4.5)"> Add To Cart </button>
-                </div>
+                        <button onclick="addToCart(this, 'Mini Meat Pies',140)" class="add">add to cart</button>                    </div>
 
-                <div class="image " data-price="170">
-                    <img src="كرواسون4.jpg" alt="Sausage Croissant">
-                    <h3> Sausage Croissant</h3>
-                    <p> 170 EGP </p>
-                    <button onclick="addToCart('product',4.5)"> Add To Cart </button>
-                </div>
+                    <div class="image" data-price="40">
+                         <img src="Images/cheese pie.jpg" alt=" Cheese Pies" > 
+                         <h3 > Cheese Pies </h3>
+                         <p> 1/4k ==> 40 EGP </p>
 
-                <div class="image" data-price="300">
-                    <img src="بوبيان.jpg" alt="Shrimp Sandwich">
-                    <h3> Shrimp Sandwich</h3>
-                    <p> 300 EGP </p>
-                    <button onclick="addToCart('product',4.5)"> Add To Cart </button>
-                </div>
+                         <div class="counter"> 
+                            <button onclick="changeQty(this, -1)">-</button>
+                            <span class="num">1</span>
+                            <button onclick="changeQty(this, 1)">+</button>
+                         </div>
 
-                <div class="image" data-price="90">
-                    <img src="mini piza.jpg" alt="Mini Pizza">
-                    <h3> Mini Pizza</h3>
-                    <p> 1/4k ==> 90 EGP</p>
-                    <button onclick="addToCart('product',4.5)"> Add To Cart </button>
-                </div>
+                         <button onclick="addToCart(this, 'Cheese Pies',40)" class="add">add to cart</button>                    </div>
 
-                <div class="image" data-price="55">
-                    <img src="فطيرة زعتر.jpg" alt="Zaatar Pie">
-                    <h3> Zaatar Pie</h3>
-                    <p> 1/4k ==> 55 EGP</p>
-                    <button onclick="addToCart('product',4.5)"> Add To Cart </button>
-                </div>
+                    <div class="image " data-price="190">
+                         <img src="Images/كرواسون 1.jpg" alt=" Egg Croissant" > 
+                         <h3 >  Egg Croissant </h3>
+                         <p> 190 EGP </p>
 
-                <div class="image" data-price="110">
-                    <img src=";v,hs,k 6.jpg" alt="Cheesy Cold Cut Croissant">
-                    <h3> Cheesy Cold Cut Croissant</h3>
-                    <p> 110 EGP</p>
-                    <button onclick="addToCart('product',4.5)"> Add To Cart </button>
-                </div>
+                         <div class="counter"> 
+                            <button onclick="changeQty(this, -1)">-</button>
+                            <span class="num">1</span>
+                            <button onclick="changeQty(this, 1)">+</button>
+                        </div>
 
-                <div class="image" data-price="80">
-                    <img src="photo_2025-04-19_06-08-06.jpg" alt="Cheese Stuffed Croissant">
-                    <h3> Cheese Stuffed Croissant</h3>
-                    <p> 80 EGP</p>
-                    <button onclick="addToCart('product',4.5)"> Add To Cart </button>
-                </div>
+                        <button onclick="addToCart(this, 'Egg Croissant',190)" class="add">add to cart</button>                        </div>
 
-            </div>
+                    <div class="image" data-price="250">
+                        <img src="Images/كرواسون 2.jpg" alt=" Chicken Croissant" > 
+                        <h3 > Chicken Croissant</h3>
+                        <p> 250 EGP </p>
+
+                        <div class="counter"> 
+                            <button onclick="changeQty(this, -1)">-</button>
+                            <span class="num">1</span>
+                            <button onclick="changeQty(this, 1)">+</button>
+                        </div>
+
+                        <button onclick="addToCart(this, 'Chicken Croissant',250)" class="add">add to cart</button>
+                    </div>
+
+                    <div class="image" data-price="270">
+                        <img src="Images/كرواسون 3٠.jpg" alt=" Beef & Pickle Croissant" > 
+                        <h3 > Beef & Pickle Croissant</h3>
+                        <p> 270 EGP </p>
+
+                        <div class="counter"> 
+                            <button onclick="changeQty(this, -1)">-</button>
+                            <span class="num">1</span>
+                            <button onclick="changeQty(this, 1)">+</button>
+                        </div>
+
+                        <button onclick="addToCart(this, 'Beef & Pickle Croissant',270)" class="add">add to cart</button>                    </div>
+
+                    <div class="image " data-price="170">
+                        <img src="Images/كرواسون4.jpg" alt="Sausage Croissant" > 
+                        <h3 > Sausage Croissant</h3>
+                        <p> 170 EGP </p>
+
+                        <div class="counter"> 
+                            <button onclick="changeQty(this, -1)">-</button>
+                            <span class="num">1</span>
+                            <button onclick="changeQty(this, 1)">+</button>
+                        </div>
+
+                        <button onclick="addToCart(this, 'Sausage',170)" class="add">add to cart</button>                    </div>
+
+                    <div class="image" data-price="300">
+                        <img src="Images/بوبيان.jpg" alt="Shrimp Sandwich" > 
+                        <h3 > Shrimp Sandwich</h3>
+                        <p> 300 EGP </p>
+
+                        <div class="counter"> 
+                            <button onclick="changeQty(this, -1)">-</button>
+                            <span class="num">1</span>
+                            <button onclick="changeQty(this, 1)">+</button>
+                        </div>
+
+                        <button onclick="addToCart(this, 'Shrimp Sandwich',300)" class="add">add to cart</button>
+                    </div>
+
+                    <div class="image" data-price="90">
+                        <img src="Images/mini piza.jpg" alt="Mini Pizza" > 
+                        <h3 > Mini Pizza</h3>
+                        <p> 1/4k ==> 90 EGP</p>
+
+                        <div class="counter"> 
+                            <button onclick="changeQty(this, -1)">-</button>
+                            <span class="num">1</span>
+                            <button onclick="changeQty(this, 1)">+</button>
+                        </div>
+
+                        <button onclick="addToCart(this, 'Mini Pizza',90)" class="add">add to cart</button>                    </div>
+
+                    <div class="image" data-price="55">
+                        <img src="Images/فطيرة زعتر.jpg" alt="Zaatar Pie" > 
+                        <h3 > Zaatar Pie</h3>
+                        <p> 1/4k ==> 55 EGP</p>
+
+                        <div class="counter"> 
+                            <button onclick="changeQty(this, -1)">-</button>
+                            <span class="num">1</span>
+                            <button onclick="changeQty(this, 1)">+</button>
+                        </div>
+
+                        <button onclick="addToCart(this, 'Zaatar Pie',55)" class="add">add to cart</button>
+                    </div>
+
+                    <div class="image" data-price="110">
+                        <img src="Images/;v,hs,k 6.jpg" alt="Cheesy Cold Cut Croissant" > 
+                        <h3 > Cheesy Cold Cut Croissant</h3>
+                        <p>  110 EGP</p>
+
+                        <div class="counter"> 
+                            <button onclick="changeQty(this, -1)">-</button>
+                            <span class="num">1</span>
+                            <button onclick="changeQty(this, 1)">+</button>
+                        </div>
+
+                        <button onclick="addToCart(this, 'Cheese Cold Cut Croissant',110)" class="add">add to cart</button>
+                    </div>
+
+                    <div class="image" data-price="80">
+                        <img src="Images/photo_2025-04-19_06-08-06.jpg" alt="Cheese Stuffed Croissant" > 
+                        <h3 > Cheese Stuffed Croissant</h3>
+                        <p>  80 EGP</p>
+
+                        <div class="counter"> 
+                            <button onclick="changeQty(this, -1)">-</button>
+                            <span class="num">1</span>
+                            <button onclick="changeQty(this, 1)">+</button>
+                        </div>
+
+                        <button onclick="addToCart(this, 'Cheese Stuffed Croissant',80)" class="add">add to cart</button>
+                    </div>
+                </div>
 
         </div>
 

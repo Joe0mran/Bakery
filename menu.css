@@ -90,7 +90,7 @@ hr{
    background-color: beige;
    height: 1px;
 }
-div:hover{
+.drinks ,.breads ,.pastries,.savory:hover{
     transform: scale(1.03);
 }
 .products a:hover{

@@ -93,6 +93,6 @@ hr{
 div:hover{
     transform: scale(1.03);
 }
-a:hover{
+.products a:hover{
     color:#301400;
 }

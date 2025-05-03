@@ -1,6 +1,7 @@
 :root{
   --back-c:rgb(244, 231, 215);}
-  
+  --nav-bgcolor:rgb(244,231,215);
+--nav-text:rgb(89,15,15);
     body {
    position: relative;
     text-align: center;
@@ -12,7 +13,10 @@
   
 }
 body.dark{
-   --back-c:#1e1e1e;}
+   --back-c:#1e1e1e;
+  --nav-text:#s5s5s5;
+ --nav-bgcolor:#2b2b2b;
+}
 
   
 .navbar {

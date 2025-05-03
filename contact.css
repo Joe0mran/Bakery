@@ -14,7 +14,7 @@ body{
   
  
 body.dark{
-  --backcolor: 2a2723;
+  --backcolor: #2a2723;
   --img-text: white;
   --div-color: #F6F2EC;  
   --nav-text1: #f5f5f5;

@@ -181,8 +181,8 @@ transition: transform 0.3s ease;
 }
 
 .c button{
-color:white;
-background-color:rgb(160, 82, 45) ;
+color: var(--button-text);
+background-color: var(--button-bg) ;
 border: none;
 padding: 12px 12px;
 margin-top: 8px;
@@ -215,7 +215,7 @@ footer a {
 }
 
 form{
-  background-color: rgb(246, 232, 219) ;
+  background-color: var(--backg-color)  ;
   max-width: 400px;
   padding: 10px;
   margin-left: 125px;
@@ -228,15 +228,14 @@ form p {
   }
 
 form button{
-  color:white;
-  background-color:rgb(160, 82, 45) ;
+  color:var(--button-text);
+  background-color: var(--button-bg) ;
   border: none;
   padding: 10px 18px;
   margin-top: 12px;
   border-radius: 999px;
   font-weight: bold;
   cursor: pointer;   
-  
 }
 textarea {
   width: 70%;

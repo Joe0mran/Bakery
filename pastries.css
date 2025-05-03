@@ -1,5 +1,5 @@
-
-
+:root{
+  --back-c:rgb(244, 231, 215);}
   
     body {
    position: relative;
@@ -7,11 +7,14 @@
      margin: 0;
     padding: 0;
     min-height: 100vh;
-    background-color: rgb(244, 231, 215);
+    background-color: var( --back-c);
     
   
 }
+body.dark{
+   --back-c:#1e1e1e;}
 
+  
 .navbar {
     background-color: var(--nav-bgcolor);
     display: flex;
@@ -72,20 +75,6 @@ nav button {
 
 }
 
-:root {
-  --backg-color: rgb(246,236,223) ;
-  --nav-bgcolor: rgb(244,231,215) ;
-  --button-bg: #E8D7C2 ;
-  --button-text: #5C4033 ;
-  --nav-text: rgb(89,15,15) ;
-}
-body.dark{
-  --backg-color: #1e1e1e ;
-  --nav-bgcolor: #2b2b2b ;
-  --button-bg: rgb(64,58,48,0.9) ;
-  --button-text: #ffffff ;
-  --nav-text: #f5f5f5 ;
-}
 
 
 

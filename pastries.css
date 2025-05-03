@@ -165,8 +165,7 @@ h1{
     
     
 }
-h1,.a,.b{
-  color:var(--hcolor);}
+
 .all{
     display: flex;
     flex-wrap: wrap;

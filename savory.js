@@ -59,3 +59,10 @@ themebutton.addEventListener('click', theme);
             }
         });
     }
+
+   function changeQty(button, amount) {
+      const counter = button.parentElement.querySelector("span");
+      let value = parseInt(counter.innerText);
+      value = Math.max(1, value + amount);
+      counter.innerText = value;
+ }

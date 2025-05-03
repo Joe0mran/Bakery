@@ -239,28 +239,27 @@ h1 {
 .imagess {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    gap: 15px;
+    flex-wrap: wrap ;
+    gap: 15px ;
     justify-content: center;
 
 }
-
 .image {
-    background-color: #c9ae86;
+    background-color:#c9ae86;
     width: 100%;
-    max-width: 300px;
-    height: auto;
+    max-width: 300px ;
+    height: 450px ; 
     border: #550808;
     border-style: double;
-    border-radius: 10%;
+    border-radius: 10%;  
     padding-top: 2%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; 
     color: #550808;
     font-size: larger;
     text-align: center;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    transition: transform 0.03s ease, box-shodow 0.03 ease;
+    transition: transform 0.03s  ease , box-shodow 0.03 ease;
     margin-top: 0;
 }
 
@@ -269,9 +268,10 @@ h1 {
     box-shadow: 5px 5px 10px #754c23;
 }
 
-.image img {
+.image img{
     width: 75%;
     height: 70%;
+    max-height: 300px;
     border-radius: 10%;
 }
 

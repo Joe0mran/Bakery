@@ -1,6 +1,6 @@
 :root{
   --back-c:rgb(244, 231, 215);
---nav-text:rgb(89,15,15);
+--navtextt:rgb(89,15,15);
 }
   
 body {
@@ -15,7 +15,7 @@ body {
 }
 body.dark{
    --back-c:#1e1e1e;
-  --nav-text:#f5f5f5;
+  --navtextt:#f5f5f5;
 
 }
 

@@ -9,10 +9,9 @@ body {
      margin: 0;
     padding: 0;
     min-height: 100vh;
-    background-color: var( --back-c);
-    
-  
+    background-color: var( --back-c);      
 }
+
 body.dark{
    --back-c:#1e1e1e;
   --navtextt:#f5f5f5;

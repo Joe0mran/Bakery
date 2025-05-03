@@ -79,7 +79,7 @@ div{
     box-sizing: border-box;
     transition: transform 0.3s ease;
 }
-a{
+.products a{
     text-decoration: none;
     font-size: 40px; 
     color: brown;

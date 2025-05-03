@@ -1,8 +1,8 @@
 
 root:{
-    --back:rgb(246, 236, 223);
-    --nav-bgcolor:rgb(244,231,215);
-    --nav-text:rgb(89,15,15);
+    --back : rgb(246, 236, 223);
+    --nav-bgcolor : rgb(244,231,215);
+    --nav-text : rgb(89,15,15);
 }
 body.dark{
     --back:#1e1e1e;

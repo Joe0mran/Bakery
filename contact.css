@@ -2,8 +2,8 @@
   --backcolor: rgb(246,236,223);
   --img-text: rgb(153 97 44);
   --div-color: rgb(247, 230, 209);  
-  --navtext: rgb(89,15,15);
-  --navbgcolor: rgb(244,231,215);
+  --nav-text1: rgb(89,15,15);
+  --nav-bgcolor1: rgb(244,231,215);
 }
 body{
     background-color: var(--backcolor) ;
@@ -17,12 +17,12 @@ body.dark{
   --backcolor: #1e1e1e;
   --img-text: white;
   --div-color: beige;  
-  --navtext: #f5f5f5;
-  --navbgcolor: #2b2b2b;
+  --nav-text1: #f5f5f5;
+  --nav-bgcolor1: #2b2b2b;
 } 
 
 .navbar {
-  background-color: var(--navbgcolor);
+  background-color: var(--nav-bgcolor1);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -35,7 +35,7 @@ nav button {
   margin-right: 30px;
   border-radius: 10px 10px;
   border: none;
-  background-color: var(--navbgcolor);
+  background-color: var(--nav-bgcolor1);
   cursor: pointer;
   font-size: 30px;
 
@@ -66,7 +66,7 @@ nav button {
 
 .link li a {
   text-decoration: none;
-  color: var(--nav-text);
+  color: var(--nav-text1);
 
 }
 

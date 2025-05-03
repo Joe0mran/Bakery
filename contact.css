@@ -2,6 +2,8 @@
   --backcolor: rgb(246,236,223);
   --img-text: rgb(153 97 44);
   --div-color: rgb(247, 230, 209);  
+  --navtext: rgb(89,15,15);
+  --navbgcolor: rgb(244,231,215);
 }
 body{
     background-color: var(--backcolor) ;
@@ -15,10 +17,12 @@ body.dark{
   --backcolor: #1e1e1e;
   --img-text: white;
   --div-color: brown;  
+  --navtext: #f5f5f5;
+  --navbgcolor: #2b2b2b;
 } 
 
 .navbar {
-  background-color: var(--nav-bgcolor);
+  background-color: var(--navbgcolor);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,7 +35,7 @@ nav button {
   margin-right: 30px;
   border-radius: 10px 10px;
   border: none;
-  background-color: var(--nav-bgcolor);
+  background-color: var(--navbgcolor);
   cursor: pointer;
   font-size: 30px;
 

@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Drinks</title>
     <link rel="stylesheet" href="drinks.css" />
     <script src="theme.js"></script>
   </head>
   <body id="bod">
+    <button onclick="scrollToTop()" id="scroller">
+      <img src="arrow-up.png" alt="">
+    </button>
     <div id="parties" class="head">
       <img class="logo" src="logo.jpg" alt="logo" />
       <div>
@@ -37,7 +40,9 @@
           </li>
         </ul>
       </div>
-      <button id="theme" class="theme"><img src="moon-stars.png" alt=""></button>
+      <button id="theme" class="theme">
+        <img src="moon-stars.png" alt="" />
+      </button>
     </div>
     <div class="imgwrapper">
       <img class="imgCover" src="cover.jpg" />
@@ -206,6 +211,22 @@
           alert("Drink added to cart!");
         };
       });
+    </script>
+    <script>
+      window.onscroll = function () {
+        const btn = document.getElementById("scroller");
+        if (document.documentElement.scrollTop > 50) {
+          btn.style.display = "block";
+        } else {
+          btn.style.display = "none";
+        }
+      };
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      }
     </script>
     <script src="cart.js"></script>
   </body>

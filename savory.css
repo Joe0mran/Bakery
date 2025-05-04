@@ -202,7 +202,7 @@ h1 {
     box-shadow: 2px 2px 5px var(--shadow);
     background-color: var(--buttons);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: var(--buttons);
+    color: #F5ECD5;
 }
 
 .imagess {

@@ -39,7 +39,7 @@
         </video>
         <h3 id="vidtext"></h3>
         <h1 id="vidtext2"></h1>
-        <button class="buttonmenu"><a href="#" class="btnM">Menu</a></button>
+        <button class="buttonmenu " onclick="location.href='menu.html'">Menu</button>
     </div>
     <section class="choose-us">
         <div class="choose-us-container">
@@ -78,6 +78,7 @@
             <h1>limited time offer!!</h1>
             <p>only <strong>100</strong> instead of <del>200</del></p>
             <button id="add-offer" onclick="addToCart(this, 'offer',100)" class="add"> add offer</button>
+
         </div>
 
         <img src="offer.jpg" alt="" width="300px">
@@ -91,25 +92,28 @@
             </div>
 
             <ul class="footer-link">
-                <h4>Links</h4>
+                <h4 class="footertitle">Links</h4>
                 <a href="https://www.facebook.com/" title="Go to facebook">Facebook </a>
                 <a href="https://www.instagram.com/" title="Go to instagram">Instagram</a>
                 <a href="https://x.com/" title="Go to Twitter">Twitter</a>
                 <a href="https://web.whatsapp.com/" title="Go to whatsapp">whatsapp</a>
             </ul>
             <div class="footer-address">
-                <h4>Our address</h4>
+                <h4 class="footertitle">Our address</h4>
                 <p>Arkan Plaza, Sheikh Zayed City, 6th of October, Giza, Egypt. </p>
                 <a href="https://maps.app.goo.gl/x4TJvcGuhojgkcXAA" target="_blank"><button>Find us</button> </a>
             </div>
             <div class="footer-contact">
                 <ul>
-                    <h4>contact us</h4>
-                    <li><img src="phone-plus.png" alt="" width="20px">082-123-234-345</li>
+                    <h4 class="footertitle">contact us</h4>
+                    <li><img src="phone-plus.png" alt="" width="20px" id="icone-footer">082-123-234-345</li>
                     <li>hotline:1773</li>
                 </ul>
             </div>
+
+
         </div>
+
     </footer>
     <script src="cart.js"></script>
     <script src="index.js"></script>

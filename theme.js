@@ -29,12 +29,14 @@ function switchToLightMode() {
     const colorphone = document.getElementById('icophone');
     const colorcart = document.getElementById('iconcart');
     const colorlog = document.getElementById('iconlog');
+    const colorphonefooter = document.getElementById('icone-footer');
     themebutton.innerHTML = '<img src="moon-stars.png" alt="moon" width="30px">';
     colorhouse.src = "house-chimney.png";
     colormenu.src = 'apps.png';
     colorcart.src = 'cart-shopping-fast.png';
     colorlog.src = 'entrance.png';
     colorphone.src = 'phone-plus.png';
+    colorphonefooter.src = 'phone-plus.png';
 }
 
 function switchToDarkMode() {
@@ -44,10 +46,12 @@ function switchToDarkMode() {
     const colorphone = document.getElementById('icophone');
     const colorcart = document.getElementById('iconcart');
     const colorlog = document.getElementById('iconlog');
+    const colorphonefooter = document.getElementById('icone-footer');
     themebutton.innerHTML = '<img src="brightness.png" alt="sun" width="30px">';
     colorhouse.src = 'house-chimney -white.png';
     colormenu.src = 'apps -1.png';
     colorcart.src = 'cart-shopping-fast (1).png';
     colorlog.src = 'entrance (1).png';
-    colorphone.src = 'phone-plus (1).png'
+    colorphone.src = 'phone-plus (1).png';
+    colorphonefooter.src = 'phone-plus (1).png';
 }

@@ -26,10 +26,10 @@ function letterbyletter2() {
 
 }
 window.onload = letterbyletter;
-const start = 0.5;
+const start = 1;
 let counter = start * 60;
 let offertime = document.getElementById('timer');
-let buttonremove = document.getElementById('add-offer');
+let cartbutton = document.getElementById('add-offer');
 function countdown() {
     let min = Math.floor(counter / 60);
     let second = counter % 60;
@@ -39,9 +39,8 @@ function countdown() {
     }
 
     if (counter <= 0) {
-        // clearInterval(con);
         offertime.innerHTML = 'offer end';
-        buttonremove.innerHTML = 'cant add';
+        cartbutton.style.display = "none"
         return;
     }
     else {
@@ -50,5 +49,4 @@ function countdown() {
     }
 }
 setInterval(countdown, 1000);
-
 

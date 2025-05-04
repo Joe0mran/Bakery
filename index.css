@@ -4,6 +4,7 @@
     --button-bg: #E8D7C2;
     --button-text: #5C4033;
     --nav-text: rgb(89, 15, 15);
+    --footer-titles: black;
 }
 
 /* #8e5e3e */
@@ -30,6 +31,7 @@ body.dark {
     --button-bg: rgb(64, 58, 48, 0.9);
     --button-text: #ffffff;
     --nav-text: #f5f5f5;
+    --footer-titles: #E8D7C2;
 }
 
 .videoscope {
@@ -83,7 +85,7 @@ body.dark {
     font-family: "Roboto Mono", monospace;
 }
 
-.buttonmenu .btnM {
+.videoscope .buttonmenu {
     text-decoration: none;
     color: var(--button-text);
     font-weight: bold;
@@ -261,8 +263,17 @@ nav button {
     padding: 50px;
     max-width: 700px;
     height: 300px;
+    transition: 0.3 ease;
+
 
 }
+
+.offer:hover {
+    box-shadow: 0 15px 25px rgb(0, 0, 0, 0.9);
+    transform: scale(1.02);
+}
+
+
 
 .offer img {
     width: 270px;
@@ -303,13 +314,19 @@ nav button {
 
 
 
-.footer-container {
+footer .footer-container {
+    color: var(--footer-titles);
     background-color: var(--nav-bgcolor);
     display: flex;
     justify-content: space-between;
     border-radius: 30px 30px 0 0;
+    font-weight: bold;
     /* gap: 70px; */
     /* flex-grow: 1; */
+}
+
+.footertitle {
+    font-size: x-large;
 }
 
 .footer-link {
@@ -330,8 +347,8 @@ nav button {
     margin-bottom: 10px;
 } */
 
-.footer-address {
 
+.footer-address {
     margin: 32px 20px;
     text-transform: capitalize;
 }

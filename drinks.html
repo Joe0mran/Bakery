@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>drinks sec.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drinks</title>
     <link rel="stylesheet" href="drinks.css" />
     <script src="theme.js"></script>
   </head>
@@ -35,7 +37,7 @@
           </li>
         </ul>
       </div>
-      <button id="theme"><img src="moon-stars.png" /></button>
+      <button id="theme" class="theme"><img src="moon-stars.png" alt=""></button>
     </div>
     <div class="imgwrapper">
       <img class="imgCover" src="cover.jpg" />
@@ -192,11 +194,19 @@
         <p>© 2025 <a href="index.html">Pretty Baked</a></p>
       </footer>
     </div>
-  <script>
-     loadTheme();
-    const themebutton = document.getElementById('theme');
-    themebutton.addEventListener('click', theme);
-  </script>
+    <script>
+      loadTheme();
+      const themebutton = document.getElementById("theme");
+      themebutton.addEventListener("click", theme);
+    </script>
+    <script>
+      const btn = document.querySelectorAll(".adding");
+      btn.forEach(function (button) {
+        button.onclick = function () {
+          alert("Drink added to cart!");
+        };
+      });
+    </script>
     <script src="cart.js"></script>
   </body>
 </html>

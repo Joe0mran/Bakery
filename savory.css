@@ -200,7 +200,7 @@ h1 {
     border: var(--navtext);
     border-style: double;
     box-shadow: 2px 2px 5px var(--shadow);
-    background-color: #E5D0AC;
+    background-color: var(--buttons);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: var(--buttons);
 }

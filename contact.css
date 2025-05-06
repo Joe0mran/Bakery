@@ -183,7 +183,7 @@ input:focus , textarea:focus{
   box-sizing: border-box;
   transition: transform 0.3s;
 
-}
+} }
 .email:hover{
   transform: scale(1.03);
 }

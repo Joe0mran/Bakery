@@ -26,7 +26,44 @@
             <button id="theme" class="theme"><img src="moon-stars.png" alt=""></button>
 
         </nav>
-   
+   <div class="click">
+  <div class="emoji" >
+    <label>🥐<br>
+    <input type="checkbox" value="Croissant">
+    </label>
+    <p> croissant</p>
+  </div>
+  <div class="emoji"  >
+  <label>🍩<br>
+    <input type="checkbox" value="Donut">
+  </label>
+  <p>Donut</p>
+  </div>
+  <div class="emoji"  >
+ <label> 🍥<br>
+  <input type="checkbox" value="Cinnamon">
+ </label>
+  <P> Cinnamon</P>
+  </div>
+  <div class="emoji"  >
+  <label>🍰<br>
+    <input type="checkbox" value="Eclair">
+  </label>
+  <p>Eclair</p>
+  </div>
+  <div class="emoji">
+  <label>🍪<br>
+    <input type="checkbox" value="Cookies">
+  </label>
+  <p>Cookies</p>
+  </div>
+  <div class="emoji" >
+  <label> 🥮<br>
+    <input type="checkbox" value="Danish">
+  </label>
+  <p>Danish</p>
+  </div>
+</div>
     
     <div class="title">
     <h1>pastries</h1>
@@ -40,7 +77,7 @@
 </div>
 
    <div  class="all">
-    <div class="items ">
+    <div class="items "data-category="Croissant" >
     <h3>  White Chocolate Croissant</h3>
     <img src="Cute baking (1).jfif" alt="">
     <div class="price">80 EGP</div>
@@ -52,7 +89,7 @@
       <button onclick="addToCart(this, 'White Chocolate Croissant',80)" class="add">add to cart</button>
     </div>
     
-    <div class="items"> 
+    <div class="items" data-category="Croissant"> 
         <h3> Strawberry Croissant</h3>
         <img src="🥐🌸 (1).jfif" alt="">
         <div class="price">80 EGP</div>
@@ -65,7 +102,7 @@
   <button onclick="addToCart(this, 'Strawberry Croissant',80)" class="add">add to cart</button>
     </div>
     
-    <div class="items"> 
+    <div class="items"data-category="Croissant"> 
         <h3> Pestachio Croissant</h3>
         <img src="★ (1).jfif" alt="">
         <div class="price">100 EGP</div>
@@ -78,7 +115,7 @@
 <button onclick="addToCart(this, 'Pestachio Croissant',100)" class="add">add to cart</button>
     </div>
     
-    <div class="items">
+    <div class="items"data-category="Donut">
         <h3> Chocolate Donut</h3>
         <img src="DÓNUTS DE FERRERO ROCHER - Petit Fit by Cris (1).jfif" alt="">
         <div class="price">70 EGP</div>
@@ -90,7 +127,7 @@
       </div>
     <button onclick="addToCart(this, 'Chocolate Donut',70)" class="add">add to cart</button>
     </div>
-    <div class="items"> 
+    <div class="items"data-category="Donut"> 
         <h3> Raspberry Donut</h3>
         <img src="تنزيل (9) (1).jfif" alt="">
            
@@ -104,7 +141,7 @@
     <button onclick="addToCart(this, 'Raspberry Donut',70)" class="add">add to cart</button>
     </div>
    
-    <div class="items"> 
+    <div class="items"data-category="Donut"> 
         <h3> Lotus Donut</h3>
         <img src="Baked Biscoff Doughnuts - Vegan & Easy _ The Chestnut Bakery (1).jfif" alt="">
            
@@ -118,7 +155,7 @@
 <button onclick="addToCart(this, 'Lotus Donut',90)" class="add">add to cart</button>
     </div>
 
-    <div class="items"> 
+    <div class="items"data-category="Cinnamon"> 
         <h3> Classic Cinnamon</h3>
         <img src="Delicious Food 🍲 (1).jfif" alt="">
         <div class="price">80 EGP</div>
@@ -132,7 +169,7 @@
       <button onclick="addToCart(this, 'Classic Cinnamon',80)" class="add">add to cart</button>
     </div>
    
-    <div class="items"> 
+    <div class="items"data-category="Cinnamon"> 
         <h3> Red Velvet Cinnamon</h3>
         <img src="Red Velvet Cinnamon Rolls.jfif" alt="">
            
@@ -145,7 +182,7 @@
   <button onclick="addToCart(this, 'Red Velvet Cinnamon',80)" class="add">add to cart</button>
     </div>
    
-    <div class="items"> 
+    <div class="items"data-category="Cinnamon"> 
         <h3> Matcha Cinnamon</h3>
         <img src="Matcha Cinnamon Rolls [145 Minutes] (1) (1).jfif" alt="">
            
@@ -159,7 +196,7 @@
  <button onclick="addToCart(this, 'Matcha Cinnamon',90)" class="add">add to cart</button>
     </div>
     
-    <div class="items"> 
+    <div class="items"data-category="Eclair"> 
         <h3>  White Chocolate Eclair</h3>
         <img src="55e698b6-7dba-4898-87c1-8913905a3f73 (1).jfif" alt="">
         <div class="price">110 EGP</div>
@@ -186,7 +223,7 @@
         <button onclick="addToCart(this, 'Raspberry Eclair',130)" class="add">add to cart</button>
     </div>
    
-    <div class="items"> 
+    <div class="items"data-category="Eclair"> 
         <h3> Pestachio Eclair</h3>
         <img src="Christophe Adam (@christopheadam) • Photos et vidéos Instagram (1).jfif" alt="">
            
@@ -200,7 +237,7 @@
     <button onclick="addToCart(this, 'Pestachio Eclair',120)" class="add">add to cart</button>
     </div>
      
-    <div class="items"> 
+    <div class="items"data-category="Cookies"> 
         <h3> Red Velvet Cookies</h3>
         <img src="Red Velvet Cookies (1) (1).jfif" alt="">
         <div class="price">120 EGP</div>
@@ -212,7 +249,7 @@
       </div>
  <button onclick="addToCart(this, 'Red Velvet Cookies',120)" class="add">add to cart</button>
     </div>
-    <div class="items"> 
+    <div class="items"data-category="Cookies"> 
         <h3> Chocolate Cookies</h3>
         <img src="chy_ ᥫ᭡ (1).jfif" alt="">
            
@@ -224,7 +261,7 @@
       </div>
    <button onclick="addToCart(this, 'Chocolate Cookies',100)" class="add">add to cart</button>
     </div>
-    <div class="items"> 
+    <div class="items"data-category="Cookies"> 
         <h3> Lotus Cookies</h3>
         <img src="Biscoff Cookie Butter White Chocolate Chip Cookies - House of Nash Eats (1).jfif" alt="">
            
@@ -236,7 +273,7 @@
       </div>
       <button onclick="addToCart(this, 'Lotus Cookies',125)" class="add">add to cart</button>
     </div>
-    <div class="items"> 
+    <div class="items"data-category="Danish"> 
         <h3> Blueberry Danish</h3>
         <img src="Delicious Blackberry Cream Cheese Danish Recipe (1).jfif" alt="">
         <div class="price">90 EGP</div>
@@ -247,7 +284,7 @@
       </div>
     <button onclick="addToCart(this, 'Blueberry Danish',90)" class="add">add to cart</button>
     </div>
-    <div class="items"> 
+    <div class="items"data-category="Danish"> 
         <h3> Raspberry Danish</h3>
         <img src="🍒.jpg" alt="">
            
@@ -259,7 +296,7 @@
       </div>
 <button onclick="addToCart(this, 'Raspberry Danish',95)" class="add">add to cart</button>
     </div>
-    <div class="items"> 
+    <div class="items"data-category="Danish"> 
         <h3> Mango Danish</h3>
         <img src="b695c8ab-4f77-492e-b165-079a413c6635.jfif" alt="">
            
@@ -293,6 +330,35 @@ items.forEach(item=>{
     }else{ 
         item.style.display="none";
     }
+    });
+}
+const checkboxes = document.querySelectorAll('.emoji input[type="checkbox"]');
+checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', filterByCategory);
+});
+
+function filterByCategory() {
+    let checkedCategories = Array.from(checkboxes)
+        .filter(cb => cb.checked)
+        .map(cb => cb.value);
+
+    const items = document.querySelectorAll('.items');
+
+    if (checkedCategories.length === 0) {
+        // If no checkbox selected, show all
+        items.forEach(item => {
+            item.style.display = 'block';
+        });
+        return;
+    }
+
+    items.forEach(item => {
+        const itemCategory = item.getAttribute('data-category');
+        if (checkedCategories.includes(itemCategory)) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
     });
 }
 

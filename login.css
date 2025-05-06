@@ -56,7 +56,6 @@ body
     line-height: 1.5;
     font-weight: 400;
     transition: 0.5s ease-in-out;
-    background-color: var(--back);
     margin-bottom: 2%;
 }
 .login:hover

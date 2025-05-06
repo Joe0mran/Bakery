@@ -1,4 +1,4 @@
-٠:root {
+:root {
   --backcolor: rgb(246,236,223);
   --img-text: rgb(153 97 44);
   --div-color: rgb(247, 230, 209);  
@@ -183,7 +183,7 @@ input:focus , textarea:focus{
   box-sizing: border-box;
   transition: transform 0.3s;
 
-} }
+} 
 .email:hover{
   transform: scale(1.03);
 }
@@ -200,9 +200,7 @@ input:focus , textarea:focus{
   display: flex;
 }
 
-.all{
-  display: flex;
-}
+
 
 button:hover{
  background-color:rgb(247, 230, 209); ; }

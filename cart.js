@@ -1,4 +1,8 @@
-  function addToCart(button, name, price) {
+loadTheme();
+const themebutton = document.getElementById('theme');
+themebutton.addEventListener('click', theme);
+
+function addToCart(button, name, price) {
 
       const qtyElement = button.parentElement.querySelector('.d');
       const quantity = parseInt(qtyElement?.innerText) || 1; 

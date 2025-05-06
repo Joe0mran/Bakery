@@ -26,6 +26,9 @@
 
 <script src="cart.js"></script>
 <script>
+   loadTheme();
+   const themebutton = document.getElementById('theme');
+   themebutton.addEventListener('click', theme);
   function renderCart() {
     const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
     const container = document.getElementById("cart");

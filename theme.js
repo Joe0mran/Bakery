@@ -29,7 +29,9 @@ function switchToLightMode() {
     const colorphone = document.getElementById('icophone');
     const colorcart = document.getElementById('iconcart');
     const colorlog = document.getElementById('iconlog');
+    const logo = document.getElementById('logo');
     themebutton.innerHTML = '<img src="moon-stars.png" alt="moon" width="30px">';
+    logo.src = 'logono.png';
     colorhouse.src = "house-chimney.png";
     colormenu.src = 'apps.png';
     colorcart.src = 'cart-shopping-fast.png';
@@ -44,11 +46,13 @@ function switchToDarkMode() {
     const colorphone = document.getElementById('icophone');
     const colorcart = document.getElementById('iconcart');
     const colorlog = document.getElementById('iconlog');
+    const logo = document.getElementById('logo');
     themebutton.innerHTML = '<img src="brightness.png" alt="sun" width="30px">';
     colorhouse.src = 'house-chimney -white.png';
     colormenu.src = 'apps -1.png';
     colorcart.src = 'cart-shopping-fast (1).png';
     colorlog.src = 'entrance (1).png';
     colorphone.src = 'phone-plus (1).png';
+    logo.src = 'darklogo-removebg-preview (1).png';
 
 }

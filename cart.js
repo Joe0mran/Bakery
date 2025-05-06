@@ -1,6 +1,3 @@
-loadTheme();
-const themebutton = document.getElementById('theme');
-themebutton.addEventListener('click', theme);
 
 function addToCart(button, name, price) {
 

@@ -135,6 +135,7 @@ nav button {
     border-radius: 10px 10px;
     box-sizing: border-box;
  }
+   
   
   label{
     color: var(--labelcol);
@@ -181,8 +182,9 @@ input:focus , textarea:focus{
   text-align: center;
   margin: 20px;
   box-sizing: border-box;
-  transition: transform 0.3s ease;
-}
+  transition: transform 0.3s;
+  box-shadow:5px 5px 5px #fffff0
+} 
 .email:hover{
   transform: scale(1.03);
 }
@@ -199,9 +201,7 @@ input:focus , textarea:focus{
   display: flex;
 }
 
-.all{
-  display: flex;
-}
+
 
 button:hover{
  background-color:rgb(247, 230, 209); ; }

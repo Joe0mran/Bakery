@@ -1,5 +1,6 @@
 <html>
     <head>
+        <script src="theme.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
@@ -8,14 +9,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="login.css">
-        <script src="theme.js"></script>
         <title>Login Page</title>
     </head>
     <body>
         <header>
             <nav class="navbar">
                 <div class="logo">
-                    <img src="logono.png" alt="">
+                    <img src="logono.png" alt="" id="logo">
                 </div>
                 <ul class="link">
                     <li><img src="house-chimney.png" id="iconhouse"><a href="index.html">HOME</a></li>
@@ -25,7 +25,7 @@
                     <li><img src="entrance.png" alt="" id="iconlog"><a href="login.html">login</a></li>
     
                 </ul>
-                <button id="theme-toggle-button" onclick="themeToggle()"><img src="moon-stars.png" alt=""></button>
+                <button id="theme" class="theme"><img src="moon-stars.png" alt=""></button>
     
             </nav>
         </header>

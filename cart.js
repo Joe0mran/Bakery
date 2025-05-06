@@ -1,4 +1,5 @@
-  function addToCart(button, name, price) {
+
+function addToCart(button, name, price) {
 
       const qtyElement = button.parentElement.querySelector('.d');
       const quantity = parseInt(qtyElement?.innerText) || 1; 

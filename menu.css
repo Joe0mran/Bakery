@@ -91,7 +91,7 @@ nav button {
     width: calc(25% - 25px);
     box-sizing: border-box;
     transition: transform 0.3s ease;
-    box-shadow:2;
+    box-shadow:10px;
 }
 .products a{
     text-decoration: none;

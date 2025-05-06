@@ -293,9 +293,39 @@ transition: transform 0.2s ease;}
     height: 100px;
     
 }
+.click{
+    text-align: center;
+    margin: 20px;  
+    display: flex;
+    justify-content: center;
+}
+.emoji{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.emoji label{
+    cursor: pointer;
+font-size: 45px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
 
 
+.emoji p{
+    margin: 8px;
+    font-size: 23px;
+    font-family: "Poetsen One", sans-serif;
+
 }
-.search input[type="text"]{
-    width: 90%;
+.emoji input[type="checkbox"]{
+    width: 25px;
+    height: 25px;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 30px;
+
 }
+
+

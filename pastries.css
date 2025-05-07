@@ -17,7 +17,7 @@ body.dark{
    --back-c:#1e1e1e;
   --navtextt:#f5f5f5;
    --hcolor:#F3DEBA;
-  --em:white
+  --em:white;
 
 }
 
@@ -169,7 +169,7 @@ h1{
 h1,.a,.b{
   color:var(--hcolor);}
 .emoji p{
-  color:var(em);}
+  color:var(--em);}
 .all{
     display: flex;
     flex-wrap: wrap;
@@ -315,8 +315,7 @@ flex-direction: column;
 align-items: center;
 }
 
-
-.emoji p{
+  .emoji p{
     margin: 8px;
     font-size: 23px;
     font-family: "Poetsen One", sans-serif;

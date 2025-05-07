@@ -21,6 +21,7 @@ header{
   --button-bg: #E8D7C2 ;
   --button-text: #5C4033 ;
   --nav-text: rgb(89,15,15) ;
+  --plus:#845057;
 }
 body.dark{
   --backg-color: #1e1e1e ;
@@ -28,6 +29,7 @@ body.dark{
   --button-bg: rgb(64,58,48,0.9) ;
   --button-text: #ffffff ;
   --nav-text: #f5f5f5 ;
+  --plus:#f5f5f5;
 }
 
 .navbar {
@@ -198,7 +200,7 @@ justify-content: center;
 align-items: center;      
 }
 .d span{
-color: #845057;
+color: var(plus);
 font-weight:bold;
 font-size: larger;
 }

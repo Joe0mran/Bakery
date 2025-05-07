@@ -13,11 +13,12 @@ const images = [
 let current = 0;
 
 window.addEventListener('DOMContentLoaded', () => {
-  const bgDiv = document.getElementById('background');
+  const bgDiv = document.querySelector('background');
 
   function changeBackground() {
     bgDiv.style.backgroundImage = `url('${images[current]}')`;
     current = (current + 1) % images.length;
+    }, 500);
   }
 
   changeBackground();

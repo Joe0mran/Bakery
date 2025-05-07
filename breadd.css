@@ -228,7 +228,7 @@ form p {
 
 form button{
   color:var(--button-text);
-  background-color: var(--button-bg) ;
+  background-color: rgb(160, 82, 45) ;
   border: none;
   padding: 10px 18px;
   margin-top: 12px;

@@ -54,7 +54,7 @@ body
     padding: 2%;
     margin-top: 5%;
     transform: none;
-    border: 1px solid rgb(160, 82, 45);
+    border: 1px solid var(--nav-text);
     font-family: Arial, sans-serif;
     font-size: 1.2rem;
     color: var(--nav-text);

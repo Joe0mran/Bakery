@@ -140,6 +140,10 @@ footer a
     color: var(--nav-text);
     font-family: Lucida Handwriting;
 }
+footer p 
+{
+    color: var(--nav-text);
+}
 .navbar {
     background-color: var(--nav-bgcolor);
     display: flex;

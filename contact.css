@@ -20,7 +20,7 @@ body{
 body.dark{
   --backcolor: #2a2723;
   --img-text: white;
-  --div-color: #1e1e1e;  
+  --div-color: #f6f2ec;  
   --nav-text1: #f5f5f5;
   --nav-bgcolor1: #2b2b2b;
   --button-text1:#ffffff;
@@ -185,23 +185,22 @@ input:focus , textarea:focus{
   margin: 20px;
   box-sizing: border-box;
   transition: transform 0.3s;
-
+  box-shadow:0 0 5px rgb(210,180,140);
 } 
 .email:hover{
   transform: scale(1.03);
-  box-shadow:0 0 5px rgb(210,180,140);
+  
 }
 .whatsapp:hover{
   transform: scale(1.03);
-  box-shadow:0 0 5px rgb(210,180,140);
+  
 }
 .call:hover{
   transform: scale(1.03);
-  box-shadow:0 0 5px rgb(210,180,140);
 }
 .shop:hover{
  transform: scale(1.03);
- box-shadow:0 0 5px rgb(210,180,140);
+ 
 }
 .all{
   display: flex;

@@ -147,7 +147,7 @@ h1{
 
 }
 
-.a{
+.h2{
     font-family: "Playwrite AU SA", cursive;
     font-optical-sizing: auto;
     font-weight:bold;
@@ -158,7 +158,7 @@ h1{
 
    
 }
-.b{
+.h3{
     font-family: "Playwrite AU SA", cursive;
     font-optical-sizing: auto;
    font-weight: bold;
@@ -170,7 +170,7 @@ h1{
 }
 .h1{
   text-shadow:var(--shadow);}
-h1,.a,.b{
+h1,.h2,.h3{
   color:var(--hcolor);}
 .emoji p{
   color:var(--em);}
@@ -240,7 +240,7 @@ font-style: normal;
 }
 
 
- .c button {
+ .count1 button {
     padding: 5px 10px;
 font-size: 20px;
 background-color:rgba(190, 123, 22, 0.3);
@@ -258,12 +258,12 @@ font-size:15PX;
 
 
 
-.c button:hover{
+. count1 button:hover{
 background-color: #C9B194;
 transition: 0.3s ease;
 
 }
-.d{
+.count2{
     font-family: "Concert One", sans-serif;
     font-weight: 400;
     font-style: normal;

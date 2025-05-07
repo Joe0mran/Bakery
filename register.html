@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script>
-        loadTheme();
-        const themebutton = document.getElementById('theme');
-        themebutton.addEventListener('click', theme);
-    </script>
+    <script src="theme.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>register</title>
@@ -45,7 +41,10 @@
     <footer>
       <p>© 2025 <a href="index.html">Pretty Baked</a></p>
     </footer>
-    
-    <script src="theme.js"></script>
+    <script>
+        loadTheme();
+        const themebutton = document.getElementById('theme');
+        themebutton.addEventListener('click', theme);
+    </script> 
   </body>
 </html>

@@ -200,7 +200,7 @@ justify-content: center;
 align-items: center;      
 }
 .d span{
-color: var(plus);
+color: var(--plus);
 font-weight:bold;
 font-size: larger;
 }

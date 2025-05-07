@@ -107,66 +107,6 @@ a{
   font-size: large;
   text-decoration: none;
 }
-/*#head {
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 50px;
-  background-color:var(--nav-bgcolor);
-  transition-duration: 1s;
-  position: initial;
-  height: 27px;
-  width: 1245px;
-}
-#theme {
-  background-color: none;
-}
-:root {
-  --backg-color:rgb(235, 212, 172);
-  --nav-bgcolor: rgb(244, 231, 215);
-  --button-bg:rgb(170, 123, 65);
-  --button-text:rgb(89, 15, 15);
-  --cards:rgb(228, 195, 135);
-  --cardColor:rgba(66, 43, 15, 0.685);
-}
-body.dark {
-  --backg-color:rgb(46, 42, 42);
-  --nav-bgcolor:  #1d1c1c;
-  --button-bg:#504f4f;
-  --button-text: white;
-  --cards:#000000;
-  --cardColor:rgb(46, 42, 42);
-}
-.logo {
-  width: 70px;
-  border-radius: 10%;
-}
-#head a {
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 16px;
-  color: var(--button-text);
-}
-.upperbtn {
-  width: 15px;
-  border-radius: 100%;
-}
-li {
-  list-style: none;
-  margin: 2px 35px;
-  text-align: center;
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-}
-#head button {
-  color: white;
-  background-color: var(--nav-bgcolor);
-  padding: 5px 5px;
-  text-decoration: none;
-  border-radius: 15px;
-  border: 0;
-}*/
 .imgCover {
   position: absolute;
   top: 0;

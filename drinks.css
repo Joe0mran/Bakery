@@ -9,11 +9,12 @@ body {
 .titlebody {
   justify-items: center;
   padding: 10px 0px 0px 0px;
-  font-size: x-large;
 }
 .title {
   color: rgb(250, 181, 102);
   text-decoration: none;
+  font-size:xx-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 header{
   padding: 20px;
@@ -30,7 +31,7 @@ header{
   --button-bg: #E8D7C2 ;
   --button-text: #5C4033 ;
   --nav-text: rgb(89,15,15) ;
-  --cards: rgb(244,231,215);
+  --cards: rgb(226, 199, 165);
   --cardColor:rgb(204, 128, 28);
 }
 body.dark{

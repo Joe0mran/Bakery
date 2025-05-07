@@ -22,7 +22,6 @@ header{
   text-align: center;
   font-family:'Lucida Handwriting';
   font-size:x-large ; 
-  transition-duration: 1s;
 }
 
 :root {
@@ -51,7 +50,7 @@ body.dark{
   justify-content: space-between;
   text-transform: uppercase;
   height: 55px;
-
+  transition-duration: 1s;
 }
 
 nav button {

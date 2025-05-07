@@ -3,8 +3,9 @@
 --navtextt:rgb(89,15,15);
   --hcolor:#4E1F00;
   --prod-bg:#FEFAF6;
-  --buttons:rgba(190, 123, 22, 0.3);
+  --buttons:#F3DEBA
   --button-text:rgb(19, 11, 0);
+  --itemm:black;
 }
   
 body {
@@ -26,6 +27,7 @@ body.dark{
   --prod-bg:#1e1e1e;
   --buttons:rgb(64,58,48,0.9);
   --button-text:#f5f5f5;
+  --itemm:rgb(245, 245, 220);
 }
 
   
@@ -117,7 +119,7 @@ nav button {
     font-size: 16px;
     border-radius: 5px;
     border: none;
-    background-color: #F3DEBA;
+    background-color: var(--buttons);
     color: rgb(12, 8, 8);
     cursor: pointer;
     width:150px ;
@@ -130,7 +132,7 @@ nav button {
 }
 
 .search button:hover{
-     background-color:  var(--buttons);
+     background-color:
     transform: translatez(-10px) scale(1.03);
         box-shadow: 0 4px 8px #74512D;
 }
@@ -232,6 +234,7 @@ margin-right: auto;
     font-weight: 400;
     font-style: normal;
     font-weight: bold;
+  color:var(--itemm);
   
 }
 

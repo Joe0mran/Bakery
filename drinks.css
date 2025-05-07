@@ -22,6 +22,7 @@ header{
   text-align: center;
   font-family:'Lucida Handwriting';
   font-size:x-large ; 
+  transition-duration: 1s;
 }
 
 :root {
@@ -50,7 +51,7 @@ body.dark{
   justify-content: space-between;
   text-transform: uppercase;
   height: 55px;
-  transition-duration: 1s;
+
 }
 
 nav button {
@@ -120,13 +121,13 @@ a{
   font-size: large;
 }
 .row {
-  display: flex;
+  display:flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
   padding: 5px;
 }
-.adding {
+.add {
   position: flex;
   color: white;
   background-color: var(--button-bg);
@@ -135,11 +136,17 @@ a{
   border-radius: 30px 5px;
   border: 0;
 }
-.adding:hover {
+.add:hover {
   background-color: rgb(161, 117, 62);
 }
+.c button{
+  background-color: var(--button-bg);
+  border: none;
+  border-radius: 15px;
+  margin: 5px 0px 8px 0px;
+}
 .card {
-  width: 25%;
+  width:25%;
   height: 100%;
   background-color: var(--cards);
   padding: 5px 5px;
@@ -149,7 +156,7 @@ a{
   transition-duration: 1s;
 }
 .card img {
-  width: 100%;
+  width:100%;
   border-radius: 30px 5px;
 }
 .card:hover {

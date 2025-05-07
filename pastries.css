@@ -23,10 +23,7 @@ body.dark{
   --shadow:none;
   --prod-bg:#1e1e1e;
 }
-.items{
-  background-color:var(--prod-bg);
 
-}
   
 .navbar {
     background-color: var(--nav-bgcolor);
@@ -193,7 +190,7 @@ h1,.h2,.h3{
     .items{
         width:30%;
       
-        background-color: #FEFAF6;
+        background-color: var( --prod-bg);
         border-radius: 20px;
         aspect-ratio:1/1 ;
         padding: 10px;

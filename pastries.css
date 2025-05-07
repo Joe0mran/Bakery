@@ -2,6 +2,7 @@
   --back-c:rgb(244, 231, 215);
 --navtextt:rgb(89,15,15);
   --hcolor:#4E1F00;
+  --prod-bg:#FEFAF6;
 }
   
 body {
@@ -20,11 +21,10 @@ body.dark{
    --hcolor:#F3DEBA;
   --em:white;
   --shadow:none;
-  --ss:black;
-
+  --prod-bg:#1e1e1e;
 }
 .items{
-  background-color:var(--ss);
+  background-color:var(--prod-bg);
 
 }
   

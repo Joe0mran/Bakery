@@ -200,7 +200,7 @@ justify-content: center;
 align-items: center;      
 }
 .c.d{
-color: var(--plus);
+color:var(--nav-text) ;
 font-weight:bold;
 font-size: larger;
 }

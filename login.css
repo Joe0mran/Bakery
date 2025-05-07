@@ -24,7 +24,7 @@ body.dark{
 }
 body
 {
-    background-image: url(pic.jpg);
+    background-image: var(--img);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;

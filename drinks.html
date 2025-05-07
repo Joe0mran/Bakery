@@ -9,27 +9,46 @@
   </head>
   <body id="bod">
     <button onclick="scrollToTop()" id="scroller">
-      <img src="arrow-up.png" alt="">
+      <img src="arrow-up.png" alt="" />
     </button>
     <header>
       <nav class="navbar">
-          <div class="logo">
-              <img src="logono.png" alt="" id="logo">
-          </div>
-          <ul class="link">
-              <li><img src="house-chimney.png" id="iconhouse"><a href="index.html">HOME</a></li>
-              <li><img src="apps.png" id="iconmenu"><a href="menu.html">menu</a></li>
-              <li> <img src="phone-plus.png" alt="" id="icophone"><a href="contact.html">contact us</a></li>
-              <li><img src="cart-shopping-fast.png" id="iconcart"><a href="cart.html">cart</a></li>
-              <li><img src="entrance.png" alt="" id="iconlog"><a href="login.html">login</a></li>
-
-          </ul>
-         <button id="theme" class="theme"><img src="moon-stars.png" alt=""></button>
-
+        <div class="logo">
+          <img src="logono.png" alt="" id="logo" />
+        </div>
+        <ul class="link">
+          <li>
+            <img src="house-chimney.png" id="iconhouse" /><a href="index.html"
+              >HOME</a
+            >
+          </li>
+          <li>
+            <img src="apps.png" id="iconmenu" /><a href="menu.html">menu</a>
+          </li>
+          <li>
+            <img src="phone-plus.png" alt="" id="icophone" /><a
+              href="contact.html"
+              >contact us</a
+            >
+          </li>
+          <li>
+            <img src="cart-shopping-fast.png" id="iconcart" /><a
+              href="cart.html"
+              >cart</a
+            >
+          </li>
+          <li>
+            <img src="entrance.png" alt="" id="iconlog" /><a href="login.html"
+              >login</a
+            >
+          </li>
+        </ul>
+        <button id="theme" class="theme">
+          <img src="moon-stars.png" alt="" />
+        </button>
       </nav>
-<div class="page-header">
-</div>
-</header>
+      <div class="page-header"></div>
+    </header>
     <div class="imgwrapper">
       <img class="imgCover" src="cover.jpg" />
     </div>
@@ -45,33 +64,45 @@
         <img src="coffee.jpg" alt="coffee" />
         <h2>Coffee</h2>
         <h3>20 eg.</h3>
-        <button id="added" class="adding" onclick="addToCart('coffee', 20)">
-          Add to Cart
-        </button>
+        <div class="c"> 
+          <button onclick="changeQty(this, -1)">-</button>
+          <span class="d">1</span>
+          <button onclick="changeQty(this, 1)">+</button>
+        </div>
+        <button onclick="addToCart(this, 'coffee',30)" class="add">Add to cart</button>   
       </div>
       <div id="cardd" class="card">
         <img src="cappuccino.jpg" alt="cappuccino" />
         <h2>Cappuccino</h2>
         <h3>30 eg.</h3>
-        <button id="added" class="adding" onclick="addToCart('cappuccino',30)">
-          Add to Cart
-        </button>
+        <div class="c"> 
+          <button onclick="changeQty(this, -1)">-</button>
+          <span class="d">1</span>
+          <button onclick="changeQty(this, 1)">+</button>
+        </div>
+        <button onclick="addToCart(this, 'coffee',30)" class="add">Add to cart</button>   
       </div>
       <div id="cardd" class="card">
         <img src="cortado.jpg" alt="cortado" />
         <h2>Cortado</h2>
         <h3>35 eg.</h3>
-        <button id="added" class="adding" onclick="addToCart('cortado',35)">
-          Add to Cart
-        </button>
+        <div class="c"> 
+          <button onclick="changeQty(this, -1)">-</button>
+          <span class="d">1</span>
+          <button onclick="changeQty(this, 1)">+</button>
+        </div>
+        <button onclick="addToCart(this, 'coffee',30)" class="add">Add to cart</button>   
       </div>
       <div id="cardd" class="card">
         <img src="latte.jpg" alt="latte" />
         <h2>Latte</h2>
         <h3>25 eg.</h3>
-        <button id="added" class="adding" onclick="addToCart('latte',25)">
-          Add to Cart
-        </button>
+        <div class="c"> 
+          <button onclick="changeQty(this, -1)">-</button>
+          <span class="d">1</span>
+          <button onclick="changeQty(this, 1)">+</button>
+        </div>
+        <button onclick="addToCart(this, 'coffee',30)" class="add">Add to cart</button>   
       </div>
     </div>
     <div class="row">
@@ -79,33 +110,45 @@
         <img src="tea.jpg" alt="tea" />
         <h2>Tea</h2>
         <h3>15 eg.</h3>
-        <button id="added" class="adding" onclick="addToCart('tea', 15)">
-          Add to Cart
-        </button>
+        <div class="c"> 
+          <button onclick="changeQty(this, -1)">-</button>
+          <span class="d">1</span>
+          <button onclick="changeQty(this, 1)">+</button>
+        </div>
+        <button onclick="addToCart(this, 'coffee',30)" class="add">Add to cart</button> 
       </div>
       <div id="cardd" class="card">
         <img src="green tea.jpg" alt="green tea" />
         <h2>Green Tea</h2>
         <h3>30 eg.</h3>
-        <button id="added" class="adding" onclick="addToCart('green tea',30)">
-          Add to Cart
-        </button>
+        <div class="c"> 
+          <button onclick="changeQty(this, -1)">-</button>
+          <span class="d">1</span>
+          <button onclick="changeQty(this, 1)">+</button>
+        </div>
+        <button onclick="addToCart(this, 'coffee',30)" class="add">Add to cart</button> 
       </div>
       <div id="cardd" class="card">
         <img src="sahlap.jpg" alt="sahlap" />
         <h2>Sahlap</h2>
         <h3>40 eg.</h3>
-        <button id="added" class="adding" onclick="addToCart('sahlap',40)">
-          Add to Cart
-        </button>
+        <div class="c"> 
+          <button onclick="changeQty(this, -1)">-</button>
+          <span class="d">1</span>
+          <button onclick="changeQty(this, 1)">+</button>
+        </div>
+        <button onclick="addToCart(this, 'coffee',30)" class="add">Add to cart</button> 
       </div>
       <div id="cardd" class="card">
         <img src="matcha.jpg" alt="matcha" />
         <h2>Matcha</h2>
         <h3>60 eg.</h3>
-        <button id="added" class="adding" onclick="addToCart('matcha',60)">
-          Add to Cart
-        </button>
+        <div class="c"> 
+          <button onclick="changeQty(this, -1)">-</button>
+          <span class="d">1</span>
+          <button onclick="changeQty(this, 1)">+</button>
+        </div>
+        <button onclick="addToCart(this, 'coffee',30)" class="add">Add to cart</button> 
       </div>
     </div>
     <div class="row">
@@ -113,33 +156,45 @@
         <img src="iced coffee.jpeg" alt="iced coffee" />
         <h2>Iced Coffee</h2>
         <h3>55 eg.</h3>
-        <button id="added" class="adding" onclick="addToCart('iced coffee',55)">
-          Add to Cart
-        </button>
+        <div class="c"> 
+          <button onclick="changeQty(this, -1)">-</button>
+          <span class="d">1</span>
+          <button onclick="changeQty(this, 1)">+</button>
+        </div>
+        <button onclick="addToCart(this, 'coffee',30)" class="add">Add to cart</button> 
       </div>
       <div id="cardd" class="card">
         <img src="Mocha.jpeg" alt="Mocha" />
         <h2>Mocha</h2>
         <h3>50 eg.</h3>
-        <button id="added" class="adding" onclick="addToCart('Mocha',50)">
-          Add to Cart
-        </button>
+        <div class="c"> 
+          <button onclick="changeQty(this, -1)">-</button>
+          <span class="d">1</span>
+          <button onclick="changeQty(this, 1)">+</button>
+        </div>
+        <button onclick="addToCart(this, 'coffee',30)" class="add">Add to cart</button> 
       </div>
       <div id="cardd" class="card">
         <img src="chocolate milkshake.jpg" alt="chocolate milkshake" />
         <h2>Chocolate Milkshake</h2>
         <h3>65 eg.</h3>
-        <button id="added" class="adding" onclick="addToCart('chocolate milkshake',65)">
-          Add to Cart
-        </button>
+        <div class="c"> 
+          <button onclick="changeQty(this, -1)">-</button>
+          <span class="d">1</span>
+          <button onclick="changeQty(this, 1)">+</button>
+        </div>
+        <button onclick="addToCart(this, 'coffee',30)" class="add">Add to cart</button> 
       </div>
       <div id="cardd" class="card">
         <img src="strawberry milkshake.jpeg" alt="strawberry milkshake" />
         <h2>Strawberry Milkshake</h2>
         <h3>70 eg.</h3>
-        <button id="added" class="adding" onclick="addToCart('strawberry milkshake', 70)">
-          Add to Cart
-        </button>
+        <div class="c"> 
+          <button onclick="changeQty(this, -1)">-</button>
+          <span class="d">1</span>
+          <button onclick="changeQty(this, 1)">+</button>
+        </div>
+        <button onclick="addToCart(this, 'coffee',30)" class="add">Add to cart</button> 
       </div>
     </div>
     <div class="row">
@@ -147,37 +202,34 @@
         <img src="Lemon mint mojito.jpg" alt="Lemon" />
         <h2>Lemon Mint Mojito</h2>
         <h3>75 eg.</h3>
-        <button
-          id="added"
-          class="adding"
-          onclick="addToCart('Lemon Mint Mojito', 75)"
-        >
-          Add to Cart
-        </button>
+        <div class="c"> 
+          <button onclick="changeQty(this, -1)">-</button>
+          <span class="d">1</span>
+          <button onclick="changeQty(this, 1)">+</button>
+        </div>
+        <button onclick="addToCart(this, 'coffee',30)" class="add">Add to cart</button> 
       </div>
       <div id="cardd" class="card">
         <img src="berry mojito.jpg" alt="berry" />
         <h2>Berry Mojito</h2>
         <h3>85 eg.</h3>
-        <button
-          id="added"
-          class="adding"
-          onclick="addToCart('Berry mojito', 85)"
-        >
-          Add to Cart
-        </button>
+        <div class="c"> 
+          <button onclick="changeQty(this, -1)">-</button>
+          <span class="d">1</span>
+          <button onclick="changeQty(this, 1)">+</button>
+        </div>
+        <button onclick="addToCart(this, 'coffee',30)" class="add">Add to cart</button> 
       </div>
       <div id="cardd" class="card">
         <img src="mango mojito.jpg" alt="mango" />
         <h2>Mango Mojito</h2>
         <h3>80 eg.</h3>
-        <button
-          id="added"
-          class="add"
-          onclick="addToCart('Mango mojito', 80)"
-        >
-          Add to Cart
-        </button>
+        <div class="c"> 
+          <button onclick="changeQty(this, -1)">-</button>
+          <span class="d">1</span>
+          <button onclick="changeQty(this, 1)">+</button>
+        </div>
+        <button onclick="addToCart(this, 'coffee',30)" class="add">Add to cart</button> 
       </div>
     </div>
     <div id="parties" class="end">
@@ -210,10 +262,18 @@
       function scrollToTop() {
         window.scrollTo({
           top: 0,
-          behavior: "smooth"
+          behavior: "smooth",
         });
       }
     </script>
+        <script>
+    function changeQty(button, amount) {
+  const counter = button.parentElement.querySelector("span");
+  let value = parseInt(counter.innerText);
+  value = Math.max(1, value + amount);
+  counter.innerText = value;
+}
+  </script> 
     <script src="cart.js"></script>
   </body>
 </html>

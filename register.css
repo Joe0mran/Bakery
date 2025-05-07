@@ -10,7 +10,7 @@
 body {
     margin: 0;
     font-family: 'Inter';
-    background-color: rgb(253, 247, 242);
+    background-color: var(--backg-color);
     display: flex;
     justify-content: center;
     align-items: center;

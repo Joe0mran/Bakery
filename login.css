@@ -84,7 +84,7 @@ button[type="submit"]
     margin-bottom: 14px;
     width: 30%;
     padding: 10px;
-    color: var(--nav-text);
+    color: var(--btntxt);
     background-color: var(--btncol);
     border: none;
     border-radius: 5px;
@@ -112,7 +112,6 @@ p{
     text-decoration-color: rgb(160, 82, 45);
 }
 button:hover{
-    background-color: var(--btncol);
     transform: scale(1.05);
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
     transition: 0.5s ease;

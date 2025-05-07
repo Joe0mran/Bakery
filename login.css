@@ -35,7 +35,7 @@ body
     text-align: center;
     font-size: 1.7rem;
     padding-top: 30px;
-    color: white;
+    color: var(--nav-text);
     font-family: Lucida Handwriting;
 }
 .login 
@@ -51,7 +51,7 @@ body
     border: 1px solid rgb(160, 82, 45);
     font-family: Arial, sans-serif;
     font-size: 1.2rem;
-    color: rgb(160, 82, 45);
+    color: var(--nav-text);
     text-align: center;
     line-height: 1.5;
     font-weight: 400;
@@ -72,7 +72,7 @@ input[type="password"]
     border: 1px solid rgb(160, 82, 45);
     border-radius: 5px;
     font-size: 1rem;
-    color: rgb(160, 82, 45);
+    color: var(--nav-text);
 }
 button[type="submit"]
 {
@@ -80,7 +80,7 @@ button[type="submit"]
     margin-bottom: 14px;
     width: 30%;
     padding: 10px;
-    color: white;
+    color: var(--nav-text);
     background-color: rgb(160, 82, 45);
     border: none;
     border-radius: 5px;
@@ -98,12 +98,12 @@ p{
 .register
 {
     text-decoration: none;
-    color:rgb(160, 82, 45);
+    color: var(--nav-text);
     transition: 0.5s;
     
 }
 .register:hover{
-    color: rgb(160, 82, 45);
+    color: var(--nav-text);
     text-decoration: underline;
     text-decoration-color: rgb(160, 82, 45);
 }
@@ -117,17 +117,17 @@ button:hover{
 h1 a
 {
     text-decoration: none;
-    color: rgb(160, 82, 45);
+    color: var(--nav-text);
     font-family: Lucida Handwriting;
 }
 button a
 {
     text-decoration: none;
-    color: white;
+    color: var(--nav-text);
 }
 .loginbutton a:hover
 {
-    color: white;
+    color: var(--nav-text);
     text-decoration: none;
 }
 footer
@@ -137,7 +137,7 @@ footer
 footer a
 {
     text-decoration: none;
-    color: rgb(160, 82, 45);
+    color: var(--nav-text);
     font-family: Lucida Handwriting;
 }
 .navbar {

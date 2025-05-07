@@ -22,7 +22,7 @@ header{
   text-align: center;
   font-family:'Lucida Handwriting';
   font-size:x-large ; 
-  
+  transition-duration: 1s;
 }
 
 :root {

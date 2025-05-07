@@ -24,7 +24,7 @@ body{
     margin: 0;
     background-color: var(--back);
 }
-.background{
+#background{
     width: 100%;
     height: 400px;
 }

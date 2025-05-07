@@ -4,14 +4,14 @@
     --nav-bgcolor : rgb(244,231,215);
     --nav-text : rgb(89,15,15);
     --divcol:rgb(255, 243, 235);
-    --shadow:#fffff0;
+    --shadow:#1e1e1e;
 }
 body.dark{
     --back:#1e1e1e;
     --nav-bgcolor:#2b2b2b;
     --nav-text:#f5f5f5;
     --divcol:#1e1e1e;
-    --shadow:#1e1e1e;
+    --shadow:#fffff0 ;
 }
 body{
     border: 0;

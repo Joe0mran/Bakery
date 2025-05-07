@@ -48,7 +48,7 @@ body
     padding: 2%;
     margin-top: 5%;
     transform: none;
-    border: 1px solid rgb(160, 82, 45);
+    border: 1px solid var(--nav-bgcolor);
     font-family: Arial, sans-serif;
     font-size: 1.2rem;
     color: var(--nav-text);
@@ -147,7 +147,7 @@ footer a
     justify-content: space-between;
     text-transform: uppercase;
     height: 55px;
-    border-bottom: 2px solid rgb(160, 82, 45);
+    border-bottom: 2px solid var(--nav-bgcolor);
 }
 
 nav button {

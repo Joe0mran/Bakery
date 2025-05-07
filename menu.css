@@ -7,6 +7,7 @@
     --shadow:#1e1e1e;
     --span:rgb(139,69,19);
     --word:#694934;
+    --li:#694934
 body.dark{
     --back:#1e1e1e;
     --nav-bgcolor:#2b2b2b;
@@ -15,6 +16,7 @@ body.dark{
     --shadow:#fffff0 ;
     --span:#FEF8DB;
     --word:#c9ae86;
+    --li:#c9ae86;
 }
 body{
     border: 0;
@@ -101,7 +103,7 @@ nav button {
 .products a{
     text-decoration: none;
     font-size: 40px; 
-    color:#c9ae86 ;
+    color:var(--li) ;
     text-align: center;
     display: block;
 }

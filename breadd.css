@@ -163,7 +163,7 @@ transition: transform 0.3s ease;
 
 .price{
   background-color: var(--backg-color); 
-  color:#a0522d;
+  color: #a0522d;
   border: none;
   padding: 10px 18px;
   margin-top: 8px;

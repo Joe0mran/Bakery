@@ -1,242 +1,252 @@
-body {
-  margin: 0;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-weight: 100;
-  font-size: medium;
-  background-color: var(--backg-color);
-  transition-duration: 1s;
-}
-.titlebody {
-  justify-items: center;
-  padding: 10px 0px 0px 0px;
-  font-size: x-large;
-}
-.title {
-  color: rgb(250, 181, 102);
-  text-decoration: none;
-}
-header{
-  padding: 20px;
-  background-color: var(--backg-color) ;
-  text-align: center;
-  font-family:'Lucida Handwriting';
-  font-size:x-large ; 
-  
-}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drinks</title>
+    <link rel="stylesheet" href="drinks.css" />
+    <script src="theme.js"></script>
+  </head>
+  <body id="bod">
+    <button onclick="scrollToTop()" id="scroller">
+      <img src="arrow-up.png" alt="">
+    </button>
+    <header>
+      <nav class="navbar">
+          <div class="logo">
+              <img src="logono.png" alt="" id="logo">
+          </div>
+          <ul class="link">
+              <li><img src="house-chimney.png" id="iconhouse"><a href="index.html">HOME</a></li>
+              <li><img src="apps.png" id="iconmenu"><a href="menu.html">menu</a></li>
+              <li> <img src="phone-plus.png" alt="" id="icophone"><a href="contact.html">contact us</a></li>
+              <li><img src="cart-shopping-fast.png" id="iconcart"><a href="cart.html">cart</a></li>
+              <li><img src="entrance.png" alt="" id="iconlog"><a href="login.html">login</a></li>
 
-:root {
-  --backg-color: rgb(246,236,223) ;
-  --nav-bgcolor: rgb(244,231,215) ;
-  --button-bg: #E8D7C2 ;
-  --button-text: #5C4033 ;
-  --nav-text: rgb(89,15,15) ;
-}
-body.dark{
-  --backg-color: #1e1e1e ;
-  --nav-bgcolor: #2b2b2b ;
-  --button-bg: rgb(64,58,48,0.9) ;
-  --button-text: #ffffff ;
-  --nav-text: #f5f5f5 ;
-  --cards:#000000;
-  --cardColor:rgb(46, 42, 42);
-}
+          </ul>
+         <button id="theme" class="theme"><img src="moon-stars.png" alt=""></button>
 
-.navbar {
-  background-color: var(--navbgcolor);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-transform: uppercase;
-  height: 55px;
-
-}
-
-nav button {
-  margin-right: 30px;
-  border-radius: 10px 10px;
-  border: none;
-  background-color: var(--navbgcolor);
-  cursor: pointer;
-  font-size: 30px;
-
-}
-
-.navbar .logo img {
-  width: 150px;
-  display: inline-block;
-
-}
-
-.navbar .link {
-  display: flex;
-  justify-content: center;
-  flex-grow: 1;
-
-}
-
-.navbar .link li {
-
-  list-style: none;
-  display: inline-block;
-  margin-right: 70px;
-  text-align: center;
-
-}
-
-.link li a {
-  text-decoration: none;
-  color: var(--nav-text);
-
-}
-
-.link li a:hover {
-  color: rgb(192, 98, 98);
-
-}
-
-.link li img {
-  width: 15px;
-  margin-right: 5px;
-
-}
-a{
-  color: #550808;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; 
-  font-size: large;
-  text-decoration: none;
-}
-/*#head {
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 50px;
-  background-color:var(--nav-bgcolor);
-  transition-duration: 1s;
-  position: initial;
-  height: 27px;
-  width: 1245px;
-}
-#theme {
-  background-color: none;
-}
-:root {
-  --backg-color:rgb(235, 212, 172);
-  --nav-bgcolor: rgb(244, 231, 215);
-  --button-bg:rgb(170, 123, 65);
-  --button-text:rgb(89, 15, 15);
-  --cards:rgb(228, 195, 135);
-  --cardColor:rgba(66, 43, 15, 0.685);
-}
-body.dark {
-  --backg-color:rgb(46, 42, 42);
-  --nav-bgcolor:  #1d1c1c;
-  --button-bg:#504f4f;
-  --button-text: white;
-  --cards:#000000;
-  --cardColor:rgb(46, 42, 42);
-}
-.logo {
-  width: 70px;
-  border-radius: 10%;
-}
-#head a {
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 16px;
-  color: var(--button-text);
-}
-.upperbtn {
-  width: 15px;
-  border-radius: 100%;
-}
-li {
-  list-style: none;
-  margin: 2px 35px;
-  text-align: center;
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-}
-#head button {
-  color: white;
-  background-color: var(--nav-bgcolor);
-  padding: 5px 5px;
-  text-decoration: none;
-  border-radius: 15px;
-  border: 0;
-}*/
-.imgCover {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: -2;
-  border-radius: 30px;
-}
-.cover {
-  color: white;
-  padding: 0px 0px 50px 10px;
-  font-size: large;
-}
-.row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  padding: 5px;
-}
-.adding {
-  position: flex;
-  color: white;
-  background-color: var(--button-bg);
-  padding: 5px 13px;
-  text-decoration: none;
-  border-radius: 30px 5px;
-  border: 0;
-}
-.adding:hover {
-  background-color: rgb(161, 117, 62);
-}
-.card {
-  width: 25%;
-  height: 100%;
-  background-color: var(--cards);
-  padding: 5px 5px;
-  justify-items: center;
-  border-radius: 30px 5px;
-  color: var(--cardColor);
-  transition-duration: 1s;
-}
-.card img {
-  width: 100%;
-  border-radius: 30px 5px;
-}
-.card:hover {
-  background-color: rgb(63, 40, 14);
-  color: rgb(250, 181, 102);
-  width: 27%;
-}
-footer {
-  position: absolute;
-  font-family: "Lucida handwriting";
-  width: 100%;
-  text-align: center;
-  font-size: larger;
-  color: var(--cardColor);
-  transition-duration: 1s;
-  font-size: large;
-}
-footer a {
-  text-decoration: none;
-  color: rgb(204, 128, 28);
-}
-
-#scroller {
-  position: fixed;
-  bottom: 40px;
-  right: 47.6%;
-  background-color:var(--button-bg) ;
-  border: none;
-  padding: 12px 16px;
-  border-radius: 50%;
-  display: none;
-}
+      </nav>
+<div class="page-header">
+</div>
+</header>
+   <!-- <div id="head" class="navbar">
+      <img class="logo" id="logo" src="logo.jpg" alt="logo" />
+      <div>
+        <ul class="link">
+          <li>
+            <a href="index.html"
+              ><img src="house-chimney.png" id="iconhouse" class="upperbtn"  />HOME</a
+            >
+          </li>
+          <li>
+            <a href="menu.html"><img src="apps.png" id="iconmenu" class="upperbtn"  />menu</a>
+          </li>
+          <li>
+            <a href="contact.html">
+              <img src="phone-plus.png" id="iconphone" class="upperbtn"  />contact us</a
+            >
+          </li>
+          <li>
+            <a href="cart.html"
+              ><img src="cart-shopping-fast.png" id="iconcart" class="upperbtn"  />cart</a
+            >
+          </li>
+          <li>
+            <a href="login.html"
+              ><img src="entrance.png" id="iconlog" class="upperbtn" />login</a
+            >
+          </li>
+        </ul>
+      </div>
+      <button id="theme" class="theme">
+        <img src="moon-stars.png" alt="" />
+      </button>
+    </div>-->
+    <div class="imgwrapper">
+      <img class="imgCover" src="cover.jpg" />
+    </div>
+    <div class="titlebody">
+      <h1><a class="title" href="index.html">Pretty baked</a></h1>
+    </div>
+    <div class="cover">
+      <h2>Drinks</h2>
+      <p>Get yourself something to drink <br />you deserve it</p>
+    </div>
+    <div class="row">
+      <div id="cardd" class="card">
+        <img src="coffee.jpg" alt="coffee" />
+        <h2>coffee</h2>
+        <h3>20 eg.</h3>
+        <button id="added" class="adding" onclick="addToCart('coffee', 20)">
+          Add to Cart
+        </button>
+      </div>
+      <div id="cardd" class="card">
+        <img src="cappuccino.jpg" alt="cappuccino" />
+        <h2>cappuccino</h2>
+        <h3>30 eg.</h3>
+        <button id="added" class="adding" onclick="addToCart('cappuccino',30)">
+          Add to Cart
+        </button>
+      </div>
+      <div id="cardd" class="card">
+        <img src="cortado.jpg" alt="cortado" />
+        <h2>cortado</h2>
+        <h3>35 eg.</h3>
+        <button id="added" class="adding" onclick="addToCart('cortado',35)">
+          Add to Cart
+        </button>
+      </div>
+      <div id="cardd" class="card">
+        <img src="latte.jpg" alt="latte" />
+        <h2>latte</h2>
+        <h3>25 eg.</h3>
+        <button id="added" class="adding" onclick="addToCart('latte',25)">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+    <div class="row">
+      <div id="cardd" class="card">
+        <img src="tea.jpg" alt="tea" />
+        <h2>tea</h2>
+        <h3>15 eg.</h3>
+        <button id="added" class="adding" onclick="addToCart('tea', 15)">
+          Add to Cart
+        </button>
+      </div>
+      <div id="cardd" class="card">
+        <img src="green tea.jpg" alt="green tea" />
+        <h2>green tea</h2>
+        <h3>30 eg.</h3>
+        <button id="added" class="adding" onclick="addToCart('green tea',30)">
+          Add to Cart
+        </button>
+      </div>
+      <div id="cardd" class="card">
+        <img src="sahlap.jpg" alt="sahlap" />
+        <h2>sahlap</h2>
+        <h3>40 eg.</h3>
+        <button id="added" class="adding" onclick="addToCart('sahlap',40)">
+          Add to Cart
+        </button>
+      </div>
+      <div id="cardd" class="card">
+        <img src="matcha.jpg" alt="matcha" />
+        <h2>matcha</h2>
+        <h3>60 eg.</h3>
+        <button id="added" class="adding" onclick="addToCart('matcha',60)">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+    <div class="row">
+      <div id="cardd" class="card">
+        <img src="sprite.jpg" alt="sprite" />
+        <h2>sprite</h2>
+        <h3>18 eg.</h3>
+        <button id="added" class="adding" onclick="addToCart('sprite',18)">
+          Add to Cart
+        </button>
+      </div>
+      <div id="cardd" class="card">
+        <img src="pepsi.jpg" alt="pepsi" />
+        <h2>pepsi</h2>
+        <h3>18 eg.</h3>
+        <button id="added" class="adding" onclick="addToCart('pepsi',18)">
+          Add to Cart
+        </button>
+      </div>
+      <div id="cardd" class="card">
+        <img src="fanta.jpg" alt="fanta" />
+        <h2>fanta</h2>
+        <h3>18 eg.</h3>
+        <button id="added" class="adding" onclick="addToCart('fanta',18)">
+          Add to Cart
+        </button>
+      </div>
+      <div id="cardd" class="card">
+        <img src="cocacola.jpg" alt="cocacola" />
+        <h2>cocacola</h2>
+        <h3>18 eg.</h3>
+        <button id="added" class="adding" onclick="addToCart('cocacola', 18)">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+    <div class="row">
+      <div id="cardd" class="card">
+        <img src="Lemon mint mojito.jpg" alt="Lemon" />
+        <h2>Lemon Mint Mojito</h2>
+        <h3>75 eg.</h3>
+        <button
+          id="added"
+          class="adding"
+          onclick="addToCart('Lemon Mint Mojito', 75)"
+        >
+          Add to Cart
+        </button>
+      </div>
+      <div id="cardd" class="card">
+        <img src="berry mojito.jpg" alt="berry" />
+        <h2>Berry mojito</h2>
+        <h3>85 eg.</h3>
+        <button
+          id="added"
+          class="adding"
+          onclick="addToCart('Berry mojito', 85)"
+        >
+          Add to Cart
+        </button>
+      </div>
+      <div id="cardd" class="card">
+        <img src="mango mojito.jpg" alt="mango" />
+        <h2>Mango mojito</h2>
+        <h3>80 eg.</h3>
+        <button
+          id="added"
+          class="adding"
+          onclick="addToCart('Mango mojito', 80)"
+        >
+          Add to Cart
+        </button>
+      </div>
+    </div>
+    <div id="parties" class="end">
+      <footer>
+        <p>© 2025 <a href="index.html">Pretty Baked</a></p>
+      </footer>
+    </div>
+    <script>
+      loadTheme();
+      const themebutton = document.getElementById("theme");
+      themebutton.addEventListener("click", theme);
+    </script>
+    <script>
+      const btn = document.querySelectorAll(".adding");
+      btn.forEach(function (button) {
+        button.onclick = function () {
+          alert("Drink added to cart!");
+        };
+      });
+    </script>
+    <script>
+      window.onscroll = function () {
+        const btn = document.getElementById("scroller");
+        if (document.documentElement.scrollTop > 50) {
+          btn.style.display = "block";
+        } else {
+          btn.style.display = "none";
+        }
+      };
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      }
+    </script>
+    <script src="cart.js"></script>
+  </body>
+</html>

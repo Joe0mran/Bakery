@@ -187,21 +187,24 @@ input:focus , textarea:focus{
 } 
 .email:hover{
   transform: scale(1.03);
+  box-shadow:0 0 5px rgb(210,180,140);
 }
 .whatsapp:hover{
   transform: scale(1.03);
+  box-shadow:0 0 5px rgb(210,180,140);
 }
 .call:hover{
   transform: scale(1.03);
+  box-shadow:0 0 5px rgb(210,180,140);
 }
 .shop:hover{
  transform: scale(1.03);
+ box-shadow:0 0 5px rgb(210,180,140);
 }
 .all{
   display: flex;
 }
-.call ,.whatsapp ,.email, .shop{
-box-shadow:0 0 15px 5px #fffff0;} 
+ 
 
 button:hover{
  background-color:rgb(247, 230, 209); 

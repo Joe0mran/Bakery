@@ -1,16 +1,37 @@
+:root {
+    --backg-color: rgb(246, 236, 223);
+    --nav-bgcolor: rgb(244, 231, 215);
+    --button-bg: #E8D7C2;
+    --button-text: #5C4033;
+    --nav-text: rgb(89, 15, 15);
+    --footer-titles: black;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter';
+    background-color: rgb(253, 247, 242);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body.dark {
+    --backg-color: #1e1e1e;
+    --nav-bgcolor: #2b2b2b;
+    --button-bg: rgb(64, 58, 48, 0.9);
+    --button-text: #ffffff;
+    --nav-text: #f5f5f5;
+    --footer-titles: #E8D7C2;
+}
+
 header {
     position: absolute;
     top: 20px;
     left: 0;
     width: 100%;
     text-align: center;
-}
-
-header h2 {
-    font-family: 'Lucida Handwriting';
-    color: rgb(94, 60, 43);
-    font-size: 32px;
-    margin: 0;
 }
 
 .navbar {
@@ -73,15 +94,7 @@ nav button {
 
 }
 
-body {
-    margin: 0;
-    font-family: 'Inter';
-    background-color: rgb(253, 247, 242);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+
 .register_form{
     background-color: rgb(255, 247, 240);
     padding: 40px;

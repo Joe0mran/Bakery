@@ -10,7 +10,7 @@
     --nav-text : rgb(89,15,15);
     --divcol:rgb(255, 243, 235);
     --btncol:rgb(160, 82, 45);
-    --btntxt:rgb(255.255,255);
+    --btntxt:rgb(255,255,255);
 }
 body.dark{
     --back:#1e1e1e;
@@ -22,7 +22,7 @@ body.dark{
 }
 body
 {
-    background-color: var(--back);
+    background-image: url(images/pic.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -62,21 +62,21 @@ body
     transition: 0.5s ease-in-out;
     margin-bottom: 2%;
 }
-.login:hover
+form input
 {
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
-    transform: scale(1.03);
+    min-width: 0;
+    height: 50px;
+    font: inherit;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 10px;
+    border: 2px solid var(--nav-bgcolor);
+    background-color: var(--nav-bgcolor);
+    transition: 150ms ease;
 }
-input[type="email"],
-input[type="password"]
+form input:hover
 {
-    width: 100%;
-    padding: 10px;
-    margin-top: 20px ;
-    border: 1px solid rgb(160, 82, 45);
-    border-radius: 5px;
-    font-size: 1rem;
-    color: var(--nav-text);
+    border-color: var(--nav-text) ;
 }
 button[type="submit"]
 {
@@ -85,7 +85,7 @@ button[type="submit"]
     width: 30%;
     padding: 10px;
     color: var(--btntxt);
-    background-color: var(--btncol);
+    background-color: var(--nav-text);
     border: none;
     border-radius: 5px;
     font-size: 1rem;
@@ -122,16 +122,6 @@ h1 a
     color: var(--nav-text);
     font-family: Lucida Handwriting;
 }
-button a
-{
-    text-decoration: none;
-    color: var(--btntxt);
-}
-.loginbutton a:hover
-{
-    color: var(--nav-text);
-    text-decoration: none;
-}
 footer
 {
     text-align: center;
@@ -153,7 +143,7 @@ footer p
     justify-content: space-between;
     text-transform: uppercase;
     height: 55px;
-    border-bottom: 2px solid rgb(160, 82, 45);
+    border-bottom: 2px solid var(--nav-text);
 }
 
 nav button {

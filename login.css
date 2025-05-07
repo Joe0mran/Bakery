@@ -9,12 +9,14 @@
     --nav-bgcolor : rgb(244,231,215);
     --nav-text : rgb(89,15,15);
     --divcol:rgb(255, 243, 235);
+    --btncol:rgb(160, 82, 45);
 }
 body.dark{
     --back:#1e1e1e;
     --nav-bgcolor:#2b2b2b;
     --nav-text:#f5f5f5;
     --divcol:#F6F2EC;
+    --btncol:rgb(255,255,255);
 }
 body
 {
@@ -81,7 +83,7 @@ button[type="submit"]
     width: 30%;
     padding: 10px;
     color: var(--nav-text);
-    background-color: var(--back);
+    background-color: var(--btncol);
     border: none;
     border-radius: 5px;
     font-size: 1rem;
@@ -108,7 +110,7 @@ p{
     text-decoration-color: rgb(160, 82, 45);
 }
 button:hover{
-    background-color: var(--back);
+    background-color: var(--btncol);
     color: var(--nav-text);
     transform: scale(1.05);
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);

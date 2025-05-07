@@ -30,7 +30,7 @@ header{
   --button-bg: #E8D7C2 ;
   --button-text: #5C4033 ;
   --nav-text: rgb(89,15,15) ;
-  --cards: rgb(250, 181, 102);
+  --cards: rgb(244,231,215);
   --cardColor:rgb(204, 128, 28);
 }
 body.dark{

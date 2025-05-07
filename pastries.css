@@ -3,6 +3,7 @@
 --navtextt:rgb(89,15,15);
   --hcolor:#4E1F00;
   --prod-bg:#FEFAF6;
+  --buttons:rgba(190, 123, 22, 0.3);
 }
   
 body {
@@ -22,6 +23,7 @@ body.dark{
   --em:white;
   --shadow:none;
   --prod-bg:#1e1e1e;
+  --buttons:rgb(64,58,48,0.9);
 }
 
   
@@ -126,7 +128,7 @@ nav button {
 }
 
 .search button:hover{
-     background-color:  #F3DEBA;
+     background-color:  var(--buttons);
     transform: translatez(-10px) scale(1.03);
         box-shadow: 0 4px 8px #74512D;
 }
@@ -244,7 +246,7 @@ font-style: normal;
  .count1 button {
     padding: 5px 10px;
 font-size: 20px;
-background-color:rgba(190, 123, 22, 0.3);
+background-color:var(--buttons);
 color: rgb(19, 11, 0);
 border: none;
 border-radius:10px;
@@ -287,7 +289,7 @@ transition: 0.3s ease;
     font-family: "Poetsen One", sans-serif;
     font-weight:500PX;
     font-style: normal;
-    background: rgba(190, 123, 22, 0.3);
+    background:  var(--buttons);
 transition: transform 0.2s ease;}
 
 

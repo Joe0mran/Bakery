@@ -12,37 +12,40 @@
     <link rel="stylesheet" href="register.css">
   </head>
 
-
   <body>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="logono.png" alt="">
-        </div>
-        <ul class="link">
-            <li><img src="house-chimney.png" id="iconhouse"><a href="index.html">HOME</a></li>
-            <li><img src="apps.png" id="iconmenu"><a href="menu.html">menu</a></li>
-            <li> <img src="phone-plus.png" alt="" id="icophone"><a href="contact.html">contact us</a></li>
-            <li><img src="cart-shopping-fast.png" id="iconcart"><a href="cart.html">cart</a></li>
-            <li><img src="entrance.png" alt="" id="iconlog"><a href="login.html">login</a></li>
+    <header>
+      <nav class="navbar">
+          <div class="logo">
+              <img src="logono.png" alt="">
+          </div>
+          <ul class="link">
+              <li><img src="house-chimney.png" id="iconhouse"><a href="index.html">HOME</a></li>
+              <li><img src="apps.png" id="iconmenu"><a href="menu.html">menu</a></li>
+              <li><img src="phone-plus.png" alt="" id="icophone"><a href="contact.html">contact us</a></li>
+              <li><img src="cart-shopping-fast.png" id="iconcart"><a href="cart.html">cart</a></li>
+              <li><img src="entrance.png" alt="" id="iconlog"><a href="login.html">login</a></li>
+          </ul>
+          <button id="theme" class="theme"><img src="moon-stars.png" alt=""></button>
+      </nav>
+    </header>
 
-        </ul>
-        <button id="theme" class="theme"><img src="moon-stars.png" alt=""></button>
-    </nav>
-  
-    <div class="register_form">
-      <h1>Create Account</h1>
-      <form>
-        <input type="text" placeholder="First Name" required>
-        <input type="text" placeholder="Last Name" required>
-        <input type="email" placeholder="Email" required>
-        <input type="password" placeholder="Password" required>
-        <button type="submit">Create</button>
-      </form>
-    </div>
+    <main class="page-wrapper">
+      <div class="register_form">
+        <h1>Create Account</h1>
+        <form>
+          <input type="text" placeholder="First Name" required>
+          <input type="text" placeholder="Last Name" required>
+          <input type="email" placeholder="Email" required>
+          <input type="password" placeholder="Password" required>
+          <button type="submit">Create</button>
+        </form>
+      </div>
+    </main>
 
     <footer>
       <p>© 2025 <a href="index.html">Pretty Baked</a></p>
     </footer>
+    
     <script src="theme.js"></script>
   </body>
 </html>

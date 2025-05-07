@@ -121,3 +121,8 @@ hr{
 }
 span{color:var(--span);
     font-weight:bold;}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+}

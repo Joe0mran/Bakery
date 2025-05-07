@@ -20,11 +20,13 @@ body.dark{
    --hcolor:#F3DEBA;
   --em:white;
   --shadow:none;
-  --cat:black;
+  --ss:black;
 
 }
 .items{
-  background-color:var(--cat);}
+  background-color:var(--ss);
+
+}
   
 .navbar {
     background-color: var(--nav-bgcolor);

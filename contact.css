@@ -7,6 +7,7 @@
   --button-text1:white;
   --buttonbg: #a0522d;
   --labelcol:#8b4513;
+  
 }
 body{
     background-color: var(--backcolor) ;
@@ -19,12 +20,13 @@ body{
 body.dark{
   --backcolor: #2a2723;
   --img-text: white;
-  --div-color: #F6F2EC;  
+  --div-color: #1e1e1e;  
   --nav-text1: #f5f5f5;
   --nav-bgcolor1: #2b2b2b;
   --button-text1:#ffffff;
   --buttonbg:rgb(64,58,48,0.9);
   --labelcol:#F6F2EC;
+  
 } 
 
 .navbar {

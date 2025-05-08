@@ -127,7 +127,7 @@ p{
 .register:hover{
     color: var(--nav-text);
     text-decoration: underline;
-    text-decoration-color: rgb(160, 82, 45);
+    text-decoration-color: var(--nav-text);
 }
 button:hover{
     transform: scale(1.05);

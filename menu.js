@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded",function() {
 
     img.src=back[index];
 }
-    setInterval(changeimage,3000);
+    setInterval(changeimage,2500);
 })
 
 

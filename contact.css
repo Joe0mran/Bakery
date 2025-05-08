@@ -215,6 +215,7 @@ button:hover{
 #counter{
   color: var(--labelcol);
   font-family: "Roboto Mono", monospace;
+  text-align:right;
 }
  
 

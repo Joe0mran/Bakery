@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded",function() {
                  "4.jpg",
                  "coffe.jpg",
                  "3.jpg",
-                 "coofe2.jpg",
+                 "coffe2.jpg",
                  "cc.jpg" ,
                  "2.jpg",
                  "back.jpg",

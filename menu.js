@@ -9,10 +9,7 @@ document.addEventListener("DOMContentLoaded",function() {
                  "coffe.jpg",
                  "3.jpg",
                  "coffe2.jpg",
-                 "cc.jpg" ,
-                 "2.jpg",
-                 "back.jpg",
-        ] ;
+                 "cc.jpg" ] ;
 
     const img= document.getElementById("img");
 

@@ -20,7 +20,7 @@ body{
 body.dark{
   --backcolor: #2a2723;
   --img-text: white;
-  --div-color: #f1daae;  
+  --div-color: rgb(252, 237, 226);  
   --nav-text1: #f5f5f5;
   --nav-bgcolor1: #2b2b2b;
   --button-text1:#ffffff;

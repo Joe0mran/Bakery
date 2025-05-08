@@ -7,7 +7,7 @@
   --button-text1:white;
   --buttonbg: #a0522d;
   --labelcol:#8b4513;
-  
+  --ho-but:rgb(247, 230, 209); 
 }
 body{
     background-color: var(--backcolor) ;
@@ -26,7 +26,7 @@ body.dark{
   --button-text1:#ffffff;
   --buttonbg:rgb(64,58,48,0.9);
   --labelcol:#F6F2EC;
-  
+  --ho-but:beige;
 } 
 
 .navbar {
@@ -208,7 +208,7 @@ input:focus , textarea:focus{
  
 
 button:hover{
- background-color:rgb(247, 230, 209); 
+ background-color:var(--ho-but);
  } 
 
 

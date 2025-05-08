@@ -20,7 +20,7 @@ body{
 body.dark{
   --backcolor: #2a2723;
   --img-text: white;
-  --div-color: rgb(252, 237, 226);  
+  --div-color: #f6f2ec;  
   --nav-text1: #f5f5f5;
   --nav-bgcolor1: #2b2b2b;
   --button-text1:#ffffff;
@@ -136,6 +136,7 @@ nav button {
     border: 2px solid #b96d36;
     border-radius: 10px 10px;
     box-sizing: border-box;
+    background-color:#f6f2ec;
  }
    
   

@@ -82,7 +82,7 @@ form input:hover
 }
 form input::placeholder
 {
-    color: rgb(89,15,15);
+    color: --nav-text : rgb(89,15,15);
 }
 .incorrect input {
     border-color: red;

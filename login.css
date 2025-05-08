@@ -12,6 +12,7 @@
     --btncol:rgb(160, 82, 45);
     --btntxt:rgb(255,255,255);
     --img: url("pic.jpg");
+    --errorclr: #ffe6e6;
 }
 body.dark{
     --back:#1e1e1e;
@@ -21,6 +22,7 @@ body.dark{
     --btncol:rgb(255,255,255);
     --btntxt:rgb(0,0,0);
     --img: url("dark2.jpg");
+    --errorclr: gray;
 }
 body
 {
@@ -86,7 +88,7 @@ form input::placeholder
 }
 .incorrect input {
     border-color: red;
-    background-color: var(--nav-bgcolor);
+    background-color: var(--errorclr);
 }
 #error-messages {
     display: block;

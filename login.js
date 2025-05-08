@@ -1,6 +1,7 @@
 loadTheme();
 const themebutton = document.getElementById('theme');
-themebutton.addEventListener('click', theme);
+themebutton.addEventListener('click', theme);
+
 const form = document.getElementById('form');
 const email_input = document.getElementById('email_input');
 const password_input = document.getElementById('password_input');

@@ -26,7 +26,7 @@ body.dark{
   --button-text1:#ffffff;
   --buttonbg:rgb(64,58,48,0.9);
   --labelcol:#F6F2EC;
-  --ho-but:beige;
+  --ho-but:#f6f2ec;
 } 
 
 .navbar {
@@ -209,9 +209,13 @@ input:focus , textarea:focus{
 
 button:hover{
  background-color:var(--ho-but);
+  color:#8b4513;
  } 
 
-
+#counter{
+  color: var(--labelcol);
+  font-family: "Roboto Mono", monospace;
+}
  
 
 

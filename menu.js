@@ -3,7 +3,16 @@ const themebutton = document.getElementById('theme');
 themebutton.addEventListener('click', theme);
 
 document.addEventListener("DOMContentLoaded",function() {
-    const back =["670c40b0-3e3e-405f-824d-19d840027923.jpg", "2.jpg","3.jpg","4.jpg", "cc.jpg" ,"coffe.jpg","back.jpg"] ;
+    const back =["670c40b0-3e3e-405f-824d-19d840027923.jpg",
+                 "donut.jpg ,
+                 "4.jpg",
+                 "coffe.jpg",
+                 "3.jpg",
+                 "coofe2.jpg,
+                 "cc.jpg" ,
+                 "2.jpg",
+                 "back.jpg",
+        ] ;
 
     const img= document.getElementById("img");
 
@@ -13,7 +22,7 @@ document.addEventListener("DOMContentLoaded",function() {
 
     img.src=back[index];
 }
-    setInterval(changeimage,2000);
+    setInterval(changeimage,5000);
 })
 
 

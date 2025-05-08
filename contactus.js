@@ -20,10 +20,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.addEventListener("DOMContentLoaded",function() {
    const textarea =document.getElementById("message");
-   const counter =document.getElementById("conter");
+   const counter =document.getElementById("counter");
 
-   document.addEventListener("input",function(){
+   textarea.addEventListener("input",function(){
     const Length = textarea.value.length;
-    counter.textContent = '{tLength} / 500';
+    counter.textContent = `${Length} / 500`;
    });
 })

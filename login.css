@@ -11,6 +11,7 @@
     --divcol:rgb(255, 243, 235);
     --btncol:rgb(160, 82, 45);
     --btntxt:rgb(255,255,255);
+    --img: url("pic.jpg");
 }
 body.dark{
     --back:#1e1e1e;
@@ -19,10 +20,11 @@ body.dark{
     --divcol:#F6F2EC;
     --btncol:rgb(255,255,255);
     --btntxt:rgb(0,0,0);
+    --img: url("dark2.jpg");
 }
 body
 {
-    background-image: url(images/pic.jpg);
+    background-image: var(--img);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -48,7 +50,7 @@ body
     padding: 2%;
     margin-top: 5%;
     transform: none;
-    border: 1px solid rgb(160, 82, 45);
+    border: 1px solid var(--nav-text);
     font-family: Arial, sans-serif;
     font-size: 1.2rem;
     color: var(--nav-text);
@@ -76,7 +78,7 @@ form input
 }
 form input:hover
 {
-    border-color: rgb(89,15,15) ;
+    border-color: var(--nav-text) ;
 }
 form input::placeholder
 {
@@ -101,7 +103,7 @@ button[type="submit"]
     width: 30%;
     padding: 10px;
     color: var(--btntxt);
-    background-color: rgb(89,15,15);
+    background-color: var(--nav-text);
     border: none;
     border-radius: 5px;
     font-size: 1rem;
@@ -159,7 +161,7 @@ footer p
     justify-content: space-between;
     text-transform: uppercase;
     height: 55px;
-    border-bottom: 2px solid rgb(89,15,15);
+    border-bottom: 2px solid var(--nav-text);
 }
 
 nav button {

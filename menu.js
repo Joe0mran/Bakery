@@ -3,7 +3,7 @@ const themebutton = document.getElementById('theme');
 themebutton.addEventListener('click', theme);
 
 document.addEventListener("DOMContentLoaded",function() {
-    const back =[ "cc.jpg" ,"coffe.jpg","back.jpg"] ;
+    const back =["670c40b0-3e3e-405f-824d-19d840027923.jpg", "cc.jpg" ,"coffe.jpg","back.jpg"] ;
 
     const img= document.getElementById("img");
 

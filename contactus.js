@@ -18,3 +18,12 @@ document.addEventListener("DOMContentLoaded", function() {
     alert("Welcome to Pretty Baked! We 're glad you're here.If you need any help ,please don't hesitate to contact us.")
 });
 
+document.addEventListener("DOMContentLoaded",function() {
+   const textarea =document.getElementById("message");
+   const counter =document.getElementById("conter");
+
+   document.addEventListener("input",function(){
+    const Length = textarea.value.length;
+    counter.textContent = '{tLength} / 500';
+   });
+})

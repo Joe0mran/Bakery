@@ -1,6 +1,12 @@
 loadTheme();
+loadHomeTheme();
 const themebutton = document.getElementById('theme');
-themebutton.addEventListener('click', theme);
+themebutton.addEventListener('click', function () {
+    theme();
+    homeTheme();
+
+});
+
 
 let vidtext1 = "Freshly baked,";
 let vidtext2 = "just for you!!";
@@ -40,13 +46,46 @@ function countdown() {
 
     if (counter <= 0) {
         offertime.innerHTML = 'offer end';
-        cartbutton.style.display = "none"
-        return;
+        cartbutton.style.display = "none";
+        clearInterval(offerInterval);
     }
     else {
         offertime.innerHTML = `${min}:${second}`;
         counter--;
     }
 }
-setInterval(countdown, 1000);
+const offerInterval = setInterval(countdown, 1000);
+function loadHomeTheme() {
+    const savedTheme = localStorage.getItem("theme-mode");
+    // If a saved theme exists, apply it
+    if (savedTheme == "dark") {
+        homeSwitchToDarkModek();
+    } else {
+        homeSwitchToLightMode();
+    }
+}
+function homeTheme() {
+    const savedTheme = localStorage.getItem("theme-mode");
+    if (savedTheme == "dark") {
+        homeSwitchToDarkModek();
+    }
+    else {
+        homeSwitchToLightMode();
+    }
+}
+function homeSwitchToLightMode() {
+    const logoFooter = document.getElementById("logo-footer");
+    const phonefooter = document.getElementById("icon-footer");
+    logoFooter.src = 'logono.png';
+    phonefooter.src = 'phone-plus.png';
+
+}
+
+function homeSwitchToDarkModek() {
+    const logoFooter = document.getElementById("logo-footer");
+    const phonefooter = document.getElementById("icon-footer");
+    logoFooter.src = 'darklogo-removebg-preview (1).png';
+    phonefooter.src = 'phone-plus (1).png';
+
+}
 

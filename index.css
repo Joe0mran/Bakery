@@ -83,6 +83,11 @@ body.dark {
     padding: 12px 70px;
     background-color: var(--button-bg);
     font-family: "Roboto Mono", monospace;
+    cursor: pointer;
+}
+
+.videoscope button:hover {
+    color: rgb(192, 98, 98);
 }
 
 .videoscope .buttonmenu {
@@ -310,8 +315,17 @@ nav button {
     background-color: #c7b196;
     color: #5C4033;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
+.offer button:hover {
+    color: rgb(192, 98, 98);
+}
+
+.text-offer {
+    font-size: 15px;
+    max-width: 700px;
+}
 
 
 footer .footer-container {
@@ -370,7 +384,12 @@ footer .footer-container {
     padding: 5px 15px;
     border: none;
     font-weight: bold;
+    cursor: pointer;
 
+}
+
+.footer-address button:hover {
+    color: rgb(192, 98, 98);
 }
 
 .footer-contact {
@@ -387,4 +406,5 @@ footer .footer-container {
 
 .footer-contact img {
     margin-right: 10px;
+
 }

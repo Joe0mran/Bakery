@@ -62,3 +62,14 @@ function displayErrors(errors) {
     errorContainer.appendChild(errorElement);
   });
 }
+
+const emailInput = document.getElementById('email_input');
+const passwordInput = document.getElementById('password_input');
+
+emailInput.addEventListener('input', () => {
+    emailInput.style.color = 'var(--nav-text)'; 
+});
+
+passwordInput.addEventListener('input', () => {
+    passwordInput.style.color = 'var(--nav-text)'; 
+});

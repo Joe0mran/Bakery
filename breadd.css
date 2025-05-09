@@ -200,7 +200,7 @@ display: flex;
 justify-content: center;
 align-items: center;      
 }
-.c.d{
+.c.count2{
 color:var(--nav-text) ;
 font-weight:bold;
 font-size: larger;

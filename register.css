@@ -28,14 +28,6 @@ body.dark {
     --img: url("dark2.jpg");
 }
 
-header {
-    position: absolute;
-    top: 20px;
-    left: 0;
-    width: 100%;
-    text-align: center;
-}
-
 .navbar {
     background-color: var(--nav-bgcolor);
     display: flex;

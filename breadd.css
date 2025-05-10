@@ -5,7 +5,9 @@ body{
   border-radius: 20px;
   color: #a0522d;
 }
-
+a{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; 
+}
 
 header{
   padding: 20px;

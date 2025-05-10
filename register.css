@@ -91,7 +91,7 @@ nav button {
 
 .register_form{
     margin: auto;
-    margin-top: 50px;
+    margin-top: 70px;
     background-color: rgb(255, 247, 240);
     padding: 40px;
     border-radius: 12px;
@@ -124,7 +124,6 @@ form input {
     border-radius: 10px;
     background-color: rgb(255, 250, 245);
     font-size: 15px;
-    text-align: center;
 }
 
 form button {

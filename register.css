@@ -115,16 +115,18 @@ a{
     text-decoration: none;
 }
 form input {
-    display: block;
+
     width: 70%;
-    margin: 12px 0;
-    padding: 12px;
-    border: 2px solid rgb(210, 180, 140);
+    height: 50px;
+    font: inherit;
     border-radius: 10px;
-    background-color: rgb(255, 250, 245);
-    font-size: 15px;
-    text-align: center;
+    padding: 1rem;
+    margin: 10px;
+    border: 2px solid var(--nav-bgcolor);
+    background-color: var(--nav-bgcolor);
+    transition: 150ms ease;
 }
+
 form button {
     margin-top: 20px;
     margin-left: auto;

@@ -5,15 +5,16 @@
     --button-text: #5C4033;
     --nav-text: rgb(89, 15, 15);
     --footer-titles: black;
+    --img: url("pic.jpg");
 }
 
 body {
     margin: 0;
     font-family: 'Inter';
-    background-color: var(--backg-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-image: var(--img);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     height: 100vh;
 }
 
@@ -24,14 +25,7 @@ body.dark {
     --button-text: #ffffff;
     --nav-text: #f5f5f5;
     --footer-titles: #E8D7C2;
-}
-
-header {
-    position: absolute;
-    top: 20px;
-    left: 0;
-    width: 100%;
-    text-align: center;
+    --img: url("dark2.jpg");
 }
 
 .navbar {
@@ -96,12 +90,13 @@ nav button {
 
 
 .register_form{
+    margin: auto;
+    margin-top: 70px;
     background-color: rgb(255, 247, 240);
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0 10px 30px black;
-    max-width: 400px;
-    width: 100%;
+    width: 30%;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
@@ -120,6 +115,7 @@ a{
     text-decoration: none;
 }
 form input {
+
     display: block;
     width: 90%;
     margin: 12px 0;
@@ -129,6 +125,7 @@ form input {
     background-color: rgb(255, 250, 245);
     font-size: 15px;
 }
+
 form button {
     margin-top: 20px;
     margin-left: auto;

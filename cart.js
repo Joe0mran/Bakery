@@ -1,7 +1,7 @@
 
 function addToCart(button, name, price) {
 
-      const qtyElement = button.parentElement.querySelector('.d');
+      const qtyElement = button.parentElement.querySelector('.count2');
       const quantity = parseInt(qtyElement?.innerText) || 1; 
       let cart = JSON.parse(localStorage.getItem('cart')) || [];
       const index = cart.findIndex(item => item.name === name);
@@ -13,6 +13,7 @@ function addToCart(button, name, price) {
       }
 
       localStorage.setItem('cart', JSON.stringify(cart));
-      alert('x' + quantity + " " + name + ' added to cart for ' + (price * quantity)+ ' EGP ✅');
+      alert(name + ' x' + quantity + ' added to cart for ' + (price * quantity)+ ' EGP each');
       qtyElement.innerText = 1;
   }
+

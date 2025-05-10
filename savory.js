@@ -20,7 +20,7 @@ themebutton.addEventListener('click', theme);
             // لو نفس الترتيب موجود قبل كدا ... هنرجع كل العناصر لطبيعتها
             originalProducts.forEach(product => container.appendChild(product));
             lastStoredOrder = ''; //  بعيد الترتيب
-            clearActiveButtons();  // همسح التأثيرات
+            // clearActiveButtons();  // همسح التأثيرات
         } else {
             // لو كان الترتيب مختلف عن اللي موجود هنرتب حسب الترتيب المطلوب
             products.sort((a, b) => {

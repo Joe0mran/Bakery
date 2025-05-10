@@ -179,7 +179,7 @@ h1 {
     margin-left: 20px;
     margin-right: 5px;
     gap: 20px;
-    border: #550808;
+    border: var(--active) ;
     border-style: solid;
     border-radius: 5px;
 }

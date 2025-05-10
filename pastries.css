@@ -131,13 +131,13 @@ nav button {
     font-family: "Concert One", sans-serif;
     font-weight: 400;
     font-style: normal
-   transition: transform 0.3 ease,box-shadow 0.3s ease ;
+   transitiontransform 0.3 ease,box-shadow 0.3s ease ;
   
 }
 
 .search button:hover{
-     background-color:
-    transform: translatez(-10px) scale(1.03);
+  
+    transform:translatez(-10px) scale(1.03);
         box-shadow: 0 4px 8px #74512D;
 }
     .title{ 
@@ -271,7 +271,7 @@ font-size:15PX;
 
 
 
-. count1 button:hover{
+.count1 button:hover{
 background-color: #C9B194;
 transition: 0.3s ease;
 

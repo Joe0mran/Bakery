@@ -5,12 +5,13 @@
     --button-text: #5C4033;
     --nav-text: rgb(89, 15, 15);
     --footer-titles: black;
+    --img: url("pic.jpg");
 }
 
 body {
     margin: 0;
     font-family: 'Inter';
-    background-color: var(--backg-color);
+    background-image: var(--img);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,6 +25,7 @@ body.dark {
     --button-text: #ffffff;
     --nav-text: #f5f5f5;
     --footer-titles: #E8D7C2;
+    --img: url("dark2.jpg");
 }
 
 header {

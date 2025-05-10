@@ -271,7 +271,7 @@ h1 {
     cursor: pointer;
 }
 
-.count2 button {
+.counter button {
     padding: 5px 10px;
     font-size: 20px;
     background-color: var(--buttons);

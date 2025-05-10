@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     document.getElementById("button").textContent="We received your feedback";
 
-e.target.reset();
+m.target.reset();
 });
 });
 

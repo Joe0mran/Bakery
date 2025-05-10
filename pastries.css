@@ -140,11 +140,7 @@ nav button {
     transform:translatez(-10px) scale(1.03);
         box-shadow: 0 4px 8px #74512D;
 }
-    .title{ 
-       
-    background-repeat: no-repeat;
-    background-position: center;
-}
+  
     
 h1{
     font-family: "Poetsen One", sans-serif;

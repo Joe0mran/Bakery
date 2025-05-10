@@ -17,10 +17,10 @@ function letterbyletter() {
     if (text1index < vidtext1.length) {
         document.getElementById("vidtext").innerHTML += vidtext1.charAt(text1index);
         text1index++;
-        setTimeout(letterbyletter, textspeed);;
+        setTimeout(letterbyletter, textspeed);
     }
     else {
-        setTimeout(letterbyletter2, textspeed)
+        setTimeout(letterbyletter2, textspeed);
     }
 }
 function letterbyletter2() {

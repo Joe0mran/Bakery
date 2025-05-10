@@ -97,19 +97,6 @@ a{
   font-size: large;
   text-decoration: none;
 }
-.left-side {
-  width: 20%;
-  height: auto ;
-  border-radius: 10px;  
-  background: #E5D0AC;
-  background-image: url("logoo.jpg");
-  background-size: contain ;
-  background-repeat: repeat;
-  background-attachment: scroll;
-  background-position: 5px 5px;
-  margin: 0;   
-  padding: 0;
-}
 
 header h1{
  color: #a0522d; 

@@ -116,15 +116,15 @@ a{
 }
 form input {
 
-    width: 70%;
-    height: 50px;
-    font: inherit;
+    display: block;
+    width: 90%;
+    margin: 12px 0;
+    padding: 12px;
+    border: 2px solid rgb(210, 180, 140);
     border-radius: 10px;
-    padding: 1rem;
-    margin: 10px;
-    border: 2px solid var(--nav-bgcolor);
-    background-color: var(--nav-bgcolor);
-    transition: 150ms ease;
+    background-color: rgb(255, 250, 245);
+    font-size: 15px;
+    text-align: center;
 }
 
 form button {

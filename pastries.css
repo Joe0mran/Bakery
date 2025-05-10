@@ -190,7 +190,7 @@ h1,.h2,.h3{
     text-align: center;
     max-width: 1200px;
     margin: auto;
-     
+     box-sizing: border-box;
 }
     .items{
         width:30%;
